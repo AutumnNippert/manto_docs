@@ -1,0 +1,499 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	// Qualities
+	"Has Hybrid Form": {
+		"prefix": "hybrid",
+		"body": [
+			"$0 has hybrid form"
+		],
+		"description": "Use where an entity is explicitly said to be a mixture or blending of two or more species, e.g. the Centaurs, the Minotaur, Pegasos. Use where an entity is both hybrid and monstrous. Use also to capture passages where the hybridity of traditionally hybrid creatures is explicitly denied and tag with ‘Doubt or disbelief expressed’. Triggers phenomenon ‘monstrosity and hybridity’"
+	},
+
+	"Has Monstrous Form": {
+		"prefix": "monstrous",
+		"body": [
+			"$0 has monstrous form"
+		],
+		"description": "Use where an entity is explicitly said to have some unconventional physical characteristic, excluding hybridity, e.g. unusual size, single eye (Polyphemos), extra limbs (Hundred-handers). If the monstrosity is accompanied by some aspect of hybridity, use ‘has hybrid form’ instead. Use also to capture passages where the monstrosity of traditionally monstrous creatures is explicitly denied and tag with ‘Doubt or disbelief expressed’. Triggers phenomenon ‘monstrosity and hybridity’"
+	},
+
+	// Blood Relationships
+	"Child of": {
+		"prefix": "childOf",
+		"body": [
+			"$0 is child of $1"
+		],
+		"description": "Use where ENTITY1 is a child of ENTITY2. If ENTITY1 is a collective with 'Children of: ENTITY2', do not repeat. Populates filecard categories ‘son/daughter/child of’, ‘children of’, ‘mother/father of’, ‘parents of’, ‘has children with’."
+	},
+
+	"Sibling of": {
+		"prefix": "sibling",
+		"body": [
+			"$0 is sibling of $1"
+		],
+		"description": "Use only where you cannot use ‘is child of’, with the name(s) of the parent(s) implied."
+	},
+
+	"Twin of": {
+		"prefix": "twin",
+		"body": [
+			"$0 is twin of $1"
+		],
+		"description": "Populates filecard categories ‘twin of’. Triggers phenomenon ‘mythic twins’."
+	},
+
+	"Mother by Parthenogenesis": {
+		"prefix": "parthenogenesis",
+		"body": [
+			"$0 is mother by parthenogenesis of $1"
+		],
+		"description": "Use where a mother conceives her offspring on her own. Populates filecard categories ‘son/daughter/child of’, ‘mother of’, ‘gives birth by parthenogenesis to’. Triggers phenomenon ‘parthenogenesis’, ‘unusual births’."
+	},
+
+	"No Children": {
+		"prefix": "noChildren",
+		"body": [
+			"$0 has no children"
+		],
+		"description": "Use only where an agent is explicitly said to have died childless."
+	},
+
+	"Descendant Of": {
+		"prefix": "descendantOf",
+		"body": [
+			"$0 is a descendant of $1"
+		],
+		"description": "Use only where the exact relationship between two agents is not apparent. Populates filecard category ‘descendant of’."
+	},
+
+	"Claimed as Ancestor": {
+		"prefix": "claimedAncestor",
+		"body": [
+			"$0 is claimed as ancestor in/on/at $1"
+		],
+		"description": "Use where the person or group making the claim exists in the historical period. Use with a timemark."
+	},
+
+	//2.8.3 Relationships by marriage
+	"Spouse of": {
+		"prefix": "spouse",
+		"body": [
+			"$0 is spouse of $1"
+		],
+		"description": "If a more detailed episode is described, use ‘marries’ or ‘gives in marriage’. Populates filecard category ‘wife/husband of’."
+	},
+
+	"Marries": {
+		"prefix": "marries",
+		"body": [
+			"$0 marries $1"
+		],
+		"description": "Populates filecard category ‘wife/husband of’."
+	},
+
+	"Gives in Marriage": {
+		"prefix": "givesInMarriage",
+		"body": [
+			"$0 gives in marriage [indir. obj. $2]"
+		],
+		"description": "Use where a marriage did not take place, or to capture the place of arrangement."
+	},
+
+	"Offers in Marriage": {
+		"prefix": "offersInMarriage",
+		"body": [
+			"$0 offers in marriage $1 [indir. obj. $2]"
+		],
+		"description": "Use where a marriage did not take place, or to capture the place of arrangement."
+	},
+
+	// 2.8.4 Birth
+	"Born": {
+		"prefix": "born",
+		"body": [
+			"$0 is born [in/on/at $1] [from $2] [with involvement of $3]"
+		],
+		"description": "Use where the location or episode of birth is significant. Populates filecard categories ‘born at’, ‘born from’, ‘place of birth of’, ‘from which is created’. Triggers phenomenon ‘unusual births’ if ‘from’ is used."
+	},
+
+	"Gives Birth": {
+		"prefix": "givesBirth",
+		"body": [
+			"$0 gives birth to $1 [in/on/at $2]"
+		],
+		"description": "Populates filecard categories ‘born at’, ‘place of birth of’."
+	},
+
+	"Born by Autochthony": {
+		"prefix": "autochthony",
+		"body": [
+			"$0 is born by autochthony [in/on/at $1]"
+		],
+		"description": "Capture only explicit instances of autochthony. Populates filecard category ‘born at’, ‘place of birth of’. Triggers phenomenon ‘autochthons’, ‘unusual births’."
+	},
+
+	"Comes Into Being": {
+		"prefix": "comesIntoBeing",
+		"body": [
+			"$0 comes into being"
+		],
+		"description": "Use where an entity spontaneously comes into existence. Triggers phenomenon ‘comes into being at the beginning of the world’, ‘unusual births’."
+	},
+
+	// 2.8.5 Death
+	"Kills": {
+		"prefix": "kills",
+		"body": [
+			"$0 kills $1 [using $2]"
+		],
+		"description": "Populates filecard category ‘dies at’, ‘place of death of’, ‘killed by’, ‘kills’."
+	},
+
+	"Died": {
+		"prefix": "died",
+		"body": [
+			"$0 dies"
+		],
+		"description": "Use only when more specific ties are not appropriate. Populates filecard category ‘dies at’, ‘place of death of’."
+	},
+
+	"Died by Suicide": {
+		"prefix": "diedBySuicide",
+		"body": [
+			"$0 dies by suicide"
+		],
+		"description": "Populates filecard category ‘dies at’, ‘place of death of’. Triggers phenomenon ‘deaths by suicide’."
+	},
+
+	"Disappeared": {
+		"prefix": "disappears",
+		"body": [
+			"$0 disappears"
+		],
+		"description": "Use when an agent disappears rather than dies. Populates filecard category ‘disappears at’. Triggers phenomenon ‘disappearing heroes’."
+	},
+
+	"Mourns": {
+		"prefix": "mourns",
+		"body": [
+			"$0 mourns $1"
+		],
+		"description": "Use where an agent expresses grief for another."
+	},
+
+	"Resurrects": {
+		"prefix": "resurrects",
+		"body": [
+			"$0 resurrects $1"
+		],
+		"description": "Use where one agent returns another to life. Populates filecard category ‘resurrected at’, ‘resurrected by’. Triggers phenomenon ‘resurrected heroes’."
+	},
+
+	"Post-Mortem Existence": {
+		"prefix": "postMortem",
+		"body": [
+			"$0 has post-mortem existence [in/on/at $1]"
+		],
+		"description": "Use where an agent exists after death in some form. Populates filecard category ‘has post-mortem existence at’."
+	},
+
+	"Buries": {
+		"prefix": "buries",
+		"body": [
+			"$0 buries $1 [in/on/at $2]"
+		],
+		"description": "Use where an agent disposes of a body after death. Populates filecard categories ‘buried at’, ‘buried by’, ‘burial place of’."
+	},
+
+	"Has Cenotaph": {
+		"prefix": "cenotaph",
+		"body": [
+			"$0 has cenotaph [in/on/at $1]"
+		],
+		"description": "Use where tomb is specifically said not to include a body. Populates filecard categories ‘cult sites’, ‘cult site of’."
+	},
+
+	// 2.8.6 Roles and non-familial relationships 
+	"Is Slave Of": {
+		"prefix": "slaveOf",
+		"body": [
+			"$0 is slave of $1"
+		],
+		"description": "Use where the agent’s primary identity is as slave of another. Populates filecard category ‘enslaved to’."
+	},
+
+	"Is Charioteer Of": {
+		"prefix": "charioteerOf",
+		"body": [
+			"$0 is charioteer of $1"
+		],
+		"description": "Populates filecard category ‘charioteer of’."
+	},
+
+	"Is Herald Of": {
+		"prefix": "heraldOf",
+		"body": [
+			"$0 is herald of $1 [in/on/at $2]"
+		],
+		"description": "Populates filecard categories ‘herald of’, ‘herald at’."
+	},
+
+	"Is Helmsman Of": {
+		"prefix": "helmsmanOf",
+		"body": [
+			"$0 is helmsman of $1"
+		],
+		"description": "Populates filecard category ‘helmsman of’."
+	},
+
+	"Lawgiver": {
+		"prefix": "lawgiver",
+		"body": [
+			"$0 is lawgiver [in/on/at $1]"
+		],
+		"description": "Use where an entity establishes laws or governance in a specific location. Populates filecard categories ‘lawgiver at’."
+	},
+
+	"Healer": {
+		"prefix": "heals",
+		"body": [
+			"$0 heals $1 [of $2]"
+		],
+		"description": "Use where an entity provides healing to another entity. Populates filecard categories ‘healer of’. If $1 is a collective, populates categories ‘includes’, ‘belongs to’."
+	},
+
+	"Nurse": {
+		"prefix": "nurses",
+		"body": [
+			"$0 nurses $1 [of $2]"
+		],
+		"description": "Use where a caretaker provides nourishment to an infant or young entity. Populates filecard category ‘nurse of’."
+	},
+
+	"Teacher": {
+		"prefix": "teaches",
+		"body": [
+			"$0 teaches $1"
+		],
+		"description": "Use where an entity provides instruction or education to another. Populates filecard category ‘teacher of’."
+	},
+
+	"Priest": {
+		"prefix": "priest",
+		"body": [
+			"$0 is priest [of $1] [in/on/at $2]"
+		],
+		"description": "Use where an entity serves as a priest for a deity or at a specific temple. Populates categories ‘priest/priestess of’, ‘priest/priestess at’."
+	},
+
+	"Divine Patron": {
+		"prefix": "divine patron",
+		"body": [
+			"$0 is divine patron [of $1]"
+		],
+		"description": "Use where a god or goddess has a close relationship with a hero or place. Populates filecard category ‘divine patron of’."
+	},
+
+	"Prophet": {
+		"prefix": "prophet",
+		"body": [
+			"$0 is prophet [of $1] [in/on/at $2]"
+		],
+		"description": "Use where an entity provides prophecies to another entity or collective. Populates categories ‘prophet of’, ‘prophet at’. If $1 is a collective, populates categories ‘includes’, ‘belongs to’."
+	},
+
+	// 2.8.7 Names and Transformation 
+	"Eponym": {
+		"prefix": "eponym",
+		"body": [
+			"$0 is eponym of $1"
+		],
+		"description": "Use where a hero(ine) gives their name to a place. Populates categories ‘eponym of’, ‘eponym’."
+	},
+
+	"Etymology": {
+		"prefix": "derives etymology",
+		"body": [
+			"$0 derives etymology [from $1]"
+		],
+		"description": "Use where etymology is not a simple case of eponymy. ENTITY2 should have significance for the etymology even if that significance is not immediately clear from the names. Explain the connection in Commentary where necessary. Populates filecard category ‘derives etymology from’"
+	},
+
+	"Names Entity": {
+		"prefix": "names",
+		"body": [
+			"$0 names $1 [to honor $2]"
+		],
+		"description": "Use where ENTITY2 has no previous name, e.g. the first naming of cities.  ENTITY3 is what ENTITY2 is named after. If ENTITY2 has an eponym or etymology, capture that in a separate tie as well. Populates filecard category ‘named by’"
+	},
+
+	"Changes Name To": {
+		"prefix": "changes name",
+		"body": [
+			"$0 changes name to $1 [to honor $2]"
+		],
+		"description": "Use where ENTITY1’s name changes, but there you cannot capture an entity that does the renaming. (Where ENTITY1 is given a new name by someone else, use ‘changes name of’.) ENTITY3 is what ENTITY2 is named after. Where the name change happens during deification, use 'becomes immortal' instead. If ENTITY2 has an eponym or etymology capture that in a separate tie as well. This interaction does not populate the filecard categories ‘alternative name’ and ‘alternative name for’."
+	},
+
+	"Changes Name Of": {
+		"prefix": "changes name",
+		"body": [
+			"$0 changes name of $1 [ind.obj. $2] [to honor $3]"
+		],
+		"description": "Use where ENTITY1 changes the name of ENTITY2, which already has a name. ENTITY4 is what ENTITY3 is named after.  Where the name change happens during deification, use 'becomes immortal' instead. If ENTITY3 has an eponym or etymology capture in a separate tie as well. This interaction does not populate the filecard categories ‘alternative name’ and ‘alternative name for’. Populates filecard category ‘named by’"
+	},
+
+	"Metamorphosis": {
+		"prefix": "metamorphoses",
+		"body": [
+			"$0 metamorphoses $1 [into $2]"
+		],
+		"description": "Use where an entity is transformed into another entity. Populates categories ‘transformed into’, ‘transformed from’. Triggers phenomenon ‘metamorphosis’."
+	},
+
+	"Immortal": {
+		"prefix": "makes immortal",
+		"body": [
+			"$0 makes immortal $1 [into $2]"
+		],
+		"description": "Use where an entity is granted immortality by another entity. Populates categories ‘transformed into’, ‘transformed from’. Triggers phenomenon ‘mortals who become gods’."
+	},
+
+	"Helps": {
+		"prefix": "helps",
+		"body": [
+			"$0 helps $1"
+		],
+		"description": "Use where one entity assists another. Use only if a more specific interaction does not apply."
+	},
+
+	"Heals": {
+		"prefix": "heals",
+		"body": [
+			"$0 heals $1"
+		],
+		"description": "Use where an entity provides healing. Does not populate ‘healer of’."
+	},
+
+	"Protects": {
+		"prefix": "protects",
+		"body": [
+			"$0 protects $1 [from $2]"
+		],
+		"description": "Use where one entity defends another. Use only if a more specific interaction does not apply."
+	},
+
+	"Hinders": {
+		"prefix": "hinders",
+		"body": [
+			"$0 hinders $1"
+		],
+		"description": "Use only if action is not captured by a more specific interaction."
+	},
+
+	"Mistreats": {
+		"prefix": "mistreats",
+		"body": [
+			"$0 mistreats $1 [using $2]"
+		],
+		"description": "Use only if action is not captured by a more specific interaction. If ‘using’ contains an object or landmark, populates filecard category ‘used to harm’."
+	},
+
+	"Deceives": {
+		"prefix": "deceives",
+		"body": [
+			"$0 deceives $1"
+		],
+		"description": "Use only if action is not captured by a more specific interaction."
+	},
+
+	"Plots Against": {
+		"prefix": "plots against",
+		"body": [
+			"$0 plots against $1"
+		],
+		"description": "Use only if ‘at the instigation of’ or ‘to punish’ are not appropriate."
+	},
+
+	"Pursues": {
+		"prefix": "pursues",
+		"body": [
+			"$0 pursues $1 [from $2] [to $3] [via $4]"
+		],
+		"description": "Use to describe the act of chasing or following another entity."
+	},
+
+	"Hunts": {
+		"prefix": "hunts",
+		"body": [
+			"$0 hunts $1"
+		],
+		"description": "Use only in instances of hunting an animal. 'Pursues' also exists."
+	},
+
+	"Punishes": {
+		"prefix": "punishes",
+		"body": [
+			"$0 punishes $1 [in/on/at $2] [using $3]"
+		],
+		"description": "If ‘using’ contains an object or landmark, populates filecard category ‘used to harm’. If ‘in/on/at’ contains ‘the Underworld’ or ‘Tartaros’, populates filecard category ‘has post-mortem existence at’. Triggers phenomenon ‘people punished in the underworld’."
+	},
+
+	"Curses": {
+		"prefix": "curses",
+		"body": [
+			"$0 curses $1"
+		],
+		"description": "Use where 'punishes' is not appropriate."
+	},
+
+	"Abandons": {
+		"prefix": "abandons",
+		"body": [
+			"$0 abandons $1"
+		],
+		"description": "Use also in instances of abandonment or divorce of a spouse. For throwing away an object, use ‘discards’."
+	},
+
+	"Exposes": {
+		"prefix": "exposes",
+		"body": [
+			"$0 exposes $1"
+		],
+		"description": "Use only where a child is left out to die. Triggers phenomenon ‘children exposed’."
+	},
+
+	"Drives Insane": {
+		"prefix": "drives insane",
+		"body": [
+			"$0 drives insane $1"
+		],
+		"description": "Use to indicate causing another entity to lose their sanity."
+	},
+
+	"Tests": {
+		"prefix": "tests",
+		"body": [
+			"$0 tests $1"
+		],
+		"description": "Use only if action is not captured by a more specific interaction."
+	},
+
+
+
+}
