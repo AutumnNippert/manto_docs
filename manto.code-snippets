@@ -1,4 +1,5 @@
 {
+	// 2.8.1 Qualities
 	"Has Hybrid Form": {
 		"prefix": "hybrid",
 		"body": [
@@ -15,7 +16,7 @@
 		"description": "Use where an entity is explicitly said to have some unconventional physical characteristic, excluding hybridity, e.g. unusual size, single eye (Polyphemos), extra limbs (Hundred-handers). If the monstrosity is accompanied by some aspect of hybridity, use ‘has hybrid form’ instead. Use also to capture passages where the monstrosity of traditionally monstrous creatures is explicitly denied and tag with ‘Doubt or disbelief expressed’. Triggers phenomenon ‘monstrosity and hybridity’"
 	},
 
-	// Blood Relationships
+	// 2.8.2 Blood relationships
 	"Child of": {
 		"prefix": "childOf",
 		"body": [
