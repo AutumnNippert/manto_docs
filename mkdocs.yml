@@ -1,9 +1,9 @@
 site_name: Manto
-site_url: https://mydomain.org/mysite
+site_url: https://autumnnippert.github.io/manto_docs/
 theme:
 
   name: material
-  
+
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
