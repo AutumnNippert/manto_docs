@@ -1,0 +1,3731 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://autumnnippert.github.io/manto_docs/2.%20Practices/2-4/">
+      
+      
+        <link rel="prev" href="../2-3/">
+      
+      
+        <link rel="next" href="../2-5/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
+    
+    
+      
+        <title>2.4 Creating entities - Manto Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#24-creating-entities" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Manto Docs" class="md-header__button md-logo" aria-label="Manto Docs" data-md-component="logo">
+      
+  <img src="../../media/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Manto Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.4 Creating entities
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AutumnNippert/manto_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Manto Docs" class="md-nav__button md-logo" aria-label="Manto Docs" data-md-component="logo">
+      
+  <img src="../../media/logo.png" alt="logo">
+
+    </a>
+    Manto Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AutumnNippert/manto_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MANTO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    1. Principles
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            1. Principles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20Principles/principles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Principles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2. Practices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. Practices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1 Getting help
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2 Passages: the basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3 Entities: the basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2.4 Creating entities
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    2.4 Creating entities
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#241-creating-special-kinds-of-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1 Creating special kinds of entities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.1 Creating special kinds of entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2411-alternative-name-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1.1 Alternative name entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2412-rationalized-form-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1.2 Rationalized form entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2413-anonymous-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1.3 Anonymous entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2414-personifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1.4 Personifications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#242-creating-agents-and-collectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.2 Creating agents and collectives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.2 Creating agents and collectives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-transliteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Transliteration)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-greek-font" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Greek Font)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-latinized" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Latinized)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-in-latin-texts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name In Latin Texts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-disambiguation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Disambiguation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-name-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Name For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possibly-the-same-as" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possibly The Same As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rationalized-form-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationalized Form Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personification-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personification Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limc-headword" class="md-nav__link">
+    <span class="md-ellipsis">
+      LIMC Headword
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gender" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gender
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#children-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Children Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part Of
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#243-creating-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.3 Creating objects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.3 Creating objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-transliteration_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Transliteration)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-greek-font_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Greek Font)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-latinized_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Latinized)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-in-latin-texts_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name in Latin Texts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-names_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-disambiguation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Disambiguation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-name-for_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Name For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possibly-the-same-as_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possibly The Same As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rationalized-form-of_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationalized Form Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personification-of_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personification Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#of_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Of
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#244-creating-places-and-landmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.4 Creating places and landmarks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.4 Creating places and landmarks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-transliteration_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Transliteration)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-greek-font_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Greek Font)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-latinized_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Latinized)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-in-latin-texts_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name in Latin Texts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-names_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-disambiguation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Disambiguation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-name-for_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Name For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possibly-the-same-as_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possibly The Same As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rationalized-form-of_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationalized Form Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personification-of_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personification Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#of_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pleiades-urn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pleiades URN?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pleiades-urn_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pleiades URN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in" class="md-nav__link">
+    <span class="md-ellipsis">
+      In
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#somewhere-near" class="md-nav__link">
+    <span class="md-ellipsis">
+      Somewhere Near
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#245-creating-constellations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.5 Creating constellations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.5 Creating constellations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-transliteration_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Transliteration)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-greek-font_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Greek Font)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-latinzed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Latinzed)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-in-latin-texts_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name In Latin Texts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-names_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-disambiguation_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Disambiguation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-name-for_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Name For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possibly-the-same-as_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possibly The Same As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rationalized-form-of_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationalized Form Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personification-of_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personification Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#of_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      In
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#246-creating-mythical-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.6 Creating mythical events
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.6 Creating mythical events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-transliteration_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Transliteration)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-greek-font_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Greek Font)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-latinzed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Latinzed)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-in-latin-texts_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name In Latin Texts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-names_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-disambiguation_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Disambiguation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-name-for_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Name For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possibly-the-same-as_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possibly The Same As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#of_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      In
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#todo-247-doesnt-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      TODO: 2.4.7 doesn't exist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#248-creating-historical-artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.8 Creating historical artifacts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.8 Creating historical artifacts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-transliteration_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Transliteration)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-greek-font_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Greek Font)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-latinzed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Latinzed)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-in-latin-texts_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name In Latin Texts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-names_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-disambiguation_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Disambiguation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possibly-the-same-as_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possibly The Same As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#of_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pleiades-urn_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pleiades URN?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pleiades-urn_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pleiades URN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      In
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#somewhere-near_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Somewhere Near
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5 Ties: the basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.7 Creating a Tie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.8 Interactions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    3. Style Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            3. Style Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20Style%20Guide/3_style_guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Style Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    4. Issues
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            4. Issues
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.%20Issues/4_issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    5. Data Management
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            5. Data Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5.%20Data%20Management/5_data_management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    6. About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            6. About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6.%20About/about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#241-creating-special-kinds-of-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1 Creating special kinds of entities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.1 Creating special kinds of entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2411-alternative-name-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1.1 Alternative name entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2412-rationalized-form-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1.2 Rationalized form entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2413-anonymous-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1.3 Anonymous entities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2414-personifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.1.4 Personifications
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#242-creating-agents-and-collectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.2 Creating agents and collectives
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.2 Creating agents and collectives">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-transliteration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Transliteration)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-greek-font" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Greek Font)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-latinized" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Latinized)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-in-latin-texts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name In Latin Texts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-disambiguation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Disambiguation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-name-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Name For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possibly-the-same-as" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possibly The Same As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rationalized-form-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationalized Form Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personification-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personification Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#limc-headword" class="md-nav__link">
+    <span class="md-ellipsis">
+      LIMC Headword
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gender" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gender
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#children-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Children Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#part-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Part Of
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#243-creating-objects" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.3 Creating objects
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.3 Creating objects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-transliteration_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Transliteration)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-greek-font_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Greek Font)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-latinized_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Latinized)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-in-latin-texts_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name in Latin Texts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-names_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-disambiguation_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Disambiguation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-name-for_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Name For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possibly-the-same-as_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possibly The Same As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rationalized-form-of_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationalized Form Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personification-of_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personification Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#of_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Of
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#244-creating-places-and-landmarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.4 Creating places and landmarks
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.4 Creating places and landmarks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-transliteration_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Transliteration)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-greek-font_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Greek Font)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-latinized_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Latinized)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-in-latin-texts_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name in Latin Texts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-names_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-disambiguation_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Disambiguation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-name-for_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Name For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possibly-the-same-as_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possibly The Same As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rationalized-form-of_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationalized Form Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personification-of_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personification Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#of_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pleiades-urn" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pleiades URN?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pleiades-urn_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pleiades URN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in" class="md-nav__link">
+    <span class="md-ellipsis">
+      In
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#somewhere-near" class="md-nav__link">
+    <span class="md-ellipsis">
+      Somewhere Near
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#245-creating-constellations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.5 Creating constellations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.5 Creating constellations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-transliteration_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Transliteration)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-greek-font_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Greek Font)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-latinzed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Latinzed)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-in-latin-texts_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name In Latin Texts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-names_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-disambiguation_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Disambiguation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-name-for_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Name For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possibly-the-same-as_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possibly The Same As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rationalized-form-of_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rationalized Form Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personification-of_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Personification Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#of_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      In
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#246-creating-mythical-events" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.6 Creating mythical events
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.6 Creating mythical events">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-transliteration_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Transliteration)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-greek-font_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Greek Font)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-latinzed_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Latinzed)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-in-latin-texts_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name In Latin Texts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-names_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-disambiguation_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Disambiguation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-name-for_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Name For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possibly-the-same-as_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possibly The Same As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#of_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      In
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#todo-247-doesnt-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      TODO: 2.4.7 doesn't exist
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#248-creating-historical-artifacts" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4.8 Creating historical artifacts
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.4.8 Creating historical artifacts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Name">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-transliteration_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Transliteration)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-greek-font_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Greek Font)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-latinzed_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name (Latinzed)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#name-in-latin-texts_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Name In Latin Texts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alternative-names_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Alternative Names
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minimal-disambiguation_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimal Disambiguation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#information_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#possibly-the-same-as_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possibly The Same As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#of_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pleiades-urn_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pleiades URN?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pleiades-urn_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pleiades URN
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#in_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      In
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#somewhere-near_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Somewhere Near
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="24-creating-entities">2.4 Creating entities</h1>
+<blockquote>
+<p>TODO: 2.4.1 is at the bottom of 2.4 instead of the top</p>
+</blockquote>
+<p>Entities are given attributes (called 'sub-objects' in Nodegoat).
+Nodegoat does not restrict which attributes you can use with which
+* <strong>Entity Type</strong>, but in practice you will give different
+kinds of attributes to different types of entities. Sometimes attributes
+are used differently between entity types.</p>
+<p>Read the instructions in the next sections carefully. Adding specific
+words to certain fields will trigger reversals. If these reversals are
+not accurate in the case of the entity you are creating, keep the
+relevant field(s) empty and leave a note explaining why you did this.</p>
+<p>Use <strong>Note, Commentary,</strong> and <strong>[Attention
+Required]</strong> as necessary (see
+<a href="#21-getting-help">2.1 getting-help</a>). The checkboxes that appear after
+<strong>Modified?</strong> relate to specific research projects: do not
+touch these.</p>
+<p>If you are creating entities that represent alternative names or
+rationalized forms of other entities, or personifications, or the entity
+you are creating doesn't have a name, read
+<a href="#2411-alternative-name-entities">2.4.1.1-4 alternative-name-entities</a> first.</p>
+<h2 id="241-creating-special-kinds-of-entities">2.4.1 Creating special kinds of entities</h2>
+<p>There are some special kinds of entities that are found in all entity
+types. These instructions should be followed even where they contradict
+what you read in
+<a href="#242-creating-agents-and-collectives">2.4.2-8 creating-agents-and-collectives</a>.</p>
+<h3 id="2411-alternative-name-entities">2.4.1.1 Alternative name entities</h3>
+<p>Only create alternative names entities if the name is needed to create
+ties about naming, eponyms, and etymologies. (In all other instances,
+just add the name(s) as free text in the <strong>[Alternative names]</strong> field of the main entity.)</p>
+<blockquote>
+<p>Use the same <strong>Entity Type</strong> and <strong>Entity
+Subtype</strong> as the main entity.</p>
+<p>Use '(alt. [main entity name])' in <strong>Minimal
+Disambiguation.</strong></p>
+<p>Use 'alternative name for [main entity name]' at the beginning of
+<strong>Information.</strong></p>
+<p>Enter the main entity in <strong>Alternative Name For</strong>.</p>
+<p><strong>Populates filecard category 'alternative name'</strong></p>
+<p><strong>'Alternative name' entities nest within main entity (see
+<a href="#414-nesting-entities">4.14 nesting-entities</a>); any 'related entities' of
+the alternative name entity will also populate the main entity.</strong></p>
+</blockquote>
+<p>These alternative name entities are just stubs that direct the user to
+the main entity; do not enter anything in the rest of the fields. For
+further details on the use of alternative name entities, see
+<a href="#46-alternative-names">4.6 alternative-names</a>.</p>
+<h3 id="2412-rationalized-form-entities">2.4.1.2 Rationalized form entities</h3>
+<p>Only create entities to capture rationalized forms where existing
+entities cannot be used.</p>
+<blockquote>
+<p>Use the same <strong>Entity Type</strong> and <strong>[Entity
+Subtype]</strong> as the main entity.</p>
+<p>Use '(rat. [main entity name])' in <strong>Minimal
+Disambiguation.</strong> If it is not a rationalization of a
+specific entity in MANTO (e.g. <a href="https://manto.unh.edu/viewer.p/60/2616/object/6580-11296441">Tricarenia</a>),
+use '(rationalized)'.</p>
+<p>Use 'rationalized form of \main entity name\' at the beginning of
+<strong>Information.</strong> If it is not a rationalization of a
+specific entity in MANTO (e.g. <a href="https://manto.unh.edu/viewer.p/60/2616/object/6580-11296441">Tricarenia</a>),
+use 'rationalized' somewhere in <strong>Information</strong>.</p>
+<p>Enter the main entity in <strong>Rationalized form of</strong> where
+appropriate.</p>
+<p><strong>Populates filecard category 'rationalized form'</strong></p>
+</blockquote>
+<p>Complete other fields as required for the entity type. For further
+details on the use of rationalized form entities, see <a href="#413">4.13</a>.</p>
+<h3 id="2413-anonymous-entities">2.4.1.3 Anonymous entities</h3>
+<p>If an entity is not named in the source you are working on but is named
+elsewhere, then use that name and record your decision in
+<strong>Note</strong> or <strong>Commentary.</strong> If an entity is
+never given a name in our ancient sources, you must:</p>
+<blockquote>
+<p>Create a <strong>Name</strong> that describes the entity: e.g.
+'<a href="https://manto.unh.edu/viewer.p/60/2616/object/6580-11289354">Mother of Areion</a>'
+(note: maximum capitalization, no 'the').</p>
+<p>Use '(name unknown)' in <strong>Minimal Disambiguation.</strong></p>
+</blockquote>
+<p>Complete other fields as required for the entity type.</p>
+<h3 id="2414-personifications">2.4.1.4 Personifications</h3>
+<p>See <a href="#48-personifications-1">4.8 personifications</a> for information on
+personifications.</p>
+<blockquote>
+<p>For personifications of abstract concepts, use the Greek form (e.g.
+'Eros') in <strong>Name</strong> and add English translation(s) (e.g.
+'Love', 'Desire') as free text in <strong>Alternative Names</strong>.</p>
+<p>For personifications of abstract concepts, include 'personification of
+[English translation]' in <strong>Information</strong>; for
+personifications of rivers, include 'river god' in
+<strong>Information</strong>.</p>
+<p>Where this entity is the personification of another entity in MANTO
+(e.g. the river god Acheloos is the personification of River
+Acheloos), enter the main entity in <strong>Personification
+Of</strong>.</p>
+<p><strong>Populates filecard category 'Personification'</strong></p>
+</blockquote>
+<p>Complete other fields as required for the entity type.</p>
+<h2 id="242-creating-agents-and-collectives">2.4.2 Creating agents and collectives</h2>
+<h4 id="name">Name</h4>
+<blockquote>
+<p><strong>Name:</strong> This is a required field. Follow house style
+(see <a href="#31-house-style">3.1 house-style</a>) and existing practice.</p>
+<p><strong>Agents and collectives with 'Cattle', 'Cow', 'Bull', 'Mare' 'Horse',
+'Dog', 'Sheep', 'Lamb', 'Ram', 'Dove', 'Serpent', 'Turtle' 'Livestock'
+in Name populate the filecard categories 'animal/animals
+belonging to', 'animals' when Of contains an agent or
+collective. (If the animal has a proper name, use that here. Placing
+'(horse)' or '(dog)' in Minimal Disambiguation will also
+trigger this reversal.)</strong></p>
+</blockquote>
+<p>The next name fields are optional. They are free text fields that aid
+findability; i.e. if a user searches for 'Paris' or 'Alexandros'
+Nodegoat will return the entity 'Alexander' because they are listed as
+alternative names.</p>
+<h5 id="name-transliteration">Name (Transliteration)</h5>
+<blockquote>
+<p><strong>Name (transliteration):</strong> The name of the entity as
+strictly transliterated from the Greek if different from the house
+style (κ = k, χ = ch, ῥ = rh, αι = ai, γγ (etc.) = ng). Multiple names
+are allowed in this field; enter each in a separate box by clicking
+'Add'.</p>
+</blockquote>
+<h5 id="name-greek-font">Name (Greek Font)</h5>
+<blockquote>
+<p><strong>Name (Greek Font):</strong> The name of the entity as it
+appears in Greek with polytonic accents. Multiple names are allowed in
+this field; enter each in a separate box by clicking 'Add'.</p>
+</blockquote>
+<h5 id="name-latinized">Name (Latinized)</h5>
+<blockquote>
+<p><strong>Name (Latinized):</strong> The name of the entity as rendered
+in a Latinized transliteration from the Greek if different from the
+house style. These forms are typically used in Loeb editions. Multiple
+names are allowed in this field; enter each in a separate box by
+clicking 'Add'.</p>
+</blockquote>
+<h5 id="name-in-latin-texts">Name In Latin Texts</h5>
+<blockquote>
+<p><strong>Name in Latin texts:</strong> The name as used by Latin
+authors if different from the house style (e.g. Jupiter, Hercules,
+Pollux). Multiple names are allowed in this field; enter each in a
+separate box by clicking 'Add'.</p>
+</blockquote>
+<h5 id="alternative-names">Alternative Names</h5>
+<blockquote>
+<p><strong>Alternative names:</strong> Any alternative spellings or
+forms, or other names this entity is known by. Multiple names are
+allowed in this field; enter each in a separate box by clicking 'Add'.</p>
+</blockquote>
+<h4 id="minimal-disambiguation">Minimal Disambiguation</h4>
+<blockquote>
+<p><strong>Minimal disambiguation:</strong> These appear alongside the
+name in the public interface and help users distinguish between entities
+with the same or similar names. The information that you give here must
+go in round brackets '()'. It should be as brief as possible. Use '&amp;'
+not 'and', '/' not 'or'. Use minimal capitalization.</p>
+<p>For agents and collectives, add a minimal disambiguation only if the
+name is identical to or likely to be confused with the name of another
+agent or collective. Use either an adjective of a place they are
+particularly associated with ('(Athenian)', '(Arcadian)', an
+abbreviated genealogy ('(f. of Alexandros)'), or description of
+prominent role ('(thunderbolt-makers)'). Distinguish further with
+Roman numerals if necessary (e.g. '(Trojan I)', '(Trojan II)').</p>
+<p>TODO: No Closing Paren for ('(Athenian)...</p>
+<p>Fictional agents or collectives created by other agents should include
+the word 'persona' (e.g. '(Odyssean persona)').</p>
+<p><strong>Agents with '(horse)' or '(dog)' in [Minimal disambiguation] populate the filecard categories 'animal/animals belonging to', 'animals' when Of contains an agent or collective. This reversal can also be triggered using Name.</strong></p>
+</blockquote>
+<h4 id="information">Information</h4>
+<blockquote>
+<p><strong>Information:</strong> This is an optional, free text field. In
+the data collection interface it appears as part of the name. In the
+public interface it appears on the filecard. Give the most pertinent
+information about this entity to help others identify it accurately.
+More information can be given in <strong>Note</strong> or
+<strong>Commentary.</strong></p>
+</blockquote>
+<h4 id="alternative-name-for">Alternative Name For</h4>
+<blockquote>
+<p><strong>Alternative name for:</strong> See
+<a href="#2411-alternative-name-entities">2.4.1.1 alternative-name-entities</a>.</p>
+</blockquote>
+<h4 id="possibly-the-same-as">Possibly The Same As</h4>
+<blockquote>
+<p><strong>Possibly the same as:</strong> Use where we do not have enough
+information to determine whether two or more entities are different, and
+it is possible that they are in fact the same. Only use this attribute
+with one entity (a reversal will populate the others).</p>
+<p><strong>Populates filecard category 'possibly the same as'</strong></p>
+<p>TODO: other(s) is not present in this one compared to the others</p>
+</blockquote>
+<h4 id="rationalized-form-of">Rationalized Form Of</h4>
+<blockquote>
+<p><strong>Rationalized form of:</strong> See
+<a href="#2412-rationalized-form-entities">2.4.1.2 rationalized-form-entities</a>.</p>
+</blockquote>
+<h4 id="personification-of">Personification Of</h4>
+<blockquote>
+<p><strong>Personification of:</strong> See
+<a href="#2414-personifications">2.4.1.4 personifications</a>.</p>
+</blockquote>
+<h4 id="of">Of</h4>
+<blockquote>
+<p><strong>Of:</strong> Used to create high-level connections between
+entities which are inherent to them. If the 'of' in a collective's name
+refers to their parent(s) (e.g. 'the Children of Niobe'), use
+<strong>Children Of</strong> instead.</p>
+<p><strong>Populates filecard category 'Related entities'</strong></p>
+</blockquote>
+<p><strong class="red">Wikidata:</strong>
+Enter Wikidata identifier, which is a string
+of numbers beginning with "Q". Do not enter the full URL as Nodegoat
+will create that from the identifier. Multiple names are allowed in this
+field.</p>
+<h4 id="limc-headword">LIMC Headword</h4>
+<blockquote>
+<p><strong>LIMC headword:</strong> We are not currently collecting LIMC
+data, so you do not need to enter anything in this field. (Where
+entered, use the exact form as given in headings in LIMC (e.g. 'Briareos
+II'); multiple names are allowed in this field.)</p>
+</blockquote>
+<h4 id="gender">Gender</h4>
+<blockquote>
+<p><strong>Gender:</strong> All agents and collectives must have a gender
+attribute. Use 'undefined' where (a) the gender of an agent is not
+knowable; (b) the gender of an agent is fluid; (c) a collective is (or
+might be) made up of both males and females.</p>
+</blockquote>
+<h4 id="children-of">Children Of</h4>
+<blockquote>
+<p><strong>Children Of:</strong> If the collective has a parent that is
+stable in the tradition, give it here: e.g. the Danaids are children of
+Danaos, the Sons of Lycaon are children of Lycaon. More than one parent
+can be entered.</p>
+<p><strong>Populates filecard categories 'children of', 'mother/father of'. If
+the collective has Entity Subtype 'collective without
+members' it populates filecard category 'parent of'. If [Children Of] contains a collective, it populates filecard category
+'parents of'.</strong></p>
+</blockquote>
+<h4 id="part-of">Part Of</h4>
+<blockquote>
+<p><strong>Part Of</strong> Where a collective is a sub-group of a larger
+collective, enter the name of the larger collective here. So, for
+example, '<a href="https://manto.unh.edu/viewer.p/60/2616/object/6580-8190247">the Mycenae Contingent</a>'
+that fights at Troy is 'part of' the larger '<a href="https://manto.unh.edu/viewer.p/60/2616/object/6580-8190050">Greek Contingent</a>'.
+This 'nests' (see <a href="#414-nesting-entities">4.14 nesting-entities</a>) collectives
+inside each other.</p>
+<p><strong>Populates filecard category 'subgroups'</strong></p>
+</blockquote>
+<h2 id="243-creating-objects">2.4.3 Creating objects</h2>
+<h4 id="name_1">Name</h4>
+<blockquote>
+<p><strong>Name:</strong> This is a required field. Follow house style
+(see <a href="#31-house-style">3.1 house-style</a>) and existing practice. Use
+maximal capitalization, and 'the' where needed; e.g. 'the Bow of
+Artemis'.</p>
+<p><strong>Objects with 'Bones' in Name populate filecard
+categories 'remains of', 'body parts' when Of is used.</strong></p>
+<p><strong>Objects with 'Finger', 'Skin', 'Genital', 'Thigh', 'Shoulder',
+'Teeth', 'Tooth' 'Blood', 'Hair', 'Head', 'Tusk', 'Horn', 'Bone of',
+'Umbilical cord' in Name populate filecard categories
+'body part of', 'body parts' when Of is used.</strong></p>
+<p><strong>Objects with 'Shield', 'Scabbard', 'Sword', 'Armour', 'Bow',
+'Arrow', 'Club', 'Breastplate', 'War-belt', 'Helmet', 'Quiver',
+'Thunderbolt', 'Spear', 'Dagger', 'Axe', 'Trident' in
+Name populate filecard categories 'weapon of',
+'weaponry' when Of is used.</strong></p>
+</blockquote>
+<p>The next name fields are optional. They are free text fields that aid
+findability; i.e. if a user searches for 'Paris' or 'Alexandros'
+Nodegoat will return the entity 'Alexander' because they are listed as
+alternative names.</p>
+<h5 id="name-transliteration_1">Name (Transliteration)</h5>
+<blockquote>
+<p><strong>Name (transliteration):</strong> The name of the entity as
+strictly transliterated from the Greek if different from the house
+style (κ = k, χ = ch, ῥ = rh, αι = ai, γγ (etc.) = ng.). Multiple
+names are allowed in this field.</p>
+</blockquote>
+<h5 id="name-greek-font_1">Name (Greek Font)</h5>
+<blockquote>
+<p><strong>Name (Greek Font):</strong> The name of the entity as it
+appears in Greek with polytonic accents. Multiple names are allowed in
+this field.</p>
+</blockquote>
+<h5 id="name-latinized_1">Name (Latinized)</h5>
+<blockquote>
+<p><strong>Name (Latinized):</strong> The name of the entity as rendered
+in a Latinized transliteration from the Greek if different from the
+house style. These forms are typically used in Loeb editions.</p>
+</blockquote>
+<h5 id="name-in-latin-texts_1">Name in Latin Texts</h5>
+<blockquote>
+<p><strong>Name in Latin texts:</strong> The name as used by Latin
+authors if different from the house style (e.g. Jupiter, Hercules,
+Pollux). Multiple names are allowed in this field.</p>
+</blockquote>
+<h5 id="alternative-names_1">Alternative Names</h5>
+<blockquote>
+<p><strong>Alternative names:</strong> Any alternative spellings, or
+forms, of this entity's name. Multiple names are allowed in this
+field.</p>
+</blockquote>
+<h4 id="minimal-disambiguation_1">Minimal Disambiguation</h4>
+<blockquote>
+<p><strong>Minimal disambiguation:</strong> These appear alongside the
+name in the public interface and help users distinguish between entities
+with the same or similar names. The information that you give here must
+go in round brackets '()'. It should be as brief as possible. Use '&amp;'
+not 'and', '/' not 'or'. Use minimal capitalization.</p>
+<p>For objects, add a minimal disambiguation only if the name is
+identical to or likely to be confused with the name of another object.
+Use adjectives expressing either maker ('(Daidalean)') or a place it
+is particularly associated with ('(Argive)').</p>
+</blockquote>
+<h4 id="information_1">Information</h4>
+<blockquote>
+<p><strong>Information:</strong> This is an optional, free text field. In
+the data collection interface it appears as part of the name. In the
+public interface it appears on the filecard. Give the most pertinent
+information about this entity to help others identify it accurately.
+More information can be given in <strong>Note</strong> or
+<strong>Commentary.</strong></p>
+</blockquote>
+<h4 id="alternative-name-for_1">Alternative Name For</h4>
+<blockquote>
+<p><strong>Alternative name for:</strong> See
+<a href="#2411-alternative-name-entities">2.4.1.1 alternative-name-entities</a>.</p>
+</blockquote>
+<h4 id="possibly-the-same-as_1">Possibly The Same As</h4>
+<blockquote>
+<p><strong>Possibly the same as:</strong> Use where we do not have enough
+information to determine whether two or more entities are different, and
+it is possible that they are in fact the same. Only use this attribute
+with one entity (a reversal will populate the other(s)).</p>
+<p><strong>Populates filecard category 'possibly the same as'</strong></p>
+<p>TODO: Duplicate</p>
+</blockquote>
+<h4 id="rationalized-form-of_1">Rationalized Form Of</h4>
+<blockquote>
+<p><strong>Rationalized form of:</strong> See
+<a href="#2412-rationalized-form-entities">2.4.1.2 rationalized-form-entities</a>.</p>
+</blockquote>
+<h4 id="personification-of_1">Personification Of</h4>
+<blockquote>
+<p><strong>Personification of:</strong> See
+<a href="#2414-personifications">2.4.1.4 personifications</a>.</p>
+</blockquote>
+<h4 id="of_1">Of</h4>
+<blockquote>
+<p><strong>Of:</strong> Used to create high-level connections between
+entities which are inherent to them. This attribute always triggers the
+'related entities' reversal. Entities with specific words in
+<strong>Name</strong> will trigger other reversals: see above for the
+list.</p>
+</blockquote>
+<p><strong class="red">Wikidata:</strong>
+Enter Wikidata identifier, which is a string
+of numbers beginning with "Q". Do not enter the full URL as Nodegoat
+will create that from the identifier. Multiple names are allowed in this
+field.</p>
+<h2 id="244-creating-places-and-landmarks">2.4.4 Creating places and landmarks</h2>
+<h4 id="name_2">Name</h4>
+<blockquote>
+<p><strong>Name:</strong> This is a required field. Follow house style
+(see <a href="#31-house-style">3.1 house-style</a>) and existing practice. Use
+maximal capitalization, and 'the' where needed; e.g. Mount Olympos, the
+Atlas Mountains, the Myrtoan Sea, River Alpheios, the Springs of
+Amymone, Hippocrene Spring, the Tomb of Hippolytos.</p>
+<p><strong>Landmarks with 'Tomb' in Name populate filecard categories 'buried at', 'burial place of' when Of is used.</strong></p>
+<p><strong>Landmarks with 'Gate', 'Wall' in Name populate filecard categories 'fortifications of', 'fortifications' when Of contains a place. 'In' field should also be used to express location with these entities.</strong></p>
+<p><strong>Places and landmarks with 'Altar', 'Temple', 'Sanctuary', 'Oracle', 'Grove' 'Cenotaph' in Name populate filecard categories 'cult site of', 'cult site' when Of is used.</strong></p>
+<p><strong>Landmarks with 'House', 'Tent', 'Palace', 'Chamber' or 'Cave' in Name populate filecard categories 'dwelling of', 'dwelling' when Of is used. These landmarks are nested (see <a href="#414-nesting-entities">4.14 nesting-entities</a>): if a landmark that is a dwelling is 'In' another landmark that is a dwelling, its resident(s) will also populate the 'dwelling of' category of the landmark it is 'In'.</strong></p>
+</blockquote>
+<p>The next name fields are optional. They are free text fields that aid
+findability; i.e. if a user searches for 'Paris' or 'Alexandros'
+Nodegoat will return the entity 'Alexander' because they are listed as
+alternative names.</p>
+<h5 id="name-transliteration_2">Name (Transliteration)</h5>
+<blockquote>
+<p><strong>Name (transliteration):</strong> The name of the entity as
+strictly transliterated from the Greek if different from the house
+style (κ = k, χ = ch, ῥ = rh, αι = ai, γγ (etc.) = ng.). Multiple
+names are allowed in this field.</p>
+</blockquote>
+<h5 id="name-greek-font_2">Name (Greek Font)</h5>
+<blockquote>
+<p><strong>Name (Greek Font):</strong> The name of the entity as it
+appears in Greek with polytonic accents. Multiple names are allowed in
+this field.</p>
+</blockquote>
+<h5 id="name-latinized_2">Name (Latinized)</h5>
+<blockquote>
+<p><strong>Name (Latinized):</strong> The name of the entity as rendered
+in a Latinized transliteration from the Greek if different from the
+house style. These forms are typically used in Loeb editions.</p>
+</blockquote>
+<h5 id="name-in-latin-texts_2">Name in Latin Texts</h5>
+<blockquote>
+<p><strong>Name in Latin texts:</strong> The name as used by Latin
+authors if different from the house style (e.g. Jupiter, Hercules,
+Pollux). Multiple names are allowed in this field.</p>
+</blockquote>
+<h5 id="alternative-names_2">Alternative Names</h5>
+<blockquote>
+<p><strong>Alternative names:</strong> Any alternative spellings, or
+forms, of this entity's name. Multiple names are allowed in this
+field.</p>
+</blockquote>
+<h4 id="minimal-disambiguation_2">Minimal Disambiguation</h4>
+<blockquote>
+<p><strong>Minimal disambiguation:</strong> These appear alongside the
+name in the public interface and help users distinguish between entities
+with the same or similar names. The information that you give here must
+go in round brackets '()'. It should be as brief as possible. Use '&amp;'
+not 'and', '/' not 'or'. Use minimal capitalization.</p>
+<p>For places and landmarks always provide a disambiguator unless the
+entity is very well known and not likely to be confused with another
+place or landmark (e.g. 'Egypt', 'River Nile'). For islands, use
+'(island(s))'; where two place names might be confused, clearly
+differentiate, e.g. 'Rhodes (city)', 'Rhodes (island)'. In all other
+cases, use a noun indicating the city or region the place belongs to
+(e.g. 'Attica', 'Asia Minor').</p>
+</blockquote>
+<h4 id="information_2">Information</h4>
+<blockquote>
+<p><strong>Information:</strong> This is an optional, free text field. In
+the data collection interface it appears as part of the name. In the
+public interface it appears on the filecard. Give the most pertinent
+information about this entity to help others identify it accurately.
+Unlocatable or fictional locations should include the word
+'unlocatable'. More information can be given in the Note or Commentary
+fields.</p>
+</blockquote>
+<h4 id="alternative-name-for_2">Alternative Name For</h4>
+<blockquote>
+<p><strong>Alternative name for:</strong> See
+<a href="#2411-alternative-name-entities">2.4.1.1 alternative-name-entities</a>.</p>
+</blockquote>
+<h4 id="possibly-the-same-as_2">Possibly The Same As</h4>
+<blockquote>
+<p><strong>Possibly the same as:</strong> Use where we do not have enough
+information to determine whether two or more entities are different, and
+it is possible that they are in fact the same. Only use this attribute
+with one entity (a reversal will populate the other(s)).</p>
+<p><strong>Populates filecard category 'possibly the same as'</strong></p>
+<p>TODO: Duplicate</p>
+</blockquote>
+<h4 id="rationalized-form-of_2">Rationalized Form Of</h4>
+<blockquote>
+<p><strong>Rationalized form of:</strong> See
+<a href="#2412-rationalized-form-entities">2.4.1.2 rationalized-form-entities</a>.</p>
+</blockquote>
+<h4 id="personification-of_2">Personification Of</h4>
+<blockquote>
+<p><strong>Personification of:</strong> See
+<a href="#2414-personifications">2.4.1.4 personifications</a>.</p>
+</blockquote>
+<h4 id="of_2">Of</h4>
+<blockquote>
+<p><strong>Of:</strong> Used to create high-level connections between
+entities which are inherent to them. This attribute always triggers the
+'related entities' reversal. Entities with specific words in <strong>Name</strong> will trigger other reversals: see above for the
+list.</p>
+</blockquote>
+<p><strong class="red">Wikidata:</strong>
+Enter Wikidata identifier, which is a string of numbers beginning with "Q". Do not enter the full URL as Nodegoat will create that from the identifier. Multiple names are allowed in this field.</p>
+<h4 id="pleiades-urn">Pleiades URN?</h4>
+<blockquote>
+<p><strong>Pleiades URN?</strong>: If you have checked Pleiades and found
+that there's no appropriate entry, change to 'no'.</p>
+</blockquote>
+<h4 id="pleiades-urn_1">Pleiades URN</h4>
+<blockquote>
+<p><strong>Pleiades URN</strong>: Enter Pleiades URN here. Enter just the
+numbers (e.g. '579885') and Nodegoat will create a URL. For advice on
+selecting the best URN, see
+<a href="#410-choosing-a-pleiades-number">4.10 choosing-a-pleiades-number</a>. If there is
+locational data (long./latt.) for this entity in Pleiades, this will be
+fetched next time the Pleiades ingestion is run (see
+<a href="#417-ingesting-locations-from-pleiades">4.17 ingesting-locations-from-pleiades</a>).</p>
+<p><strong>Populates the '[location]' sub-object</strong></p>
+<p>To run the Pleiades ingestion: From the Nodegoat Data environment
+select <code>Processes &gt; Ingestion &gt; Pleiades Location Data Run &gt; Run Ingestion</code>. This process trashes all locational data in MANTO and
+fetches the most recent locational data from Pleiades.</p>
+</blockquote>
+<h4 id="in">In</h4>
+<blockquote>
+<p><strong>In:</strong> This field establishes relations between locations
+by 'nesting' one place or landmark within another (see
+<a href="#414-nesting-entities">4.14 nesting-entities</a>). All locations within cities, islands 
+<span class="red">and archipelagos (groups of islands)</span>, and within fictional spaces (e.g. the Underworld), and all locations except cities on
+mountains and in rivers should be nested inside each other using the
+most granular entities available. E.g. a landmark like a tomb might be
+'In' a sanctuary, which is 'In' an area of a city, which is in turn 'In'
+the city itself, which is in turn 'In' an island. For real places and
+landmarks, do not use locations broader than city, island, river or
+mountain in this field (i.e. do not enter names of regions). If (e.g.) a
+city is unlocatable but known to be in a certain region, use
+<strong>Somewhere Near</strong> instead.</p>
+<p><strong>Populates the '\in\' location sub-object.</strong></p>
+<p><strong>Populates the filecard categories 'encompasses', 'in' (entities are nested)</strong></p>
+<p><strong>Affects reversals relating to relics, places of birth, places of death and burial, cult sites, depictions, related entities. I.e. If ENTITY1 is 'In' ENTITY2, entities listed in 'Relics preserved on site' for ENTITY1 will also appear as 'Relics preserved on site' for ENTITY2.</strong></p>
+</blockquote>
+<h4 id="somewhere-near">Somewhere Near</h4>
+<blockquote>
+<p><strong>Somewhere Near</strong>: Only use this field if you cannot
+fetch locational data via the 'Pleiades URN' field. For example, the
+Pleiades URN for the Messenian town of Tricca (57356) has no locational
+data, but we do know that it was in the region of Messenia, so we add
+'Messenia' in this field to give it a bit more specificity. Only one
+entity can be entered.</p>
+<p><strong>Populates the '[near]' location sub-object</strong></p>
+</blockquote>
+<h2 id="245-creating-constellations">2.4.5 Creating constellations</h2>
+<h4 id="name_3">Name</h4>
+<blockquote>
+<p><strong>Name:</strong> This is a required field. Follow house style
+(see <a href="#31-house-style">3.1 house-style</a>) and existing practice. Use
+maximal capitalization, and 'the' where needed; e.g. ‘the Crown of Ariadne'.</p>
+</blockquote>
+<p>The next name fields are optional. They are free text fields that aid
+findability; i.e. if a user searches for 'Paris' or 'Alexandros'
+Nodegoat will return the entity 'Alexander' because they are listed as
+alternative names.</p>
+<h5 id="name-transliteration_3">Name (Transliteration)</h5>
+<blockquote>
+<p><strong>Name (transliteration):</strong> The name of the entity as
+strictly transliterated from the Greek if different from the house
+style (κ = k, χ = ch, ῥ = rh, αι = ai, γγ (etc.) = ng.). Multiple
+names are allowed in this field.</p>
+</blockquote>
+<h5 id="name-greek-font_3">Name (Greek Font)</h5>
+<blockquote>
+<p><strong>Name (Greek Font):</strong> The name of the entity as it
+appears in Greek with polytonic accents. Multiple names are allowed in
+this field.</p>
+</blockquote>
+<h5 id="name-latinzed">Name (Latinzed)</h5>
+<blockquote>
+<p><strong>Name (Latinized):</strong> The name of the entity as rendered
+in a Latinized transliteration from the Greek if different from the
+house style. These forms are typically used in Loeb editions.</p>
+</blockquote>
+<h5 id="name-in-latin-texts_3">Name In Latin Texts</h5>
+<blockquote>
+<p><strong>Name in Latin texts:</strong> The name as used by Latin
+authors if different from the house style (e.g. Jupiter, Hercules,
+Pollux). Multiple names are allowed in this field.</p>
+</blockquote>
+<h5 id="alternative-names_3">Alternative Names</h5>
+<blockquote>
+<p><strong>Alternative names:</strong> Any alternative spellings, or
+forms, of this entity's name. Multiple names are allowed in this
+field.</p>
+</blockquote>
+<h4 id="minimal-disambiguation_3">Minimal Disambiguation</h4>
+<blockquote>
+<p><strong>Minimal disambiguation:</strong> These appear alongside the
+name in the public interface and help users distinguish between entities
+with the same or similar names. The information that you give here must
+go in round brackets '()'. It should be as brief as possible. Use '&amp;'
+not 'and', '/' not 'or'. Use minimal capitalization.</p>
+<p>For constellations, add a minimal disambiguation only if the name is identical to or likely to be confused with the name of another constellation.</p>
+</blockquote>
+<h4 id="information_3">Information</h4>
+<blockquote>
+<p><strong>Information:</strong> This is an optional, free text field. In the data collection interface it appears as part of the name. In the public interface it appears on the filecard. Give the most pertinent information about this entity to help others identify it accurately. Include words like ‘constellation’, ‘comet’ or ‘planet’ as appropriate. More information can be given in <strong>Note or Commentary</strong>.</p>
+</blockquote>
+<h4 id="alternative-name-for_3">Alternative Name For</h4>
+<blockquote>
+<p><strong>Alternative name for:</strong> See
+<a href="#2411-alternative-name-entities">2.4.1.1 alternative-name-entities</a>.</p>
+</blockquote>
+<h4 id="possibly-the-same-as_3">Possibly The Same As</h4>
+<blockquote>
+<p><strong>Possibly the same as:</strong> Use where we do not have enough
+information to determine whether two or more entities are different, and
+it is possible that they are in fact the same. Only use this attribute
+with one entity (a reversal will populate the other(s)).</p>
+<p><strong>Populates filecard category 'possibly the same as'</strong></p>
+<p>TODO: Duplicate</p>
+</blockquote>
+<h4 id="rationalized-form-of_3">Rationalized Form Of</h4>
+<blockquote>
+<p><strong>Rationalized form of:</strong> See
+<a href="#2412-rationalized-form-entities">2.4.1.2 rationalized-form-entities</a>.</p>
+</blockquote>
+<h4 id="personification-of_3">Personification Of</h4>
+<blockquote>
+<p><strong>Personification of:</strong> See
+<a href="#2414-personifications">2.4.1.4 personifications</a>.</p>
+</blockquote>
+<h4 id="of_3">Of</h4>
+<blockquote>
+<p><strong>Of:</strong> Used to create high-level connections between
+entities which are inherent to them. This attribute always triggers the
+'related entities' reversal.</p>
+</blockquote>
+<p><strong class="red">Wikidata:</strong>
+Enter Wikidata identifier, which is a string
+of numbers beginning with "Q". Do not enter the full URL as Nodegoat
+will create that from the identifier. Multiple names are allowed in this
+field.</p>
+<h4 class="red" id="in_1">In</h4>
+<blockquote>
+<p><strong>In:</strong> This field establishes relations between locations
+by 'nesting' one entity (see 4.14(#nesting-entities)).
+Where a star (etc) is within a larger constellation which is also an
+entity in MANTO, add the constellation here.</p>
+<p><strong>Populates the '[in]' location sub-object.</strong></p>
+<p><strong>Populates the filecard categories 'encompasses', 'in' (entities are nested)</strong></p>
+<p><strong>Affects reversals relating to related entities.</strong></p>
+</blockquote>
+<h2 id="246-creating-mythical-events">2.4.6 Creating mythical events</h2>
+<h4 id="name_4">Name</h4>
+<blockquote>
+<p><strong>Name:</strong> This is a required field. Follow house style
+(see <a href="#31-house-style">3.1 house-style</a>) and existing practice. Use
+maximal capitalization, and 'the' where needed; e.g. ‘the Funeral Games of Patroclos'.</p>
+<p><strong>Events with ‘Games’ in Name populate filecard category ‘held to honor’ when Of is used</strong></p>
+</blockquote>
+<p>The next name fields are optional. They are free text fields that aid
+findability; i.e. if a user searches for 'Paris' or 'Alexandros'
+Nodegoat will return the entity 'Alexander' because they are listed as
+alternative names.</p>
+<h5 id="name-transliteration_4">Name (Transliteration)</h5>
+<blockquote>
+<p><strong>Name (transliteration):</strong> The name of the entity as
+strictly transliterated from the Greek if different from the house
+style (κ = k, χ = ch, ῥ = rh, αι = ai, γγ (etc.) = ng.). Multiple
+names are allowed in this field.</p>
+</blockquote>
+<h5 id="name-greek-font_4">Name (Greek Font)</h5>
+<blockquote>
+<p><strong>Name (Greek Font):</strong> The name of the entity as it
+appears in Greek with polytonic accents. Multiple names are allowed in
+this field.</p>
+</blockquote>
+<h5 id="name-latinzed_1">Name (Latinzed)</h5>
+<blockquote>
+<p><strong>Name (Latinized):</strong> The name of the entity as rendered
+in a Latinized transliteration from the Greek if different from the
+house style. These forms are typically used in Loeb editions.</p>
+</blockquote>
+<h5 id="name-in-latin-texts_4">Name In Latin Texts</h5>
+<blockquote>
+<p><strong>Name in Latin texts:</strong> The name as used by Latin
+authors if different from the house style (e.g. Jupiter, Hercules,
+Pollux). Multiple names are allowed in this field.</p>
+</blockquote>
+<h5 id="alternative-names_4">Alternative Names</h5>
+<blockquote>
+<p><strong>Alternative names:</strong> Any alternative spellings, or
+forms, of this entity's name. Multiple names are allowed in this
+field.</p>
+</blockquote>
+<h4 id="minimal-disambiguation_4">Minimal Disambiguation</h4>
+<blockquote>
+<p><strong>Minimal disambiguation:</strong> These appear alongside the
+name in the public interface and help users distinguish between entities
+with the same or similar names. The information that you give here must
+go in round brackets '()'. It should be as brief as possible. Use '&amp;'
+not 'and', '/' not 'or'. Use minimal capitalization.</p>
+<p>For mythical events, use a noun indicating the city or region where
+the event took place if useful.</p>
+</blockquote>
+<h4 id="information_4">Information</h4>
+<blockquote>
+<p>This is an optional, free text field. In the data collection interface it appears as part of the name. In the public interface it appears on the filecard. Give the most pertinent information about this entity to help others identify it accurately. More information can be given in <strong>Note or Commentary</strong>.</p>
+</blockquote>
+<h4 id="alternative-name-for_4">Alternative Name For</h4>
+<blockquote>
+<p><strong>Alternative name for:</strong> See
+<a href="#2411-alternative-name-entities">2.4.1.1 alternative-name-entities</a>.</p>
+</blockquote>
+<h4 id="possibly-the-same-as_4">Possibly The Same As</h4>
+<blockquote>
+<p><strong>Possibly the same as:</strong> Use where we do not have enough
+information to determine whether two or more entities are different, and
+it is possible that they are in fact the same. Only use this attribute
+with one entity (a reversal will populate the other(s)).</p>
+<p><strong>Populates filecard category 'possibly the same as'</strong></p>
+<p>TODO: Duplicate</p>
+</blockquote>
+<h4 id="of_4">Of</h4>
+<blockquote>
+<p><strong>Of:</strong> Used to create high-level connections between
+entities which are inherent to them. This attribute always triggers the
+'related entities' reversal.</p>
+</blockquote>
+<p><strong class="red">Wikidata:</strong>
+Enter Wikidata identifier, which is a string
+of numbers beginning with "Q". Do not enter the full URL as Nodegoat
+will create that from the identifier. Multiple names are allowed in this
+field.</p>
+<h4 class="red" id="in_2">In</h4>
+<blockquote>
+<p><strong>In:</strong> Enter the location of the event if relevant.</p>
+<p><strong>Populates the filecard categories 'encompasses', 'in' (events nest within places: see <a href="#414-nesting-entities">4.14 nesting-entities</a>)</strong></p>
+</blockquote>
+<h2 id="todo-247-doesnt-exist">TODO: 2.4.7 doesn't exist</h2>
+<h2 id="248-creating-historical-artifacts">2.4.8 Creating historical artifacts</h2>
+<h4 id="name_5">Name</h4>
+<blockquote>
+<p><strong>Name:</strong> This is a required field. Follow house style
+(see <a href="#31-house-style">3.1 house-style</a>) and existing practice. Use
+maximal capitalization, and 'the' where needed.</p>
+<p><strong>Historical artifacts with 'Altar', 'Temple' in Name populate filecard categories 'cult site of', 'cult site' when Of is used.</strong></p>
+</blockquote>
+<p>The next name fields are optional. They are free text fields that aid
+findability; i.e. if a user searches for 'Paris' or 'Alexandros'
+Nodegoat will return the entity 'Alexander' because they are listed as
+alternative names.</p>
+<h5 id="name-transliteration_5">Name (Transliteration)</h5>
+<blockquote>
+<p><strong>Name (transliteration):</strong> The name of the entity as
+strictly transliterated from the Greek if different from the house
+style (κ = k, χ = ch, ῥ = rh, αι = ai, γγ (etc.) = ng.). Multiple
+names are allowed in this field.</p>
+</blockquote>
+<h5 id="name-greek-font_5">Name (Greek Font)</h5>
+<blockquote>
+<p><strong>Name (Greek Font):</strong> The name of the entity as it
+appears in Greek with polytonic accents. Multiple names are allowed in
+this field.</p>
+</blockquote>
+<h5 id="name-latinzed_2">Name (Latinzed)</h5>
+<blockquote>
+<p><strong>Name (Latinized):</strong> The name of the entity as rendered
+in a Latinized transliteration from the Greek if different from the
+house style. These forms are typically used in Loeb editions.</p>
+</blockquote>
+<h5 id="name-in-latin-texts_5">Name In Latin Texts</h5>
+<blockquote>
+<p><strong>Name in Latin texts:</strong> The name as used by Latin
+authors if different from the house style (e.g. Jupiter, Hercules,
+Pollux). Multiple names are allowed in this field.</p>
+</blockquote>
+<h5 id="alternative-names_5">Alternative Names</h5>
+<blockquote>
+<p><strong>Alternative names:</strong> Any alternative spellings, or
+forms, of this entity's name. Multiple names are allowed in this
+field.</p>
+</blockquote>
+<h4 id="minimal-disambiguation_5">Minimal Disambiguation</h4>
+<blockquote>
+<p><strong>Minimal disambiguation:</strong> These appear alongside the
+name in the public interface and help users distinguish between entities
+with the same or similar names. The information that you give here must
+go in round brackets '()'. It should be as brief as possible. Use '&amp;'
+not 'and', '/' not 'or'. Use minimal capitalization.</p>
+<p>For historical artifacts, always provide a disambiguator. Use a noun
+indicating the place the artifact belongs to (e.g. 'Athens').</p>
+</blockquote>
+<h4 id="information_5">Information</h4>
+<blockquote>
+<p><strong>Information:</strong> This is an optional, free text field. In
+the data collection interface it appears as part of the name. In the
+public interface it appears on the filecard. Give the most pertinent
+information about this entity to help others identify it accurately.
+More information can be given in <strong>Note</strong> or
+<strong>Commentary.</strong></p>
+</blockquote>
+<h4 id="possibly-the-same-as_5">Possibly The Same As</h4>
+<blockquote>
+<p><strong>Possibly the same as:</strong> Use where we do not have enough
+information to determine whether two or more entities are different, and
+it is possible that they are in fact the same. Only use this attribute
+with one entity (a reversal will populate the other(s)).</p>
+<p><strong>Populates filecard category 'possibly the same as'</strong></p>
+</blockquote>
+<h4 id="of_5">Of</h4>
+<blockquote>
+<p><strong>Of:</strong> Used to create high-level connections between
+entities which are inherent to them. This attribute always triggers the
+'related entities' reversal; entities with specific words in
+<strong>Name</strong> will also trigger other reversals: see above for
+the list.</p>
+</blockquote>
+<p><strong class="red">Wikidata:</strong>
+Enter Wikidata identifier, which is a string
+of numbers beginning with "Q". Do not enter the full URL as Nodegoat
+will create that from the identifier. Multiple names are allowed in this
+field.</p>
+<h4 id="pleiades-urn_2">Pleiades URN?</h4>
+<blockquote>
+<p><strong>Pleiades URN?</strong>: If you have checked Pleiades and found
+that there's no appropriate entry, change to 'no'.</p>
+</blockquote>
+<h4 id="pleiades-urn_3">Pleiades URN</h4>
+<blockquote>
+<p><strong>Pleiades URN</strong>: Enter Pleiades URN here. Enter just the
+numbers (e.g. '579885') and Nodegoat will create a URL. For advice on
+selecting the best URN, see
+<a href="#410-choosing-a-pleiades-number">4.10 choosing-a-pleiades-number</a>. If there is
+locational data (long./latt.) for this entity in Pleiades, this will be
+fetched next time the Pleiades ingestion is run.</p>
+<p><strong>Populates the 'location' sub-object</strong></p>
+<p>To run the Pleiades ingestion: From the Nodegoat Data environment
+select <code>Processes &gt; Ingestion &gt; Pleiades Location Data Run &gt; Run Ingestion.</code> This process trashes all locational data in MANTO and
+fetches the most recent locational data from Pleiades.</p>
+</blockquote>
+<h4 id="in_3">In</h4>
+<blockquote>
+<p><strong>In:</strong> This field establishes relations between places by
+'nesting' one place within another (see
+<a href="#414-nesting-entities">4.14 nesting-entities</a>). All historical artifacts
+should be given a location within a place or landmark where possible.
+Regions should not be entered here; if the artifact cannot be located
+with more precision that in a certain region, use <strong>[Somewhere Near]</strong> instead.</p>
+<p><strong>Populates the 'in' location sub-object.</strong></p>
+<p><strong>Populates the filecard categories 'encompasses', 'in' (entities are nested) and affects reversals relating to cult sites.</strong></p>
+</blockquote>
+<h4 id="somewhere-near_1">Somewhere Near</h4>
+<blockquote>
+<p><strong>Somewhere Near</strong>: Only use this field if you cannot use
+<strong>In</strong> (see above).</p>
+<p><strong>Populates the '[near]' location sub-object</strong></p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.instant", "navigation.path", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

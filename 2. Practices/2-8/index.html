@@ -1,0 +1,5840 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://autumnnippert.github.io/manto_docs/2.%20Practices/2-8/">
+      
+      
+        <link rel="prev" href="../2-7/">
+      
+      
+        <link rel="next" href="../../3.%20Style%20Guide/3_style_guide/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
+    
+    
+      
+        <title>2.8 Interactions - Manto Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#28-interactions" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Manto Docs" class="md-header__button md-logo" aria-label="Manto Docs" data-md-component="logo">
+      
+  <img src="../../media/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Manto Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              2.8 Interactions
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/AutumnNippert/manto_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Manto Docs" class="md-nav__button md-logo" aria-label="Manto Docs" data-md-component="logo">
+      
+  <img src="../../media/logo.png" alt="logo">
+
+    </a>
+    Manto Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/AutumnNippert/manto_docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MANTO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    1. Principles
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            1. Principles
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../1.%20Principles/principles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Principles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2. Practices
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            2. Practices
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.1 Getting help
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.2 Passages: the basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.3 Entities: the basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.4 Creating entities
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.5 Ties: the basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../2-7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2.7 Creating a Tie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2.8 Interactions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    2.8 Interactions
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#281-qualities" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.1 Qualities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.1 Qualities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#has-hybrid-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has Hybrid Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-monstrous-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has Monstrous Form
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#282-blood-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.2 Blood relationships
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.2 Blood relationships">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-child-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Child Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-sibling-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Sibling Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-twin-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Twin Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-mother-by-parthenogenesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Mother By Parthenogenesis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-no-children" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has No Children
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-a-decendant-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is A Decendant Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-claimed-as-ancestor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Claimed as Ancestor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#283-relationships-by-marriage" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.3 Relationships by marriage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.3 Relationships by marriage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-spouse-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Spouse Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gives-in-marriage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gives In Marriage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offers-in-marriage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offers In Marriage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#284-birth" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.4 Birth
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.4 Birth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-born" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Born
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gives-birth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gives Birth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-born-by-autochthony" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Born By Autochthony
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comes-into-being" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comes Into Being
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#285-death" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.5 Death
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.5 Death">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kills
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dies-by-suicide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dies By Suicide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dissapears" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dissapears
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mourns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mourns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resurrects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resurrects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-post-mortem-existence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has Post-Mortem Existence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recovers-the-body-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recovers The Body Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-cenotaph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has Cenotaph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#286-roles-and-non-familial-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.6 Roles and non-familial relationships
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.6 Roles and non-familial relationships">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-slave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Slave
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-charioteer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Charioteer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-herald" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Herald
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-helmsman" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Helmsman
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-lawgiver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Lawgiver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-healer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Healer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-nurse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Nurse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-teacher" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Teacher
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-priest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Priest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-divine-patron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Divine Patron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-prophet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Prophet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#287-names-and-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.7 Names and Transformation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.7 Names and Transformation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-eponym" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Eponym
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derives-etymology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derives Etymology
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changes-name-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changes Name To
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changes-name-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changes Name of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-alternative-name-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Alternative Name For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metamorphoses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metamorphoses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-metamorphosed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Metamorphosed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#makes-immortal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Makes Immortal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#becomes-immortal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Becomes Immortal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#takes-form-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Takes Form Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#288-friendly-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.8 Friendly interactions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.8 Friendly interactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#helps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Helps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requests-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requests Help
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#purifies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purifies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bathes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bathes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raises
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nurses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nurses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teaches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hosts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hosts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protects
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#289-hostile-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.9 Hostile Interactions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.9 Hostile Interactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hinders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hinders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mistreads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mistreads
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decieves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decieves
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plots-against" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plots Against
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pursues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pursues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hunts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hunts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punishes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Punishes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Curses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abandons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abandons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exposes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exposes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drives-insane" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drives Insane
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tests
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2810-physical-altercations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.10 Physical Altercations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.10 Physical Altercations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fights
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wounds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wounds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defeats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defeats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blinds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blinds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attacks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2811-competitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.11 Competitions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.11 Competitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#competes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Competes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wins-in-competition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wins in Competition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#establishes-games" class="md-nav__link">
+    <span class="md-ellipsis">
+      Establishes Games
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#holds-games" class="md-nav__link">
+    <span class="md-ellipsis">
+      Holds Games
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#holds-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Holds (event)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2812-capturing-enslaving-imprisoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.12 Capturing, Enslaving, Imprisoning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.12 Capturing, Enslaving, Imprisoning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imprisons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Imprisons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sells-as-slave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sells as Slave
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wins-as-war-prize" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wins as War Prize
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abducts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abducts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#captures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Captures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ransoms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ransoms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#releases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Releases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rescues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rescues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guards
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2813-sexual-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.13 Sexual Relations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.13 Sexual Relations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#has-sex-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has Sex With
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desires" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desires
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rapes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attempts-to-rape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attempts to Rape
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2814-conversations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.14 Conversations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.14 Conversations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#speaks-in-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speaks in Assembly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puts-on-trial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Puts on Trial
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#threatens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Threatens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insults" class="md-nav__link">
+    <span class="md-ellipsis">
+      Insults
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offends" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offends
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quarrels-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quarrels With
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Warns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pledges-oath-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pledges Oath With
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2815-ritual-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.15 Ritual interactions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.15 Ritual interactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#makes-sacrifice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Makes Sacrifice
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dedicates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dedicates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#establishes-cult" class="md-nav__link">
+    <span class="md-ellipsis">
+      Establishes Cult
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#develops-cult" class="md-nav__link">
+    <span class="md-ellipsis">
+      Develops Cult
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-cult-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has Cult Site
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initiates-into-cult" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initiates Into Cult
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gives-special-gift" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gives Special Gift
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grants-superhuman-power" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grants Superhuman Power
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grants-power-of-prophecy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grants Power of Prophecy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gives-prophecy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gives Prophecy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appears-in-an-epiphany" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appears in an Epiphany
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appears-in-an-epiphany-in-the-historical-period" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appears in an Epiphany in the Historical Period
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2816-possession-creation-usage-and-gifting" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.16 Possession, creation, usage, and gifting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.16 Possession, creation, usage, and gifting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#possesses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possesses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creates-humans" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creates Humans
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destoys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Destoys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#damages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Damages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consumes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#takes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Takes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gives-something" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gives Something
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hides
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2817-collectives-and-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.17 Collectives and Groups
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.17 Collectives and Groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#leads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leads
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assembles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assembles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-member-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Member Of
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2818-rulership-and-landownership" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.18 Rulership and Landownership
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.18 Rulership and Landownership">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rules-as-eponym" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rules As Eponym
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#succeeds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Succeeds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#founds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Founds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#founds-as-eponym" class="md-nav__link">
+    <span class="md-ellipsis">
+      Founds As Eponym
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conquers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conquers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2819-connections-to-places" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.19 Connections to places
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.19 Connections to places">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resides
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-depicted" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Depicted
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-a-relic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is a Relic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-moved" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Moved
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-entrance-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Entrance To
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flows-into" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flows Into
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fortifies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fortifies
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2820-movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.20 Movement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.20 Movement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#travels" class="md-nav__link">
+    <span class="md-ellipsis">
+      travels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goes-past" class="md-nav__link">
+    <span class="md-ellipsis">
+      goes past
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crosses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crosses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shipwrecks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shipwrecks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sends
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searches-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      Searches For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flees
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encounters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encounters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migrates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migrates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2821-miscellaneous-disambiguation-and-conflation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.21 Miscellaneous, disambiguation and conflation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.21 Miscellaneous, disambiguation and conflation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-associated-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Associated With
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-mentioned" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Mentioned
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-conflated-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Conflated With
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-identified-as" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Identified As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-identified" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Identified
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-identified-as_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Identified As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-located" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Located
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-contemporary-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Contemporary Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-compared-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Compared To
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    3. Style Guide
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            3. Style Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../3.%20Style%20Guide/3_style_guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Style Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    4. Issues
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            4. Issues
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../4.%20Issues/4_issues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Issues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    5. Data Management
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            5. Data Management
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../5.%20Data%20Management/5_data_management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    6. About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            6. About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../6.%20About/about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#281-qualities" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.1 Qualities
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.1 Qualities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#has-hybrid-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has Hybrid Form
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-monstrous-form" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has Monstrous Form
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#282-blood-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.2 Blood relationships
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.2 Blood relationships">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-child-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Child Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-sibling-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Sibling Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-twin-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Twin Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-mother-by-parthenogenesis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Mother By Parthenogenesis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-no-children" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has No Children
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-a-decendant-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is A Decendant Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-claimed-as-ancestor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Claimed as Ancestor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#283-relationships-by-marriage" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.3 Relationships by marriage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.3 Relationships by marriage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-spouse-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Spouse Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gives-in-marriage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gives In Marriage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offers-in-marriage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offers In Marriage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#284-birth" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.4 Birth
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.4 Birth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-born" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Born
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gives-birth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gives Birth
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-born-by-autochthony" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Born By Autochthony
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comes-into-being" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comes Into Being
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#285-death" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.5 Death
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.5 Death">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#kills" class="md-nav__link">
+    <span class="md-ellipsis">
+      Kills
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dies-by-suicide" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dies By Suicide
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dissapears" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dissapears
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mourns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mourns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resurrects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resurrects
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-post-mortem-existence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has Post-Mortem Existence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buries" class="md-nav__link">
+    <span class="md-ellipsis">
+      Buries
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recovers-the-body-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recovers The Body Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-cenotaph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has Cenotaph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#286-roles-and-non-familial-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.6 Roles and non-familial relationships
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.6 Roles and non-familial relationships">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-slave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Slave
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-charioteer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Charioteer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-herald" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Herald
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-helmsman" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Helmsman
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-lawgiver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Lawgiver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-healer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Healer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-nurse" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Nurse
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-teacher" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Teacher
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-priest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Priest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-divine-patron" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Divine Patron
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-prophet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Prophet
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#287-names-and-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.7 Names and Transformation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.7 Names and Transformation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-eponym" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Eponym
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#derives-etymology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Derives Etymology
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#names" class="md-nav__link">
+    <span class="md-ellipsis">
+      Names
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changes-name-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changes Name To
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#changes-name-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Changes Name of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-alternative-name-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Alternative Name For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metamorphoses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metamorphoses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-metamorphosed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Metamorphosed
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#makes-immortal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Makes Immortal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#becomes-immortal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Becomes Immortal
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#takes-form-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Takes Form Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#invents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Invents
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#288-friendly-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.8 Friendly interactions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.8 Friendly interactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#helps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Helps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#requests-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      Requests Help
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#purifies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Purifies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bathes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bathes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raises" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raises
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nurses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nurses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teaches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teaches
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hosts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hosts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#protects" class="md-nav__link">
+    <span class="md-ellipsis">
+      Protects
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#289-hostile-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.9 Hostile Interactions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.9 Hostile Interactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hinders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hinders
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mistreads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mistreads
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decieves" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decieves
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#plots-against" class="md-nav__link">
+    <span class="md-ellipsis">
+      Plots Against
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pursues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pursues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hunts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hunts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punishes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Punishes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Curses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abandons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abandons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exposes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exposes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drives-insane" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drives Insane
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tests
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2810-physical-altercations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.10 Physical Altercations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.10 Physical Altercations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fights
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wounds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wounds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#defeats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Defeats
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blinds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blinds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attacks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2811-competitions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.11 Competitions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.11 Competitions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#competes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Competes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wins-in-competition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wins in Competition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#establishes-games" class="md-nav__link">
+    <span class="md-ellipsis">
+      Establishes Games
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#holds-games" class="md-nav__link">
+    <span class="md-ellipsis">
+      Holds Games
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#holds-event" class="md-nav__link">
+    <span class="md-ellipsis">
+      Holds (event)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2812-capturing-enslaving-imprisoning" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.12 Capturing, Enslaving, Imprisoning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.12 Capturing, Enslaving, Imprisoning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imprisons" class="md-nav__link">
+    <span class="md-ellipsis">
+      Imprisons
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sells-as-slave" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sells as Slave
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wins-as-war-prize" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wins as War Prize
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abducts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Abducts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#captures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Captures
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ransoms" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ransoms
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#releases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Releases
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rescues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rescues
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Guards
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2813-sexual-relations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.13 Sexual Relations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.13 Sexual Relations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#has-sex-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has Sex With
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desires" class="md-nav__link">
+    <span class="md-ellipsis">
+      Desires
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rapes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rapes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attempts-to-rape" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attempts to Rape
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2814-conversations" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.14 Conversations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.14 Conversations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#speaks-in-assembly" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speaks in Assembly
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#puts-on-trial" class="md-nav__link">
+    <span class="md-ellipsis">
+      Puts on Trial
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#threatens" class="md-nav__link">
+    <span class="md-ellipsis">
+      Threatens
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#insults" class="md-nav__link">
+    <span class="md-ellipsis">
+      Insults
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offends" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offends
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#quarrels-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quarrels With
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Warns
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pledges-oath-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pledges Oath With
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2815-ritual-interactions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.15 Ritual interactions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.15 Ritual interactions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#makes-sacrifice" class="md-nav__link">
+    <span class="md-ellipsis">
+      Makes Sacrifice
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dedicates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dedicates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#establishes-cult" class="md-nav__link">
+    <span class="md-ellipsis">
+      Establishes Cult
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#develops-cult" class="md-nav__link">
+    <span class="md-ellipsis">
+      Develops Cult
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#has-cult-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      Has Cult Site
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initiates-into-cult" class="md-nav__link">
+    <span class="md-ellipsis">
+      Initiates Into Cult
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gives-special-gift" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gives Special Gift
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grants-superhuman-power" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grants Superhuman Power
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grants-power-of-prophecy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grants Power of Prophecy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gives-prophecy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gives Prophecy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appears-in-an-epiphany" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appears in an Epiphany
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#appears-in-an-epiphany-in-the-historical-period" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appears in an Epiphany in the Historical Period
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2816-possession-creation-usage-and-gifting" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.16 Possession, creation, usage, and gifting
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.16 Possession, creation, usage, and gifting">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#possesses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possesses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creates-humans" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creates Humans
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destoys" class="md-nav__link">
+    <span class="md-ellipsis">
+      Destoys
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#damages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Damages
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#discards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Discards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consumes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consumes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#takes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Takes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gives-something" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gives Something
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#offers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Offers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hides
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2817-collectives-and-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.17 Collectives and Groups
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.17 Collectives and Groups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#leads" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leads
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assembles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assembles
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-member-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Member Of
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2818-rulership-and-landownership" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.18 Rulership and Landownership
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.18 Rulership and Landownership">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rules
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rules-as-eponym" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rules As Eponym
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#succeeds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Succeeds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#founds" class="md-nav__link">
+    <span class="md-ellipsis">
+      Founds
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#founds-as-eponym" class="md-nav__link">
+    <span class="md-ellipsis">
+      Founds As Eponym
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conquers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conquers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#settles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Settles
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2819-connections-to-places" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.19 Connections to places
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.19 Connections to places">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#resides" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resides
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-depicted" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Depicted
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-a-relic" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is a Relic
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-moved" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Moved
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-entrance-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Entrance To
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flows-into" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flows Into
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fortifies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fortifies
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2820-movement" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.20 Movement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.20 Movement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#travels" class="md-nav__link">
+    <span class="md-ellipsis">
+      travels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#goes-past" class="md-nav__link">
+    <span class="md-ellipsis">
+      goes past
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crosses" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crosses
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shipwrecks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shipwrecks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sends" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sends
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Expels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searches-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      Searches For
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#flees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flees
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encounters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encounters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#migrates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Migrates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2821-miscellaneous-disambiguation-and-conflation" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.8.21 Miscellaneous, disambiguation and conflation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.8.21 Miscellaneous, disambiguation and conflation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#is-associated-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Associated With
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-mentioned" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Mentioned
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-conflated-with" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Conflated With
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-identified-as" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Identified As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-identified" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Identified
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-identified-as_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Identified As
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-located" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Located
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-contemporary-of" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Contemporary Of
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-compared-to" class="md-nav__link">
+    <span class="md-ellipsis">
+      Is Compared To
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="28-interactions">2.8 Interactions</h1>
+<p>Restrictions on the use of each interaction appear in notes next to
+them. Unless otherwise specified, any entity can be used with any
+interaction. The prepositions typically used with each one are given in
+square brackets, but these are not an exhaustive list.</p>
+<p>Many interactions trigger reversals when used in particular ways. If the
+reversal is not accurate in this context, then do not use that
+interaction in that way. (For an explanation of reversals, see
+<a href="#15-reversals-and-filecards">1.5 reversals-and-filecards</a>.)</p>
+<h2 id="281-qualities">2.8.1 Qualities</h2>
+<h4 id="has-hybrid-form">Has Hybrid Form</h4>
+<blockquote>
+<p><strong>ENTITY has hybrid form</strong></p>
+<p>Use where an entity is explicitly said to be a mixture or blending of
+two or more species, e.g. the Centaurs, the Minotaur, Pegasos. Use
+where an entity is both hybrid and monstrous. Use also to capture
+passages where the hybridity of traditionally hybrid creatures is
+explicitly denied and tag with 'Doubt or disbelief expressed'.</p>
+<p><strong>Triggers phenomenon 'monstrosity and hybridity'</strong></p>
+</blockquote>
+<h4 id="has-monstrous-form">Has Monstrous Form</h4>
+<blockquote>
+<p><strong>ENTITY has monstrous form</strong></p>
+<p>Use where an entity is explicitly said to have some unconventional
+physical characteristic, excluding hybridity, e.g. unusual size,
+single eye (Polyphemos), extra limbs (Hundred-handers). If the
+monstrosity is accompanied by some aspect of hybridity, use 'has
+hybrid form' instead. Use also to capture passages where the
+monstrosity of traditionally monstrous creatures is explicitly denied
+and tag with 'Doubt or disbelief expressed'.</p>
+<p><strong>Triggers phenomenon 'monstrosity and hybridity'</strong></p>
+</blockquote>
+<h2 id="282-blood-relationships">2.8.2 Blood relationships</h2>
+<p>Ties using these interactions typically only involve agents and
+collectives.</p>
+<p>Blood relationships are exceptions to the usual rule that we try to make
+each tie as rich as possible. Do not add prepositions, genitive
+absolutes or purpose clauses to these interactions. If an episode of
+childbirth is described, use 'is born', or 'gives birth' as well.</p>
+<h4 id="is-child-of">Is Child Of</h4>
+<blockquote>
+<p><strong>ENTITY1 is child of ENTITY2</strong></p>
+<p>If ENTITY1 is a collective that already has Children of:
+ENTITY2 as an attribute, do not enter that information again in this
+tie.</p>
+<p><strong>Populates filecard categories 'son/daughter/child of', 'children of', 'mother/father of', 'parents of', 'has children with'</strong></p>
+</blockquote>
+<h4 id="is-sibling-of">Is Sibling Of</h4>
+<blockquote>
+<p><strong>ENTITY is sibling of ENTITY</strong></p>
+<p>Use only where you cannot use 'is child of', with the name(s) of the
+parent(s) implied.</p>
+</blockquote>
+<h4 id="is-twin-of">Is Twin Of</h4>
+<blockquote>
+<p><strong>ENTITY is twin of ENTITY</strong></p>
+<p><strong>Populates filecard categories 'twin of'</strong></p>
+<p><strong>Triggers phenomenon 'mythic twins'</strong></p>
+</blockquote>
+<h4 id="is-mother-by-parthenogenesis">Is Mother By Parthenogenesis</h4>
+<blockquote>
+<p><strong>ENTITY1 is mother by parthenogenesis of ENTITY2</strong></p>
+<p>Use where a mother conceives her offspring on her own. Do not use if
+the father is simply unknown.</p>
+<p><strong>Populates filecard categories 'son/daughter/child of', 'mother of', 'gives birth by parthenogenesis to'</strong></p>
+<p><strong>Triggers phenomenon 'parthenogenesis', 'unusual births'</strong></p>
+</blockquote>
+<h4 id="has-no-children">Has No Children</h4>
+<blockquote>
+<p><strong>ENTITY has no children</strong></p>
+<p>Use only where an agent is explicitly said to have died childless</p>
+</blockquote>
+<h4 id="is-a-decendant-of">Is A Decendant Of</h4>
+<blockquote>
+<p><strong>ENTITY is a descendant of ENTITY</strong></p>
+<p>Use only where the exact relationship between two agents is not
+apparent and cannot be extrapolated from data elsewhere (even by the
+creation of anonymous figures). These relationships are difficult to
+code accurately so might not be able to be included in visualizations.
+For descendants in historical period, use 'is claimed as ancestor'.</p>
+</blockquote>
+<ul>
+<li><strong>Populates filecard category 'descendant of'</strong></li>
+</ul>
+<h4 id="is-claimed-as-ancestor">Is Claimed as Ancestor</h4>
+<blockquote>
+<p><strong>ENTITY1 is claimed as ancestor</strong> [in/on/at ENTITY2]</p>
+<p>Use only where the person or group making the claim exists in the
+historical period. Do not use where an historical figure (e.g.
+Alexander the Great) claims to have a god for a parent. Use with a
+timemark; if the timemark is left empty, the claim to ancestry was
+being made at the time when the passage was written.</p>
+</blockquote>
+<h2 id="283-relationships-by-marriage">2.8.3 Relationships by marriage</h2>
+<h4 id="is-spouse-of">Is Spouse Of</h4>
+<blockquote>
+<p><strong>ENTITY1 is spouse of ENTITY2</strong></p>
+<p>If a more detailed episode is described, use 'marries' or 'gives in
+marriage'.</p>
+<p><strong>Populates filecard category 'wife/husband of'</strong></p>
+</blockquote>
+<h4 id="marries">Marries</h4>
+<blockquote>
+<p><strong>ENTITY1 marries ENTITY2</strong></p>
+<p><strong>Populates filecard category 'wife/husband of'</strong></p>
+</blockquote>
+<h4 id="gives-in-marriage">Gives In Marriage</h4>
+<blockquote>
+<p><strong>ENTITY1 gives in marriage ENTITY2</strong> [indir. obj. ENTITY3]</p>
+<p><strong>Populates filecard category 'wife/husband of'</strong></p>
+</blockquote>
+<h4 id="offers-in-marriage">Offers In Marriage</h4>
+<blockquote>
+<p><strong>ENTITY1 offers in marriage ENTITY2</strong> [indir. obj. ENTITY3]</p>
+<p>Use where a marriage did not take place, or to capture (e.g.) the
+place the marriage arrangement was made. If the marriage takes place
+later, use 'marries' or 'is spouse of' as well.</p>
+</blockquote>
+<h2 id="284-birth">2.8.4 Birth</h2>
+<p>Use only if childbirth episode is described, or other entities need to
+be captured in relation to it. Otherwise use one of the 'blood
+relationships' interactions in 2.14.2.</p>
+<h4 id="is-born">Is Born</h4>
+<blockquote>
+<p><strong>ENTITY1 is born</strong> [in/on/at ENTITY2] [from ENTITY3] [with involvement of ENTITY4]</p>
+<p>Use where location of birth is significant, or episode of birth is
+significant and mother is not identified (if she needs to be captured,
+use 'gives birth'). ENTITY3 will be something which does not typically
+give birth (e.g. 'the Head of Medousa', 'the Eggs of Leda'). ENTITY4
+is an agent that causes ENTITY1 to be born by (e.g.) scattering
+dragon's teeth.</p>
+<p><strong>Populates filecard categories 'born at', 'born from', 'place of birth of', 'from which is created'.</strong></p>
+</blockquote>
+<ul>
+<li><strong>Triggers phenomenon 'unusual births' if 'from' is used</strong></li>
+</ul>
+<h4 id="gives-birth">Gives Birth</h4>
+<blockquote>
+<p><strong>ENTITY1 gives birth</strong> [indir.obj. ENTITY2] [in/on/at ENTITY3]</p>
+<p>This tie does not trigger genealogical reversals; use 'is child of'
+(etc) as well.</p>
+<p><strong>Populates filecard categories 'born at', 'place of birth of'</strong></p>
+</blockquote>
+<h4 id="is-born-by-autochthony">Is Born By Autochthony</h4>
+<blockquote>
+<p><strong>ENTITY1 is born by autochthony</strong> [in/on/at ENTITY2]</p>
+<p>Autochthons are agents and collectives who are born out of the earth
+without the involvement of parents. Capture only explicit instances of
+autochthony. Do not capture these as children of Ge / Gaia. ENTITY2
+should typically be a region or city. If the birth is from an object
+(etc) use 'is born [from]'.</p>
+<p><strong>Populates filecard category 'born at', 'place of birth of'</strong></p>
+<p><strong>Triggers phenomenon 'autochthons', 'unusual births'</strong></p>
+</blockquote>
+<h4 id="comes-into-being">Comes Into Being</h4>
+<blockquote>
+<p><strong>ENTITY1 comes into being</strong></p>
+<p>Use where an entity spontaneously comes into existence, e.g. Gaia,
+Chaos etc in Hesiod's <em>Theogony</em>. Use 'is born by autochthony' if the
+entity is born from the earth in a place.</p>
+<p><strong>Triggers phenomenon 'comes into being at the beginning of the world', 'unusual births'</strong></p>
+</blockquote>
+<h2 id="285-death">2.8.5 Death</h2>
+<h4 id="kills">Kills</h4>
+<blockquote>
+<p><strong>ENTITY1 kills ENTITY2</strong> [using ENTITY3]</p>
+<p><strong>Populates filecard category 'dies at', 'place of death of', 'killed by', 'kills',</strong></p>
+<p><strong>If 'using' contains an object or landmark, populates 'killed by' and 'used to kill'</strong></p>
+</blockquote>
+<h4 id="dies">Dies</h4>
+<blockquote>
+<p><strong>ENTITY dies</strong></p>
+<p>Use only when more specific ties (e.g. 'kills' or 'dies by suicide')
+are not appropriate.</p>
+<p><strong>Populates filecard category 'dies at', 'place of death of'</strong></p>
+</blockquote>
+<h4 id="dies-by-suicide">Dies By Suicide</h4>
+<blockquote>
+<p><strong>ENTITY dies by suicide</strong></p>
+<p><strong>Populates filecard category 'dies at', 'place of death of'</strong></p>
+<p><strong>If 'using' contains an object or landmark, populates 'used to kill'</strong></p>
+<p><strong>Triggers phenomenon 'deaths by suicide'</strong></p>
+</blockquote>
+<h4 id="dissapears">Dissapears</h4>
+<blockquote>
+<p><strong>ENTITY disappears</strong></p>
+<p>Use when an agent disappears rather than dies.</p>
+<p><strong>Populates filecard category ' disappears at'</strong></p>
+<p><strong>Triggers phenomenon 'disappearing heroes'</strong></p>
+</blockquote>
+<h4 id="mourns">Mourns</h4>
+<blockquote>
+<p><strong>ENTITY mourns ENTITY</strong></p>
+</blockquote>
+<h4 id="resurrects">Resurrects</h4>
+<blockquote>
+<p><strong>ENTITY resurrects ENTITY</strong></p>
+<p>Use where one agent returns another to life. Where the resurrection
+involves an agent bringing another formerly-living agent back from the
+Underworld, use 'ENTITY takes ENTITY from THE UNDERWORLD').</p>
+<p>TODO: Extra Paren</p>
+<p><strong>Populates filecard category 'resurrected at', 'resurrected by'</strong></p>
+<p><strong>Triggers phenomenon 'resurrected heroes'</strong></p>
+</blockquote>
+<h4 id="has-post-mortem-existence">Has Post-Mortem Existence</h4>
+<blockquote>
+<p><strong>ENTITY has post-mortem existence</strong> [in/on/at]</p>
+<p>Use where an agent is described as existing after death in some form
+(e.g. on the Isles of the Blessed) or appears as a ghost in the
+terrestrial realm.</p>
+<p><strong>Populates filecard category 'has post-mortem existence at'</strong></p>
+<p><strong>Triggers phenomenon</strong></p>
+</blockquote>
+<h4 id="buries">Buries</h4>
+<blockquote>
+<p><strong>ENTITY1 buries ENTITY2</strong> [in/on/at ENTITY3]</p>
+<p>Use only where an agent disposes of a body after death. Use even when
+the body is not literally buried but (e.g.) placed on a funeral pyre.
+Use 'hides' where an object is buried in earth for safekeeping, etc.
+ENTITY3 should be a place or landmark (e.g. 'the Tomb of Achilles').
+Where the tomb is a relic in historical period, use also 'is a relic'.</p>
+<p><strong>Populates filecard categories 'buried at', 'buried by', 'burial place of'</strong></p>
+</blockquote>
+<h4 id="recovers-the-body-of">Recovers The Body Of</h4>
+<blockquote>
+<p><strong>ENTITY recovers the body of ENTITY</strong> [from] [to]</p>
+</blockquote>
+<h4 id="has-cenotaph">Has Cenotaph</h4>
+<blockquote>
+<p><strong>ENTITY has cenotaph</strong> [in/on/at]</p>
+<p>Use in the form 'AGENT has cenotaph at PLACE' (<strong>not</strong>
+'PLACE has cenotaph of AGENT'). Use where tomb is specifically said
+not to include a body; where a body is present, use 'buries' above.
+Where the cenotaph is a relic in historical period, use also 'is a
+relic'.</p>
+<p><strong>Populates filecard categories 'cult sites', 'cult site of'</strong></p>
+</blockquote>
+<h2 id="286-roles-and-non-familial-relationships">2.8.6 Roles and non-familial relationships</h2>
+<p>Most of the interactions in this category have similar interactions in
+other categories (e.g. 'is prophet' / 'gives prophecy' etc.) We use the
+interactions listed in this category where the role is considered
+integral to an entity's identity, or the entity is described primarily
+in terms of the role but not described as necessarily performing the
+action. Typically these ties populate filecard categories, whereas the
+other ties do not.</p>
+<h4 id="is-slave">Is Slave</h4>
+<blockquote>
+<p><strong>ENTITY1 is slave</strong> [of ENTITY2]</p>
+<p>Use where the agent's primary identity is as slave of another; 'sells
+as slave' also exists to capture the specific action, especially
+where the state of slavery is not permanent. 'Wins as warprize' also
+exists. See <a href="#2812-capturing-enslaving-imprisoning">2.8.12 capturing-enslaving-imprisoning</a>.
+<strong>Populates filecard category 'enslaved to'</strong></p>
+</blockquote>
+<h4 id="is-charioteer">Is Charioteer</h4>
+<blockquote>
+<p><strong>ENTITY is charioteer</strong> [of]</p>
+<p><strong>Populates filecard category 'charioteer of'</strong></p>
+</blockquote>
+<h4 id="is-herald">Is Herald</h4>
+<blockquote>
+<p><strong>ENTITY1 is herald</strong> [of ENTITY2] [in/on/at]</p>
+<p><strong>Populates filecard categories 'herald of', 'herald at'</strong></p>
+</blockquote>
+<p><strong>If ENTITY2 is a collective, populates filecard categories 'includes',
+'belongs to'</strong></p>
+<h4 id="is-helmsman">Is Helmsman</h4>
+<blockquote>
+<p><strong>ENTITY1 is helmsman</strong> [of ENTITY2]</p>
+<p><strong>Populates filecard category 'helmsman of'</strong></p>
+<p><strong>If ENTITY2 is a collective, populates filecard categories 'includes', 'belongs to'</strong></p>
+</blockquote>
+<h4 id="is-lawgiver">Is Lawgiver</h4>
+<blockquote>
+<p><strong>ENTITY is lawgiver</strong> [in/on/at ENTITY]</p>
+<p><strong>Populates filecard categories 'lawgiver at'</strong></p>
+</blockquote>
+<h4 id="is-healer">Is Healer</h4>
+<blockquote>
+<p><strong>ENTITY1 is healer</strong> [of ENTITY2]</p>
+<p>Use 'heals' to capture the specific action.
+<strong>Populates filecard categories 'healer of'</strong></p>
+<p><strong>If ENTITY2 is a collective, populates filecard categories 'includes', 'belongs to'</strong></p>
+</blockquote>
+<h4 id="is-nurse">Is Nurse</h4>
+<blockquote>
+<p><strong>ENTITY1 is nurse</strong> [of ENTITY2]</p>
+<p>Use where an infant is cared for by someone who is not the parent
+('nurses' also exists to capture the specific action).
+<strong>Populates filecard category 'nurse of'</strong></p>
+</blockquote>
+<h4 id="is-teacher">Is Teacher</h4>
+<blockquote>
+<p><strong>ENTITY1 is teacher</strong> [of]</p>
+<p>Use 'teaches' to capture the specific action\
+<strong>Populates filecard category 'teacher of'</strong></p>
+</blockquote>
+<h4 id="is-priest">Is Priest</h4>
+<blockquote>
+<p><strong>ENTITY1 is priest</strong> [of ENTITY2] [in/on/at ENTITY3]</p>
+<p>ENTITY2 should be the divinity ENTITY2 is priest of; ENTITY3 should be
+temple or sanctuary. For more specific ritual interactions, see
+<a href="#2815-ritual-interactions">2.8.15 ritual-interactions</a>.</p>
+<p><strong>Populates filecard categories 'priest/priestess of', 'priest/priestess at'</strong></p>
+</blockquote>
+<h4 id="is-divine-patron">Is Divine Patron</h4>
+<blockquote>
+<p><strong>ENTITY is divine patron</strong> [of]</p>
+<p>Use where a god or goddess has a particularly close relationship with
+a hero or place.
+<strong>Populates filecard category 'divine patron of'</strong></p>
+</blockquote>
+<h4 id="is-prophet">Is Prophet</h4>
+<blockquote>
+<p><strong>ENTITY1 is prophet</strong> [of ENTITY2] [in/on/at]</p>
+<p>ENTITY2 should be the agent or collective to whom ENTITY2 gives
+prophecies, and/or the deity that the prophecies come from. Where an
+agent is prophet of Apollo at Delphi, put 'Apollo' in 'of' field, and
+'the Oracle of Apollo (Delphi)' in 'in/on/at' field. 'Gives
+prophecy' and 'grants power of prophecy' also exist (see
+<a href="#2815-ritual-interactions">2.8.15 ritual-interactions</a>).</p>
+<p><strong>Populates filecard categories 'prophet of', 'prophet at'</strong></p>
+<p><strong>If ENTITY2 is a collective, populates filecard categories 'includes', 'belongs to'</strong></p>
+</blockquote>
+<h2 id="287-names-and-transformation">2.8.7 Names and Transformation</h2>
+<h4 id="is-eponym">Is Eponym</h4>
+<blockquote>
+<p><strong>ENTITY is eponym of ENTITY</strong></p>
+<p>An eponym is the hero(ine) after whom a place is named. Where eponym
+is also founder or ruler, use 'founds as eponym' or 'rules as eponym'.</p>
+<p><strong>Populates filecard categories 'eponym of', 'eponym'</strong></p>
+</blockquote>
+<h4 id="derives-etymology">Derives Etymology</h4>
+<blockquote>
+<p><strong>ENTITY1 derives etymology</strong> [from ENTITY2]</p>
+<p>Use where etymology is not a simple case of eponymy. ENTITY2 should
+have significance for the etymology even if that significance is not
+immediately clear from the names. Explain the connection in
+<strong>Commentary</strong> where necessary.</p>
+<p><strong>Populates filecard category 'derives etymology from'</strong></p>
+</blockquote>
+<h4 id="names">Names</h4>
+<blockquote>
+<p><strong>ENTITY1 names ENTITY2</strong> [to honor ENTITY3]</p>
+<p>Use where ENTITY2 has no previous name, e.g. the first naming of
+cities. ENTITY3 is what ENTITY2 is named after. If ENTITY2 has an
+eponym or etymology, capture that in a separate tie as well.</p>
+<p><strong>Populates filecard category 'named by'</strong></p>
+</blockquote>
+<h4 id="changes-name-to">Changes Name To</h4>
+<blockquote>
+<p><strong>ENTITY1 changes name to ENTITY2</strong> [to honor ENTITY3]</p>
+<p>Use where ENTITY1's name changes, but there you cannot capture an
+entity that does the renaming. (Where ENTITY1 is given a new name by
+someone else, use 'changes name of'.) ENTITY3 is what ENTITY2 is named
+after. Where the name change happens during deification, use 'becomes
+immortal' instead. If ENTITY2 has an eponym or etymology capture that
+in a separate tie as well. This interaction does not
+populate the filecard categories 'alternative name' and 'alternative
+name for'.</p>
+</blockquote>
+<h4 id="changes-name-of">Changes Name of</h4>
+<blockquote>
+<p><strong>ENTITY1 changes name of ENTITY2</strong> [ind.obj. ENTITY3] [to honor
+ENTITY4]</p>
+<p>Use where ENTITY1 changes the name of ENTITY2, which already has a
+name. ENTITY4 is what ENTITY3 is named after. Where the name change
+happens during deification, use 'becomes immortal' instead. If
+ENTITY3 has an eponym or etymology capture in a separate tie as well.
+This interaction does not populate the filecard
+categories 'alternative name' and 'alternative name for'.</p>
+<p><strong>Populates filecard category 'named by'</strong></p>
+</blockquote>
+<h4 id="is-alternative-name-for">Is Alternative Name For</h4>
+<blockquote>
+<p><strong>ENTITY1 is alternative name for ENTITY2</strong></p>
+<p>Use where it is specifically asserted that two names refer to the same
+entity, or where the usage in the passage suggests this connection. If
+one of the entities is an 'alternative name' entity (see
+<a href="#2411-alternative-name-entities">2.4.1.1 alternative-name-entities</a>), make that one
+ENTITY1. Where the alternative name is used specifically in a
+particular place, use the 'local tradition at' field. This interaction
+does not populate the filecard categories 'alternative
+name' and 'alternative name for'.</p>
+</blockquote>
+<h4 id="metamorphoses">Metamorphoses</h4>
+<blockquote>
+<p><strong>ENTITY1 metamorphoses ENTITY2</strong> [into ENTITY3]</p>
+<p>ENTITY2 undergoes metamorphosis; ENTITY1 (usually a god) directly
+instigates the process. Capture ENTITY3 only where it exists as an
+entity in MANTO. This tie will always have a direct object: where an
+agent metamorphoses themselves or the instigator of the metamorphosis
+is not identified, use 'is metamorphosed'. Any actions done by ENTITY2
+in metamorphosed form should be captured against the original identity
+if the metamorphosis is later reversed.</p>
+<p><strong>Populates filecard categories 'transformed into', 'transformed from'</strong></p>
+<p><strong>Triggers phenomenon 'metamorphosis'</strong></p>
+</blockquote>
+<h4 id="is-metamorphosed">Is Metamorphosed</h4>
+<blockquote>
+<p><strong>ENTITY1 is metamorphosed</strong> [into ENTITY2]</p>
+<p>ENTITY1 undergoes metamorphosis. Capture ENTITY2 only where it exists
+as an entity in MANTO. This tie should be used where an agent
+metamorphoses themselves or the instigator of the metamorphosis is not
+identified. Where a direct instigator is identified, use 'is
+metamorphosed'. Any actions done by ENTITY1 in metamorphosed form
+should be captured against the original identity if the metamorphosis
+is later reversed.</p>
+<p><strong>Populates filecard categories 'transformed into', 'transformed from'</strong></p>
+<p><strong>Triggers phenomenon 'metamorphosis'</strong></p>
+</blockquote>
+<h4 id="makes-immortal">Makes Immortal</h4>
+<blockquote>
+<p><strong>ENTITY1 makes immortal ENTITY2</strong> [into ENTITY3]</p>
+<p>ENTITY2 is made immortal; ENTITY1 directly instigates the process.
+Capture ENTITY3 only where it exists as an entity in MANTO. If no
+instigator is identified, use 'becomes immortal'</p>
+<p><strong>Populates filecard categories 'transformed into', 'transformed from'</strong></p>
+<p><strong>Triggers phenomenon 'mortals who become gods'</strong></p>
+</blockquote>
+<h4 id="becomes-immortal">Becomes Immortal</h4>
+<blockquote>
+<p><strong>ENTITY1 becomes immortal ENTITY2</strong></p>
+<p>ENTITY1 is made immortal. Capture ENTITY3 only where it exists as an
+entity in MANTO. If an instigator of the process is identified, use
+'makes immortal'.</p>
+<p>TODO: Entity3 typo</p>
+<p><strong>Populates filecard categories 'transformed into', 'transformed from'</strong></p>
+<p><strong>Triggers phenomenon 'mortals who become gods'</strong></p>
+</blockquote>
+<h4 id="takes-form-of">Takes Form Of</h4>
+<blockquote>
+<p><strong>ENTITY1 takes form of ENTITY2</strong></p>
+<p>Use where ENTITY1 (typically a god) temporarily takes on the form of
+another entity. Actions performed by that entity when in disguise
+should be captured against ENTITY1.</p>
+</blockquote>
+<h4 id="invents">Invents</h4>
+<blockquote>
+<p><strong>ENTITY1 invents ENTITY2</strong></p>
+<p>Use where ENTITY1 creates ENTITY2 as a fictional persona either to
+serve as an alias, or to be used in made-up stories. Where ENTITY1
+creates a physical person (e.g. Pandora), use 'creates'.</p>
+<p><strong>Populates filecard categories 'invents', 'created by'</strong></p>
+</blockquote>
+<h2 id="288-friendly-interactions">2.8.8 Friendly interactions</h2>
+<h4 id="helps">Helps</h4>
+<blockquote>
+<p><strong>ENTITY helps ENTITY</strong></p>
+<p>Use only if action is not captured by a more specific interaction.</p>
+</blockquote>
+<h4 id="requests-help">Requests Help</h4>
+<blockquote>
+<p><strong>ENTITY requests help</strong> [from]</p>
+<p>Use also to capture supplication and prayer.</p>
+</blockquote>
+<h4 id="heals">Heals</h4>
+<blockquote>
+<p><strong>ENTITY heals ENTITY</strong></p>
+<p>'Is healer of' also exists. 'heals' does not populate
+filecard category 'healer of'.</p>
+</blockquote>
+<h4 id="purifies">Purifies</h4>
+<blockquote>
+<p><strong>ENTITY purifies ENTITY</strong></p>
+<p>Purification is a ritual act used to relieve guilt, an affliction, or
+a curse. For medical treatment, use 'heals'.</p>
+</blockquote>
+<h4 id="bathes">Bathes</h4>
+<blockquote>
+<p><strong>ENTITY bathes</strong></p>
+<p>Use to capture one entity bathing another (i.e. ENTITY1 bathes
+ENTITY2), an entity bathing (ENTITY1 bathes in/on/at ENTITY2) or
+someone being bathed by an unknown entity ([BLANK] bathes ENTITY1).</p>
+</blockquote>
+<h4 id="raises">Raises</h4>
+<blockquote>
+<p><strong>ENTITY raises ENTITY</strong></p>
+<p>Use where a child or adolescent is raised, especially by a
+step-parent. For raising of the dead, use 'resurrects'. 'Nurses' and
+'is nurse of' exists for relationships to infants.</p>
+</blockquote>
+<h4 id="nurses">Nurses</h4>
+<blockquote>
+<p><strong>ENTITY nurses ENTITY</strong></p>
+<p>Use where an infant is fed. 'Is nurse of' also exists. 'Nurses' [does not] populate filecard category 'nurse of').</p>
+<p>TODO: Extra Paren</p>
+</blockquote>
+<h4 id="teaches">Teaches</h4>
+<blockquote>
+<p><strong>ENTITY teaches ENTITY</strong></p>
+<p>'Is teacher of' also exists. 'Teaches' does not populate
+filecard category 'teacher of')</p>
+<p>TODO: Extra Paren</p>
+</blockquote>
+<h4 id="hosts">Hosts</h4>
+<blockquote>
+<p><strong>ENTITY hosts ENTITY</strong></p>
+<p>Use only if action is not captured by a more specific interaction.</p>
+</blockquote>
+<h4 id="visits">Visits</h4>
+<blockquote>
+<p><strong>ENTITY visits ENTITY</strong></p>
+<p>Use only if action is not captured by a more specific interaction.</p>
+</blockquote>
+<h4 id="protects">Protects</h4>
+<blockquote>
+<p><strong>ENTITY protects ENTITY</strong> [from]</p>
+<p>Use only if action is not captured by a more specific interaction.</p>
+</blockquote>
+<h2 id="289-hostile-interactions">2.8.9 Hostile Interactions</h2>
+<h4 id="hinders">Hinders</h4>
+<blockquote>
+<p><strong>ENTITY hinders ENTITY</strong></p>
+<p>Use only if action is not captured by a more specific interaction.</p>
+</blockquote>
+<h4 id="mistreads">Mistreads</h4>
+<blockquote>
+<p><strong>ENTITY mistreats ENTITY</strong> [using]</p>
+<p>Use only if action is not captured by a more specific interaction.</p>
+<p><strong>If 'using' contains an object or landmark, populates filecard category 'used to harm'</strong></p>
+</blockquote>
+<h4 id="decieves">Decieves</h4>
+<blockquote>
+<p><strong>ENTITY deceives ENTITY</strong></p>
+<p>Use only if action is not captured by a more specific interaction.</p>
+</blockquote>
+<h4 id="plots-against">Plots Against</h4>
+<blockquote>
+<p><strong>ENTITY plots against ENTITY</strong></p>
+<p>Use only if 'at the instigation of' or 'to punish' are not appropriate.</p>
+</blockquote>
+<h4 id="pursues">Pursues</h4>
+<blockquote>
+<p><strong>ENTITY pursues ENTITY</strong> [from] [to] [via]</p>
+</blockquote>
+<h4 id="hunts">Hunts</h4>
+<blockquote>
+<p><strong>ENTITY hunts ENTITY</strong></p>
+<p>Use only in instances of hunting an animal. 'Pursues' also exists.</p>
+</blockquote>
+<h4 id="punishes">Punishes</h4>
+<blockquote>
+<p><strong>ENTITY punishes ENTITY</strong> [in/on/at] [using]</p>
+<p><strong>If 'using' contains an object or landmark, populates filecard category 'used to harm'</strong></p>
+<p><strong>If 'in/on/at' contains 'the Underworld' or 'Tartaros', populates filecard category 'has post-mortem existence at'</strong></p>
+<p><strong>~~Triggers phenomenon 'people punished in the underworld'~~</strong></p>
+</blockquote>
+<h4 id="curses">Curses</h4>
+<blockquote>
+<p><strong>ENTITY curses ENTITY</strong></p>
+<p>Use where 'punishes' is not appropriate.</p>
+</blockquote>
+<h4 id="abandons">Abandons</h4>
+<blockquote>
+<p><strong>ENTITY abandons ENTITY</strong></p>
+<p>Use also in instances of abandonment or divorce of a spouse. For
+throwing away an object, use 'discards'.</p>
+</blockquote>
+<h4 id="exposes">Exposes</h4>
+<blockquote>
+<p><strong>ENTITY exposes ENTITY</strong></p>
+<p>Use only where a child is left out to die.</p>
+<p><strong>Triggers phenomenon 'children exposed'</strong></p>
+</blockquote>
+<h4 id="drives-insane">Drives Insane</h4>
+<blockquote>
+<p><strong>ENTITY drives insane ENTITY</strong></p>
+</blockquote>
+<h4 id="tests">Tests</h4>
+<blockquote>
+<p><strong>ENTITY tests ENTITY</strong></p>
+<p>Use only if action is not captured by a more specific interaction.</p>
+</blockquote>
+<h2 id="2810-physical-altercations">2.8.10 Physical Altercations</h2>
+<p>Where action occurs in the context of competition, use interactions
+listed under <a href="#2811-competitions">2.8.11 competitions</a>; see also
+interactions in
+<a href="#2812-capturing-enslaving-imprisoning">2.8.12 capturing-enslaving-imprisoning</a>.</p>
+<p>Verbal altercations are listed under
+<a href="#2814-conversations">2.8.14 conversations</a>.</p>
+<p>For advice on collecting data related to fights, see
+<a href="#253-hierarchies">2.5.3 hierarchies</a>.</p>
+<h4 id="fights">Fights</h4>
+<blockquote>
+<p><strong>ENTITY fights ENTITY</strong></p>
+<p>Use only in the context of physical fights. Use only if 'kills',
+'wounds', 'captures' are not appropriate. For places, use 'attacks'
+instead.</p>
+</blockquote>
+<h4 id="wounds">Wounds</h4>
+<blockquote>
+<p><strong>ENTITY1 wounds ENTITY2</strong> [using ENTITY3]</p>
+<p>If ENTITY2 is subsequently killed by ENTITY1, use 'kills' instead. Use
+only if 'blinds' is not appropriate. ENTITY3 is typically a weapon
+that exists as an entity in the dataset.</p>
+<p><strong>Populates filecard category 'wounded by' (both subject and 'using')</strong></p>
+<p><strong>If 'using' contains an object or landmark, populates filecard category 'used to harm'</strong></p>
+</blockquote>
+<h4 id="defeats">Defeats</h4>
+<blockquote>
+<p><strong>ENTITY1 defeats ENTITY2</strong> [using ENTITY3]</p>
+<p>Use where ENTITY1 wins, but ENTITY2 is not killed. ENTITY3 is
+typically a weapon that exists as an entity in the dataset. Use only
+if 'wounds' or 'captures' is not appropriate. For places, use
+'conquers', or 'destroys' instead.</p>
+</blockquote>
+<h4 id="blinds">Blinds</h4>
+<blockquote>
+<p><strong>ENTITY1 blinds ENTITY2</strong> [using ENTITY3]</p>
+<p>Use without subject where ENTITY2 is said to be blind but the blinding
+is not described. ENTITY3 is typically a weapon that exists as an
+entity in the dataset.</p>
+<p><strong>Populates filecard category 'blinded by' (both subject and using)</strong></p>
+<p><strong>If 'using' contains an object or landmark, populates filecard category 'used to harm'</strong></p>
+<p><strong>Triggers phenomenon 'blinded heroes'</strong></p>
+</blockquote>
+<h4 id="attacks">Attacks</h4>
+<blockquote>
+<p><strong>ENTITY attacks ENTITY</strong></p>
+<p>Use only if action is not captured by a more specific interaction.</p>
+</blockquote>
+<h2 id="2811-competitions">2.8.11 Competitions</h2>
+<p>Where action occurs in the context of combat use interactions listed
+under <a href="#2810-physical-altercations">2.8.10 physical-altercations</a>.</p>
+<p>Only create games as entities where they are one-off events. See
+<a href="../2-4.md/#246-creating-mythical-events">2.4.6 creating-mythical-events</a> and
+<a href="#panhellenic-games">4.7 panhellenic-games</a>. For regular competitions like
+the Olympic, Isthmian, Nemean, Pythian games or prominent regional
+games, use 'in/on/at PLACE' instead.</p>
+<h4 id="competes">Competes</h4>
+<blockquote>
+<p><strong>ENTITY competes</strong> [for] [against] [in/on/at]</p>
+<p><strong>If 'in/on/at' contains an event, populates filecard categories 'competitors', 'competes in'</strong></p>
+</blockquote>
+<h4 id="wins-in-competition">Wins in Competition</h4>
+<blockquote>
+<p><strong>ENTITY1 wins in competition ENTITY2</strong> [against ENTITY3] [in/on/at
+ENTITY4]</p>
+<p>ENTITY2 is the prize; ENTITY3 is the defeated opponent; ENTITY4 is the
+place or event at which the competition occurs. Where ENTITY2 is also
+a war prize won in competition, use 'wins as war prize' or 'is slave
+as well.</p>
+<p><strong>If 'in/on/at' contains an event, populates filecard categories 'competitors', 'competes in'</strong></p>
+</blockquote>
+<h4 id="establishes-games">Establishes Games</h4>
+<blockquote>
+<p><strong>ENTITY1 establishes games</strong> [in/on/at ENTITY2] [to honor ENTITY3]</p>
+<p>Use to capture the first instance of a regular event (e.g. the
+Olympic, Isthmian, Nemean, Pythian games or prominent regional games).
+ENTITY2 is the location of the event; ENTITY3 is the god or hero
+honored. If the games exists as an event, use 'holds'.</p>
+<p><strong>Populates filecard categories 'games established by', 'establishes games at'</strong></p>
+</blockquote>
+<h4 id="holds-games">Holds Games</h4>
+<blockquote>
+<p><strong>ENTITY1 holds games</strong> [in/on/at ENTITY2] [to honor ENTITY3]</p>
+<p>Use to capture a regular event (e.g. the Olympic, Isthmian, Nemean,
+Pythian games or prominent regional games). ENTITY2 is the location of
+the event; ENTITY3 is the god or hero honored. To capture the first
+instance of these games, use 'establishes games'. If the games exists
+as an event, use 'holds'.</p>
+<p><strong>Populates filecard categories 'games held by', 'holds games at'</strong></p>
+</blockquote>
+<h4 id="holds-event">Holds (event)</h4>
+<blockquote>
+<p><strong>ENTITY1 holds EVENT</strong> [to honor ENTITY3]</p>
+<p>ENTITY3 is the god or hero honored. If the games is not captured as an
+event (e.g. the Olympic, Isthmian, Nemean, Pythian games or prominent
+regional games) use 'holds games'.</p>
+<p><strong>Populates filecard category 'held by', 'holds', 'held to honor'</strong></p>
+</blockquote>
+<h2 id="2812-capturing-enslaving-imprisoning">2.8.12 Capturing, Enslaving, Imprisoning</h2>
+<h4 id="imprisons">Imprisons</h4>
+<blockquote>
+<p><strong>ENTITY imprisons ENTITY</strong></p>
+</blockquote>
+<h4 id="sells-as-slave">Sells as Slave</h4>
+<blockquote>
+<p><strong>ENTITY1 sells as slave ENTITY2</strong> (ind. obj. ENTITY 3)</p>
+<p>ENTITY2 is the enslaved agent. Both ENTITY1 and ENTITY3 are enslavers.
+'Is slave of' and 'wins as war prize' also exist.</p>
+<p><strong>Populates filecard category 'enslaved to'</strong></p>
+<p><strong>Triggers phenomenon 'people enslaved'</strong></p>
+</blockquote>
+<h4 id="wins-as-war-prize">Wins as War Prize</h4>
+<blockquote>
+<p><strong>ENTITY1 wins as war prize ENTITY2</strong></p>
+<p>Use only in the context or aftermath of war. 'Sells as slave' and 'is
+slave of' also exist.</p>
+<p><strong>Populates filecard category 'enslaved to'</strong></p>
+<p><strong>Triggers phenomenon 'people enslaved'</strong></p>
+</blockquote>
+<h4 id="abducts">Abducts</h4>
+<blockquote>
+<p><strong>ENTITY abducts ENTITY</strong></p>
+<p>Use only in the context of amorous desire. 'Captures' and 'rapes' also
+exist.</p>
+</blockquote>
+<h4 id="captures">Captures</h4>
+<blockquote>
+<p><strong>ENTITY1 captures ENTITY2</strong></p>
+<p>If ENTITY2 is subsequently enslaved, use 'wins as war prize'. If the
+thing captured is a place, use 'conquers', or 'destroys'.</p>
+</blockquote>
+<h4 id="ransoms">Ransoms</h4>
+<blockquote>
+<p><strong>ENTITY1 ransoms ENTITY2</strong> [from ENTITY3]</p>
+<p>ENTITY1 pays a ransom. 'Releases' also exists.</p>
+</blockquote>
+<h4 id="releases">Releases</h4>
+<blockquote>
+<p><strong>ENTITY1 releases ENTITY2</strong> [ind.obj. ENTITY3] [from]</p>
+<p>Use where 'ransoms' is not appropriate.</p>
+</blockquote>
+<h4 id="rescues">Rescues</h4>
+<blockquote>
+<p><strong>ENTITY rescues ENTITY</strong> [from]</p>
+<p>If the rescue involves retrieval from the Underworld, use 'takes'.</p>
+</blockquote>
+<h4 id="guards">Guards</h4>
+<blockquote>
+<p><strong>ENTITY guards ENTITY</strong></p>
+<p>Use also where animals are being herded.</p>
+</blockquote>
+<h2 id="2813-sexual-relations">2.8.13 Sexual Relations</h2>
+<h4 id="has-sex-with">Has Sex With</h4>
+<blockquote>
+<p><strong>ENTITY1 has sex with ENTITY2</strong> [in/on/at ENTITY3] [and they conceive ENTITY4]</p>
+<p>Use only where 'rapes', 'attempts to rape' are not accurate. ENTITY4 is the resulting offspring.</p>
+<p><strong>When 'in/on/at' and 'and they conceive' are used, populates filecard categories 'conceived at', 'place of conception of'</strong></p>
+<p><strong>When 'and they conceive' is used, populates filecard categories 'son/daughter/child/ children of', 'mother/father of', 'has children with'</strong></p>
+</blockquote>
+<h4 id="desires">Desires</h4>
+<blockquote>
+<p><strong>ENTITY desires ENTITY</strong></p>
+<p>Use only if action is not captured by a more specific interaction.</p>
+</blockquote>
+<h4 id="rapes">Rapes</h4>
+<blockquote>
+<p><strong>ENTITY1 rapes ENTITY2</strong> [in/on/at ENTITY3] [and they conceive ENTITY4]</p>
+<p>Use in instances of explicit sexual assault; otherwise, use
+'abducts' or 'has sex with'. ENTITY4 is the resulting offspring.</p>
+<p><strong>When 'in/on/at' and 'and they conceive' are used, populates filecard categories 'conceived at', 'place of conception of'</strong></p>
+<p><strong>When 'and they conceive' is used, populates filecard categories 'son/daughter/child/ children of', 'mother/father of', 'has children with'</strong></p>
+</blockquote>
+<h4 id="attempts-to-rape">Attempts to Rape</h4>
+<blockquote>
+<p><strong>ENTITY attempts to rape ENTITY</strong></p>
+<p>Use only where the attempt fails.</p>
+</blockquote>
+<h2 id="2814-conversations">2.8.14 Conversations</h2>
+<h4 id="speaks-in-assembly">Speaks in Assembly</h4>
+<blockquote>
+<p><strong>ENTITY speaks in assembly</strong> [of COLLECTIVE] [in/on/at PLACE]</p>
+</blockquote>
+<h4 id="puts-on-trial">Puts on Trial</h4>
+<blockquote>
+<p><strong>ENTITY1 puts on trial ENTITY2</strong></p>
+<p>Use to capture all kinds of legal interactions
+<strong>Populates filecard category 'place of trial of'</strong></p>
+</blockquote>
+<h4 id="threatens">Threatens</h4>
+<blockquote>
+<p><strong>ENTITY threatens ENTITY</strong></p>
+</blockquote>
+<h4 id="insults">Insults</h4>
+<blockquote>
+<p><strong>ENTITY insults ENTITY</strong></p>
+<p>Use in context of verbal insults. Where an agent acts in a generally
+insulting way, use 'offends'.</p>
+</blockquote>
+<h4 id="offends">Offends</h4>
+<blockquote>
+<p><strong>ENTITY offends ENTITY</strong></p>
+<p>Use only if the action is not captured by a more specific interaction.
+Use to capture a mortal acting offensively towards (esp.) a god(dess)
+by (e.g.) not giving sacrifices.</p>
+</blockquote>
+<h4 id="quarrels-with">Quarrels With</h4>
+<blockquote>
+<p><strong>ENTITY quarrels with ENTITY</strong></p>
+<p>Use only if action is not captured by a more specific interaction</p>
+</blockquote>
+<h4 id="warns">Warns</h4>
+<blockquote>
+<p><strong>ENTITY warns ENTITY</strong> [against]</p>
+</blockquote>
+<h4 id="pledges-oath-with">Pledges Oath With</h4>
+<blockquote>
+<p><strong>ENTITY1 pledges oath with ENTITY2</strong> [against ENTITY3] [with the
+involvement of ENTITY4]</p>
+<p>ENTITY4 should be gods (etc) invoked to witness the oath.</p>
+</blockquote>
+<h4 id="performs">Performs</h4>
+<blockquote>
+<p><strong>ENTITY performs [in/on/at] [for] [using]</strong></p>
+<p>Capture the content of the song (etc) in a separate tie.</p>
+<p><strong>Triggers phenomenon 'mythic performers'</strong></p>
+</blockquote>
+<h2 id="2815-ritual-interactions">2.8.15 Ritual interactions</h2>
+<p>Note: 'is priest' and 'is prophet' appear in
+<a href="#286-roles-and-non-familial-relationships">2.8.6</a>.</p>
+<p>For prayer or supplication, use 'requests help' in
+<a href="#288-friendly-interactions">2.8.8</a>.</p>
+<h4 id="makes-sacrifice">Makes Sacrifice</h4>
+<blockquote>
+<p><strong>ENTITY1 makes sacrifice</strong> [of ENTITY2] [ind.obj. ENTITY3] [using
+ENTITY4]</p>
+<p>ENTITY2 is the thing sacrificed; ENTITY3 is the god or hero sacrificed to.</p>
+<p><strong>If ENTITY2 is an agent, populates filecard categories 'dies at', 'place of death of', 'killed by', 'kills'</strong></p>
+<p><strong>If ENTITY2 is an agent, and ENTITY4 is an object or landmark, populates 'killed by', 'used to kill'</strong></p>
+<p><strong>Triggers phenomenon 'human sacrifices'</strong></p>
+</blockquote>
+<h4 id="dedicates">Dedicates</h4>
+<blockquote>
+<p><strong>ENTITY1 dedicates</strong> <strong>ENTITY2</strong> [ind.obj. ENTITY3]</p>
+<p>ENTITY2 is a votive, and typically an object; ENTITY3 is the god or
+hero to which it is dedicated. If the votive is not an entity in
+MANTO, use 'makes sacrifice'.</p>
+<p><strong>Populates filecard categories 'dedicated at', 'dedicated by'</strong></p>
+</blockquote>
+<h4 id="establishes-cult">Establishes Cult</h4>
+<blockquote>
+<p><strong>ENTITY1 establishes cult</strong> [of ENTITY2] [in/on/at ENTITY3] [from ENTITY4]</p>
+<p>If cult to ENTITY2 already exists at ENTITY3, use 'develops cult'
+instead. ENTITY4 is the place rituals etc are brought from. Use
+'creates', 'dedicates' etc to capture specific objects and landmarks
+as well.</p>
+<p><strong>Populates filecard categories 'cult site of' 'cult sites'</strong></p>
+<p><strong>If ENTITY3 contains 'sanctuary', 'oracle' or 'grove', populates filecard category 'cult established by', 'creates'</strong></p>
+</blockquote>
+<h4 id="develops-cult">Develops Cult</h4>
+<blockquote>
+<p><strong>ENTITY1 develops cult</strong> [of ENTITY2] [in/on/at ENTITY3]</p>
+<p>Use where an agent expands, improves or popularizes a pre-existing
+cult of ENTITY2 at ENTITY3. Use 'creates', 'dedicates' etc to capture
+specific objects and landmarks as well.</p>
+<p><strong>Populates filecard category 'cult site of', 'cult sites'</strong></p>
+</blockquote>
+<h4 id="has-cult-site">Has Cult Site</h4>
+<blockquote>
+<p><strong>ENTITY1 has cult site</strong> [in/on/at ENTITY2]</p>
+<p>ENTITY1 is an agent or collective; ENTITY2 is a landmark or place. You
+do not need to capture cult sites dedicated to Olympian gods,
+Heracles, Asclepios, Demeter, Persephone, and personifications that
+have no connection to the <em>spatium mythicum</em>.</p>
+<p><strong>Populates filecard categories 'cult site of', 'cult sites'</strong></p>
+</blockquote>
+<h4 id="initiates-into-cult">Initiates Into Cult</h4>
+<blockquote>
+<p><strong>ENTITY1 initiates into cult</strong> <strong>ENTITY2</strong> [of ENTITY3] [in/on/at ENTITY4]</p>
+<p>ENTITY2 is the agent who is initiated; ENTITY3 is the god or hero whose
+cult it is.</p>
+</blockquote>
+<h4 id="gives-special-gift">Gives Special Gift</h4>
+<blockquote>
+<p><strong>ENTITY1 gives special gift</strong> [ind. obj. ENTITY2]</p>
+<p>ENTITY1 is a divine figure who bestows a special gift upon a mortal,
+which is not an entity in MANTO (e.g. the first grapevine). 'Grants
+superhuman power' also exists.</p>
+</blockquote>
+<h4 id="grants-superhuman-power">Grants Superhuman Power</h4>
+<blockquote>
+<p><strong>ENTITY1 grants superhuman power</strong> [ind.obj. ENTITY2]</p>
+<p>ENTITY1 is a divine figure who grants a superhuman power to ENTITY2.
+ENTITY2 must be a hero or heroine and not (e.g.) a monster, animal, or
+object. Where ENTITY2 has superhuman power but no god is identified as
+granting it, use '[BLANK] grants power [ind.obj. ENTITY2]. Where
+the power is specifically said to be prophecy, use 'grants power of
+prophecy'.</p>
+<p><strong>Populates filecard category 'granted superhuman power by'</strong></p>
+<p><strong>Triggers phenomenon 'superhuman powers'</strong></p>
+</blockquote>
+<h4 id="grants-power-of-prophecy">Grants Power of Prophecy</h4>
+<blockquote>
+<p><strong>ENTITY1 grants power of prophecy</strong> [ind.obj. ENTITY2]</p>
+<p>ENTITY1 is a divine figure who grants the power of prophecy to
+ENTITY2. Where ENTITY2 is described as being granted prophetic power
+but no god is identified as granting it, use '[BLANK] grants power
+of prophecy [ind.obj. ENTITY2]'. 'Is prophet' and 'gives prophecy'
+also exist.</p>
+<p><strong>Populates filecard category 'granted power of prophecy by'</strong></p>
+<p><strong>Triggers phenomenon 'superhuman powers'</strong></p>
+</blockquote>
+<h4 id="gives-prophecy">Gives Prophecy</h4>
+<blockquote>
+<p><strong>ENTITY1 gives prophecy</strong> [ind.obj. ENTITY2]</p>
+<p>ENTITY1 is the source of the prophecy, either the god or the prophet
+or both. If the prophecy is given at Delphi and comes from Apollo,
+ENTITY1 should be 'Oracle of Apollo' (see
+<a href="../../4.%20Issues/4_issues.md/#43-prophecies-at-delphi">4.3</a>).</p>
+</blockquote>
+<h4 id="appears-in-an-epiphany">Appears in an Epiphany</h4>
+<blockquote>
+<p><strong>ENTITY1 appears in an epiphany</strong> [ind.obj. ENTITY2] [in/on/at ENTITY3]</p>
+<p>Where the epiphany occurs in the historical period, use 'appears as an
+epiphany in the historical period'.</p>
+</blockquote>
+<h4 id="appears-in-an-epiphany-in-the-historical-period">Appears in an Epiphany in the Historical Period</h4>
+<blockquote>
+<p><strong>ENTITY1 appears in an epiphany in the historical period [in/on/at ENTITY2]</strong></p>
+<p>TODO: Fix ENTITY3 to be ENTITY2</p>
+<p>ENTITY3 is the location where the epiphany occurred. Use with a
+timemark; if the timemark is left empty, the epiphany occurred when
+the passage was written. Where the epiphany occurs in the mythical
+period, use 'appears in an epiphany'.</p>
+</blockquote>
+<h2 id="2816-possession-creation-usage-and-gifting">2.8.16 Possession, creation, usage, and gifting</h2>
+<h4 id="possesses">Possesses</h4>
+<blockquote>
+<p><strong>ENTITY possesses ENTITY</strong></p>
+<p>Use only if not captured by a more specific interaction.</p>
+</blockquote>
+<h4 id="creates-humans">Creates Humans</h4>
+<blockquote>
+<p><strong>ENTITY creates humans</strong></p>
+<p>Use only where an entity creates humankind. Where an entity creates a
+specific human (e.g. Pandora), use 'creates'.</p>
+<p><strong>Populates filecard category 'humans created onsite by'</strong></p>
+<p><strong>Triggers phenomenon 'creators of humans'</strong></p>
+</blockquote>
+<h4 id="creates">Creates</h4>
+<blockquote>
+<p><strong>ENTITY1 creates ENTITY2</strong> [from ENTITY3]</p>
+<p>ENTITY3 is something which ENTITY1 uses to create ENTITY2. Where
+ENTITY2 is a sanctuary, use 'establishes cult'; where ENTITY2 is a
+fictional agent, use 'invents'.</p>
+<p><strong>Populates filecard categories 'created at', 'created by', 'creates', 'created from', 'from which is created'</strong></p>
+<p><strong>If ENTITY2 contains 'walls', 'gate', populates filecard category 'fortified by'.</strong></p>
+<p><strong>Triggers phenomenon 'creators of humans' if ENTITY2 is a collective or agent</strong></p>
+</blockquote>
+<h4 id="destoys">Destoys</h4>
+<blockquote>
+<p><strong>ENTITY destroys ENTITY</strong></p>
+<p>Where ENTITY2 is also conquered, use 'conquers' as well.</p>
+<p><strong>Populates filecard category 'destroyed by'</strong></p>
+</blockquote>
+<h4 id="damages">Damages</h4>
+<blockquote>
+<p><strong>ENTITY1 damages ENTITY2</strong></p>
+<p>Use only if 'destroys' is not appropriate.</p>
+</blockquote>
+<h4 id="discards">Discards</h4>
+<blockquote>
+<p><strong>ENTITY discards ENTITY2</strong></p>
+<p>ENTITY2 is typically an object. 'Abandons' exists for agents.</p>
+</blockquote>
+<h4 id="consumes">Consumes</h4>
+<blockquote>
+<p><strong>ENTITY consumes ENTITY</strong></p>
+<p>Use in contexts of eating and drinking.</p>
+</blockquote>
+<h4 id="takes">Takes</h4>
+<p><strong>ENTITY takes ENTITY</strong> [from] [to] [via]</p>
+<h4 id="gives">Gives</h4>
+<blockquote>
+<p><strong>ENTITY1 gives</strong> <strong>ENTITY2</strong> [ind.obj. ENTITY3] [for ENTITY4]</p>
+<p>If the thing given is not an entity in MANTO, use 'gives something'.
+Where ENTITY2 is a kingdom, use also 'rules', 'succeeds' etc to
+trigger reversals. ENTITY4 is something given in exchange. 'Gives in
+marriage', 'grants power (of prophecy)', 'gives special gift',
+'dedicates' also exist.</p>
+</blockquote>
+<h4 id="gives-something">Gives Something</h4>
+<blockquote>
+<p><strong>ENTITY1 gives something [ind. obj. ENTITY2]</strong></p>
+<p>Use only where the thing given is not an object in MANTO; otherwise,
+use 'gives'.</p>
+</blockquote>
+<h4 id="offers">Offers</h4>
+<blockquote>
+<p><strong>ENTITY offers ENTITY</strong> [ind.obj.]</p>
+<p>Use only if the offer is not accepted, or promised but never
+delivered. 'Offers in marriage' also exists.</p>
+</blockquote>
+<h4 id="hides">Hides</h4>
+<blockquote>
+<p><strong>ENTITY hides ENTITY</strong> [from]</p>
+<p>Use either to capture an entity hiding another, or an entity hiding
+him or herself (i.e. ENTITY hides [BLANK]). For disappearances
+analogous to death, use 'disappears'; for the hiding of bodies in the
+ground, use 'buries'.</p>
+</blockquote>
+<h2 id="2817-collectives-and-groups">2.8.17 Collectives and Groups</h2>
+<p>Agents can also be enrolled as members of collectives using 'is herald,
+'is helmsman', 'is healer', 'is prophet' (see <a href="#286-roles-and-non-familial-relationships">2.8.6</a>).</p>
+<p>Sub-groups can be nested inside larger collectives using the entity
+attribute <strong>Part of</strong>. Where an agent is a member of a
+subgroup, they will also appear in the filecard categories 'belongs to'
+and 'includes' in relation to the larger collective.</p>
+<h4 id="leads">Leads</h4>
+<blockquote>
+<p><strong>ENTITY1 leads ENTITY2 ENTITY2 must be a collective.</strong>
+<strong>Populates filecard categories 'led by', 'includes', 'leader of', 'belongs to'</strong></p>
+</blockquote>
+<h4 id="assembles">Assembles</h4>
+<blockquote>
+<p><strong>ENTITY assembles ENTITY</strong></p>
+</blockquote>
+<h4 id="is-member-of">Is Member Of</h4>
+<blockquote>
+<p><strong>ENTITY1 is member of ENTITY2</strong></p>
+<p>ENTITY1 is typically an agent; ENTITY2 is always a collective. Use to
+express membership of agents in collectives. If the collective is a
+group of siblings (e.g. "the Children of Niobe"), you will need to
+also create a "is child of" tie.
+<strong>Populates filecard categories 'includes', 'belongs to'</strong></p>
+</blockquote>
+<h2 id="2818-rulership-and-landownership">2.8.18 Rulership and Landownership</h2>
+<h4 id="rules">Rules</h4>
+<blockquote>
+<p><strong>ENTITY1 rules ENTITY2</strong> [for ENTITY3] [from ENTITY4]</p>
+<p>ENTITY2 should be a place. Where a king or kingdom is strongly
+associated with both a region and a capital city within that region,
+give both as ENTITY2 (E.g. 'Pandion rules Athens, Attica'). ENTITY3 is
+a minor or absent ruler for whom ENTITY1 acts as regent. ENTITY4 is a
+place outside of ENTITY2 where ENTITY1 rules from. Where an entity
+leads a collective, use 'leads'. Where a ruler is also eponym, use
+'rules as eponym'. 'Succeeds' also exists.</p>
+<p><strong>Populates filecard categories 'ruled by', 'ruler of' (both d.obj and 'from' are places ruled)</strong></p>
+</blockquote>
+<h4 id="rules-as-eponym">Rules As Eponym</h4>
+<blockquote>
+<p><strong>ENTITY1 rules as eponym ENTITY2</strong> [for ENTITY3] [from ENTITY4]</p>
+<p>ENTITY2 should be a place for which ENTITY1 is both ruler and eponym.
+ENTITY3 is a minor or absent ruler for whom ENTITY1 acts as regent.
+ENTITY4 is a place outside of ENTITY2 where ENTITY1 rules from. This
+interaction is a shortcut; it is equivalent to creating two separate
+ties ('rules' and 'is eponym of').</p>
+<p><strong>Populates filecard categories 'ruled by', 'ruler of', 'eponym of', 'eponym'</strong></p>
+</blockquote>
+<h4 id="succeeds">Succeeds</h4>
+<blockquote>
+<p><strong>ENTITY1 succeeds ENTITY2</strong> [in/on/at ENTITY3]</p>
+<p>ENTITY1 and ENTITY2 are successive rulers of ENTITY3, which should be
+a place. 'Gives' can also be used to express kingship. Where a king or
+kingdom is strongly associated with both a region and a capital city
+within that region, give both as ENTITY3 (E.g. 'Pandion succeeds
+Cecrops in/on/at Athens, Attica').</p>
+<p><strong>Populates filecard categories 'ruled by', 'ruler of' (both sbj and obj are rulers)</strong></p>
+</blockquote>
+<h4 id="founds">Founds</h4>
+<blockquote>
+<p><strong>ENTITY1 founds ENTITY2</strong> [from ENTITY3]</p>
+<p>Use only for founding of cities. For regions, islands etc use
+'settles'. For sanctuaries, use 'establishes cult'. ENTITY3 is where
+ENTITY1 comes from. Capture details of eponym, naming etc in separate
+tie(s)</p>
+<p><strong>Populates filecard categories 'founder of', 'founded by', 'founded from'</strong></p>
+</blockquote>
+<h4 id="founds-as-eponym">Founds As Eponym</h4>
+<blockquote>
+<p><strong>ENTITY1 founds as eponym ENTITY2</strong> [from ENTITY3]</p>
+<p>Use only for founding of cities where ENTITY1 is both founder and
+eponym of ENTITY2. For regions, islands etc use 'settles'; for
+sanctuaries, use 'establishes cult'. ENTITY3 is where ENTITY1 comes
+from. This interaction is a shortcut; it is equivalent to creating two
+separate ties ('founds' and 'is eponym of').</p>
+<p><strong>Populates filecard categories 'founder of', 'founded by', 'founded from', 'eponym of', 'eponym'</strong></p>
+</blockquote>
+<h4 id="conquers">Conquers</h4>
+<blockquote>
+<p><strong>ENTITY1 conquers ENTITY2</strong></p>
+<p>Where ENTITY2 is also destroyed, use 'destroys' as well.</p>
+<p><strong>Populates filecard categories 'conquered by'</strong></p>
+</blockquote>
+<h4 id="settles">Settles</h4>
+<blockquote>
+<p><strong>ENTITY1 settles ENTITY2</strong> [from ENTITY3]</p>
+<p>ENTITY2 should be a region or area, perhaps already inhabited, which
+is settled by ENTITY1. ENTITY3 is where ENTITY1 comes from. 'Conquers'
+also exists. Use 'founds' for cities. Where ENTITY1 is also eponym of
+the region, use 'is eponym of' as well.</p>
+<p><strong>Populates filecard categories 'settles', 'settled by', 'settled from'</strong></p>
+</blockquote>
+<h2 id="2819-connections-to-places">2.8.19 Connections to places</h2>
+<h4 id="resides">Resides</h4>
+<blockquote>
+<p><strong>ENTITY1 resides</strong> [in/on/at ENTITY2] [near]</p>
+<p>If ENTITY2 is not a landmark, use only if action is not captured by a
+more specific interaction. If ENTITY2 is a landmark, use only for
+(semi-)permanent residence there.</p>
+<p><strong>If 'in/on/at' contains a landmark, populates filecard categories 'dwelling', 'dwelling of'</strong></p>
+</blockquote>
+<h4 id="is-depicted">Is Depicted</h4>
+<blockquote>
+<p><strong>ENTITY is depicted</strong> [Depicted on: ENTITY2] [with the involvement
+of ENTITY3]</p>
+<p>ENTITY2 is the thing or place on or at which the depiction is
+displayed. Use also for depictions created in the historical period.
+ENTITY3 is the place that commissioned or was otherwise involved in
+the creation of the object displayed at ENTITY2 (typically used where
+a city dedicates a votive at Delphi or Olympia). You do not need to
+capture depictions of Olympian gods, Heracles, Asclepios, Demeter,
+Persephone, and personifications unless there is clear narrative
+content or they are included in a grouping that seems significant in
+some way.</p>
+<p><strong>Populates filecard categories 'has depictions of', 'depictions'.</strong></p>
+</blockquote>
+<h4 id="is-a-relic">Is a Relic</h4>
+<blockquote>
+<p><strong>ENTITY is a relic</strong> [in/on/at]</p>
+<p>Use where a mythic object or landmark is described as surviving in the
+historical period, or an animal is so long-lived that it was born in
+the mythic period and encountered in the historical period. Use with
+an historical timemark; if the timemark is left empty, the relic was
+in existence when the passage was written.</p>
+<p><strong>Populates filecard categories 'survives as a relic at', 'relics preserved on site'</strong></p>
+<p><strong>Triggers phenomenon 'preserved relics'</strong></p>
+</blockquote>
+<h4 id="is-moved">Is Moved</h4>
+<blockquote>
+<p><strong>ENTITY1 is moved</strong> [from ENTITY2] [to ENTITY3]</p>
+<p>ENTITY1 is a mythic relic moved during the historical period from
+ENTITY2 to ENTITY3. Use with a timemark; if the timemark is left
+empty, the relic was being moved when the passage was written.
+<strong>Populates filecard categories 'moved in the historical period from/to', 'survives as a relic at', 'relics preserved on site' (places drawn from both 'to' and 'from' fields)</strong></p>
+<p><strong>Triggers phenomenon 'preserved relics'</strong></p>
+</blockquote>
+<h4 id="is-entrance-to">Is Entrance To</h4>
+<blockquote>
+<p><strong>ENTITY1 is entrance to ENTITY2</strong></p>
+<p>Use only to capture entrances to the Underworld. ENTITY2 must be 'the
+Underworld'.</p>
+<p><strong>Populates filecard categories 'serves as entrance to' and 'entrances:'</strong></p>
+<p><strong>Triggers phenomenon 'entrances to underworld'</strong></p>
+</blockquote>
+<h4 id="flows-into">Flows Into</h4>
+<blockquote>
+<p><strong>ENTITY1 flows into ENTITY2</strong></p>
+<p>Both ENTITY1 and ENTITY2 are waterways, typically rivers or springs. Use only where they are said to flow into or out of one another against geographical accuracy.</p>
+<p><strong>Populates filecard category 'flows into or out of'</strong></p>
+<p><strong>Triggers phenomenon 'impossible waterways'</strong></p>
+</blockquote>
+<h4 id="fortifies">Fortifies</h4>
+<blockquote>
+<p><strong>ENTITY fortifies ENTITY</strong></p>
+<p>When walls and gates exist in MANTO as fortifications (see
+2.4.4(#creating-places-and-landmarks)), use 'creates'
+instead.</p>
+<p><strong>Populates filecard category 'fortified by'</strong></p>
+</blockquote>
+<h2 id="2820-movement">2.8.20 Movement</h2>
+<h4 id="travels">travels</h4>
+<blockquote>
+<p><strong>ENTITY1 travels</strong> [from ENTITY2] [to ENTITY3] [via ENTITY4]</p>
+<p>Use to capture complex travel itineraries in the mythical period with
+ENTITY4 used to capture stops along the route in order; use if action
+is not captured by a more specific interaction (e.g. 'visits',
+'migrates').</p>
+</blockquote>
+<h4 id="goes-past">goes past</h4>
+<blockquote>
+<p><strong>ENTITY1 goes past ENTITY2</strong></p>
+<p>Use where ENTITY1 does not visit or stop at ENTITY2.</p>
+</blockquote>
+<h4 id="crosses">Crosses</h4>
+<blockquote>
+<p><strong>ENTITY1 crosses ENTITY2</strong></p>
+<p>Use where ENTITY1 crosses ENTITY2, which will be a specific waterway.</p>
+</blockquote>
+<h4 id="shipwrecks">Shipwrecks</h4>
+<blockquote>
+<p>ENTITY1 shipwrecks ENTITY2 [in/on/at ENTITY3] [while intending to go to ENTITY4]</p>
+<p>ENTITY1 causes the shipwreck; ENTITY2 is shipwrecked (including the
+vessel if it is an entity in MANTO). ENTITY4 is the place ENTITY2 was
+heading towards. Where no god (etc.) is identified as causing the
+shipwreck, use '[BLANK]' shipwrecks '[ENTITY]'.</p>
+<p><strong>Triggers phenomenon 'shipwrecks'</strong></p>
+</blockquote>
+<h4 id="sends">Sends</h4>
+<blockquote>
+<p><strong>ENTITY sends ENTITY</strong> [against] [from] [to] [via]</p>
+</blockquote>
+<h4 id="expels">Expels</h4>
+<blockquote>
+<p><strong>ENTITY1 expels ENTITY2</strong> [from ENTITY3] [to ENTITY4]</p>
+</blockquote>
+<h4 id="searches-for">Searches For</h4>
+<blockquote>
+<p><strong>ENTITY searches for ENTITY</strong> [in/on/at] [from] [to] [via]</p>
+</blockquote>
+<h4 id="flees">Flees</h4>
+<blockquote>
+<p><strong>ENTITY flees</strong> [from] [to] [via]</p>
+</blockquote>
+<h4 id="encounters">Encounters</h4>
+<blockquote>
+<p><strong>ENTITY1 encounters ENTITY2</strong></p>
+<p>Use only if action is not captured by a more specific interaction.
+Both ENTITY1 and ENTITY2 should typically be agents or collectives.</p>
+</blockquote>
+<h4 id="migrates">Migrates</h4>
+<blockquote>
+<p><strong>ENTITY migrates</strong> [from] [to]</p>
+<p>Use where an entity changes their homeland in a (semi-)permanent
+manner (e.g. a woman is born into a family from one region and marries
+into a family in another) and the action cannot be captured by a more
+specific interaction.</p>
+</blockquote>
+<h2 id="2821-miscellaneous-disambiguation-and-conflation">2.8.21 Miscellaneous, disambiguation and conflation</h2>
+<h4 id="is-associated-with">Is Associated With</h4>
+<blockquote>
+<p><strong>ENTITY is associated with ENTITY</strong></p>
+<p>Use only if not captured by a more specific interaction.</p>
+</blockquote>
+<h4 id="is-mentioned">Is Mentioned</h4>
+<blockquote>
+<p><strong>ENTITY1 is mentioned</strong></p>
+<p>Use where there is no other entity in MANTO to connect ENTITY1 to.
+These ties should only have subject and predicate. Particularly useful
+when collecting data from fragments, where sometimes a name appears
+with no context.</p>
+</blockquote>
+<h4 id="is-conflated-with">Is Conflated With</h4>
+<blockquote>
+<p><strong>ENTITY is conflated with ENTITY</strong></p>
+<p>Use where two entities that are ontologically distinct in MANTO are
+said to be the same entity. When a mythic entity is identified in the
+historical period, use 'is identified \as\'. When the context is the
+syncretism of Greek and non-Greek entities, use 'Non-Greek entity'
+is identified as 'Greek entity' (see <a href="4_issue.md/#44-syncretism-of-gods-and-goddesses">4.4</a>)</p>
+<p><strong>Populates filecard category 'sometimes conflated with'</strong></p>
+</blockquote>
+<h4 id="is-identified-as">Is Identified As</h4>
+<blockquote>
+<p><strong>ENTITY1 is identified as ENTITY2</strong></p>
+<p>ENTITY1 is a mythic entity; ENTITY2 is an historical entity. 'Is
+identified [in/on/at]' also exists.</p>
+<p><strong>Populates filecard category 'identified as'</strong></p>
+</blockquote>
+<h4 id="is-identified">Is Identified</h4>
+<blockquote>
+<p><strong>ENTITY1 is identified</strong> [in/on/at] ENTITY2 [near]</p>
+<p>ENTITY1 is a mythic entity; ENTITY2 is an historical entity. 'Is
+identified as' also exists</p>
+<p><strong>Populates filecard category 'identified in' (only on sbj's filecard)</strong></p>
+</blockquote>
+<h4 id="is-identified-as_1">Is Identified As</h4>
+<blockquote>
+<p><strong>[Non-Greek entity] is identified as [Greek entity]</strong></p>
+<p>Use to capture syncrecism of Greek and non-Greek deities and heroes.
+See <a href="4_issues.md/#44-syncretism-of-gods-and-goddesses">4.4</a>.</p>
+<p><strong>Populates filecard category 'identified as'</strong></p>
+<p><strong>Triggers phenomenon 'syncretism'</strong></p>
+</blockquote>
+<h4 id="is-located">Is Located</h4>
+<blockquote>
+<p><strong>ENTITY is</strong> <strong>located</strong> [in/on/at] [near]</p>
+<p>Use to express topographical relationships which are not ontologically
+stable enough to be captured as attributes of the entity itself. Often
+used to express relationships between mythical places (e.g. locations
+within the Underworld). Use 'is identified \as\' where a mythic
+entity is identified in the historical period.</p>
+</blockquote>
+<h4 id="is-contemporary-of">Is Contemporary Of</h4>
+<blockquote>
+<p><strong>ENTITY is contemporary of ENTITY</strong></p>
+<p>Use only where no other interaction captures the fact that two agents
+or collectives belong to the same generation.</p>
+</blockquote>
+<h4 id="is-compared-to">Is Compared To</h4>
+<blockquote>
+<p><strong>ENTITY is compared to ENTITY</strong></p>
+<p>Use where a passage directly compares the qualities of two otherwise
+unrelated entities, and no other interaction can be captured.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.expand", "navigation.instant", "navigation.path", "navigation.indexes", "toc.follow", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
