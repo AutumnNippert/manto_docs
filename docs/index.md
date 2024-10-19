@@ -1,15 +1,4 @@
 # MANTO
-'The Manual'
-
-Data Collection Principles and Practices
-
-February 2023
-
-Revisions and additions made after 28th February 2023 are in red font.
-
-Sphinx's head [drawn by Allina Podgurski](https://www.manto-myth.org/blog/about-mantos-icon),
-after a dish (c. 600BCE) from Kameiros (Louvre A308)
-
 Introducing MANTO
 
 MANTO (Mapping Ancient Narratives, Territories, and Objects) is an
@@ -36,9 +25,9 @@ and organize the data of Greek myth must always be tempered by a very
 real appreciation for the inherent messiness of this material.
 
 You can read more about this project at
-[https://www.manto-myth.org/manto](https://www.manto-myth.org/manto)
+https://www.manto-myth.org/manto(https://www.manto-myth.org/manto)
 and explore the data via the public interface at
-[https://manto.unh.edu/viewer](https://manto.unh.edu/viewer.p/60/2616/scenario/1/geo/)
+https://manto.unh.edu/viewer(https://manto.unh.edu/viewer.p/60/2616/scenario/1/geo/)
 
 This manual describes how we collect machine-readable mythic data from
 ancient texts. We want this project to create an authoritative, useful

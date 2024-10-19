@@ -75,7 +75,7 @@ used:
 >
 > For entities in the mythic world, use Anglicized equivalents of object
 > descriptions. (You can add the Greek term(s) in **[Name
-> (transliteration)]{.smallcaps}** to aid searchability. Be as
+> (transliteration)]** to aid searchability. Be as
 > consistent as possible and follow existing practice; E.g.:
 
   -----------------------------------------------------------------------
@@ -83,7 +83,7 @@ used:
   ------------------------------------- ---------------------------------
   Panoplia                              Armour
 
-  Krene                                 Spring ([not]{.underline}
+  Krene                                 Spring (not
                                         fountain)
 
   Xoanon                                Wooden Statue
@@ -128,5 +128,5 @@ For the names of artifacts you can use transliterated names of vessels
 field. E.g. "Kylix", "Krater".
 
 When entering text in free-text fields that will be visible in the
-public interface (e.g., **[Commentary, Information]{.smallcaps}**) give
+public interface (e.g., **Commentary, Information**) give
 names in house style and use American English.

@@ -1,8 +1,8 @@
-site_name: Manto
+site_name: Manto Docs
 site_url: https://autumnnippert.github.io/manto_docs/
 theme:
-
   name: material
+  logo: media/logo.png
 
   palette:
     # Palette toggle for automatic mode
@@ -24,3 +24,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to system preference
+
+extra_css:
+  - stylesheets/extra.css

@@ -7,7 +7,7 @@ cult practices or religious ideas, we do not distinguish between the
 various facets of gods as identified by their epithets. So, for example,
 we treat Zeus Eleutherios ('the deliverer') and Zeus Horcios ('guardian
 of oaths') as the same entity, i.e.
-'[Zeus](https://manto.unh.edu/viewer.p/60/2616/object/6580-8188419)'!
+'Zeus(https://manto.unh.edu/viewer.p/60/2616/object/6580-8188419)'!
 With heroes, epithets can sometimes be too vague or poetic to be
 captured in our database. In other words, we ignore descriptors like
 'godlike' or 'scion/peer of Ares'. (i.e. do not capture 'ACHILLES is
@@ -21,8 +21,8 @@ meaning of epithets tends to be quite allusive or uncertain, you often
 need to draw on outside knowledge to create a useful tie and use your
 own judgment as to which might be the best interaction to use. As
 always, try searching Nodegoat to see what other people have done
-previously, and use **[Data uncertain, Note,]{.smallcaps}** and
-**[Commentary]{.smallcaps}** if appropriate.
+previously, and use **Data uncertain, Note,** and
+**Commentary** if appropriate.
 
 Some examples:
 
@@ -43,7 +43,7 @@ necessary to capture the same information more than once in a text.
 
 If an epithet is used in place of the actual name in a text, and you
 think a user might be confused when they click through to the text, add
-a note in **[Commentary]{.smallcaps}** explaining your decision (e.g.
+a note in **Commentary** explaining your decision (e.g.
 ''Argeiphontes' is used in line 110 to mean Hermes').
 
 # 4.2: Repeating ties
@@ -71,11 +71,11 @@ To capture oracles given at Delphi (usually by the Pythia) whose
 ultimate source is Apollo, use '[the Oracle of
 Apollo](https://manto.unh.edu/viewer.p/60/2616/object/6580-10186749)'
 entity in the 'in accordance with a prophecy from' field, or as subject
-in 'gives prophecy' ties. [Do not] also use \'Apollo\',
+in 'gives prophecy' ties. Do not also use \'Apollo\',
 \'Pythia\', or \'Delphi\'.
 
 We only use
-[Pythia](https://manto.unh.edu/viewer.p/60/2616/object/6580-8189965)
+Pythia(https://manto.unh.edu/viewer.p/60/2616/object/6580-8189965)
 as an entity when she is an active agent in a mythical event (e.g.
 breaking up the fight between Apollo and Heracles over the tripod).
 
@@ -93,23 +93,23 @@ situations. Here are some possible strategies:
 You might find that an author asserts that a hero or heroine transformed
 into a god or goddess; in these instances, you can use interactions like
 'becomes immortal' etc. (see
-[2.8.7](#names-and-transformation)).
+2.8.7(#names-and-transformation)).
 
 Where a Greek agent is said to be the same as a non-Greek one, use
-'\[Non-Greek entity\] is identified as \[Greek entity\]'. E.g. --
+'\Non-Greek entity\] is identified as \[Greek entity\'. E.g. --
 
-> *Apollodoros 2.1.3:["having found Epaphus \[Io\] came to Egypt and was
+> *Apollodoros 2.1.3:"having found Epaphus \[Io\ came to Egypt and was
 > married to Telegonus, who then reigned over the Egyptians. And she set
 > up an image of Demeter, whom the Egyptians called Isis, and Io
 > likewise they called by the name of Isis.]{.mark}*
 >
-> ***[ISIS is identified as DEMETER]{.mark}***
+> ***ISIS is identified as DEMETER{.mark}***
 >
-> ***[local source: EGYPT]{.mark}***
+> ***local source: EGYPT{.mark}***
 >
-> ***[ISIS is identified as IO]{.mark}***
+> ***ISIS is identified as IO{.mark}***
 >
-> ***[local source: EGYPT]{.mark}***
+> ***local source: EGYPT{.mark}***
 
 Where a text is clearly conflating two Greek deities, capture using 'is
 associated with' or 'is mentioned' as appropriate. E.g.:
@@ -126,7 +126,7 @@ associated with' or 'is mentioned' as appropriate. E.g.:
 
 Our definition of 'mythical' is strictly chronological, i.e. existing in
 the period which ends 5 generations after the return of the Heracleidai
-to the Peloponnese (see [1.1](#ontology)).
+to the Peloponnese (see 1.1(#ontology)).
 
 This means that we don't capture a number of things which might seem
 'mythical'. For example, we don't capture Herodotus' gold-digging ants,
@@ -157,10 +157,10 @@ various different names.
 However, this simple principle does need to be broken sometimes.
 
 For the most part, where an entity has several different names we simply
-list them in the various fields under **[Name.]{.smallcaps}** This means
+list them in the various fields under **Name.** This means
 that they can be used to search for that entity. So, if you search for
 either 'Alexandros' or 'Paris' you will find the entity
-'[Alexander](https://manto.unh.edu/viewer.p/60/2616/object/6580-8182124)'
+'Alexander(https://manto.unh.edu/viewer.p/60/2616/object/6580-8182124)'
 because both are listed as alternative names.
 
 We only create 'Alternative name' entities when we need an entity to
@@ -170,16 +170,16 @@ of', or 'changes name of'. So, in the example below, we already have a
 main entity '[the
 Peloponnese](https://manto.unh.edu/viewer.p/60/2616/object/6580-8194371)'
 but we also need to create alternative name entities for
-'[Apia](https://manto.unh.edu/viewer.p/60/2616/object/6580-8194366)'
+'Apia(https://manto.unh.edu/viewer.p/60/2616/object/6580-8194366)'
 and
-'[Argos](https://manto.unh.edu/viewer.p/60/2616/object/6580-8360025)'
+'Argos(https://manto.unh.edu/viewer.p/60/2616/object/6580-8360025)'
 to capture the assertion that
-[Apis](https://manto.unh.edu/viewer.p/60/2616/object/6580-8182232)
+Apis(https://manto.unh.edu/viewer.p/60/2616/object/6580-8182232)
 was the eponym of Apia and
-[Argos](https://manto.unh.edu/viewer.p/60/2616/object/6580-8187815)
+Argos(https://manto.unh.edu/viewer.p/60/2616/object/6580-8187815)
 was the eponym of Argos. (We connect the alternative name entities Apia
 and Argos to the main entity ('the Peloponnese') following the
-instructions in [2.4.1.1](#alternative-name-entities).
+instructions in 2.4.1.1(#alternative-name-entities).
 This means that these alternative name entities should be easy to spot
 when you are entering data.)
 
@@ -239,15 +239,15 @@ conform with these instructions.)]{.mark}
 'Alternative name entities' should not be created where an entity
 undergoes a profound transformation. In these instances they become a
 different entity. E.g., the heroine
-[Ino](https://manto.unh.edu/viewer.p/60/2616/object/6580-8188585)
+Ino(https://manto.unh.edu/viewer.p/60/2616/object/6580-8188585)
 transforms into the goddess
-[Leucothea](https://manto.unh.edu/viewer.p/60/2616/object/6580-8189686)
+Leucothea(https://manto.unh.edu/viewer.p/60/2616/object/6580-8189686)
 or the woman
-[Cainis](https://manto.unh.edu/viewer.p/60/2616/object/6580-8189365)
+Cainis(https://manto.unh.edu/viewer.p/60/2616/object/6580-8189365)
 becomes the man
-[Caineus](https://manto.unh.edu/viewer.p/60/2616/object/6580-8189365).
+Caineus(https://manto.unh.edu/viewer.p/60/2616/object/6580-8189365).
 There are examples amongst the places as well: e.g., the city of
-[Troy](https://manto.unh.edu/viewer.p/60/2616/object/6580-8194710)
+Troy(https://manto.unh.edu/viewer.p/60/2616/object/6580-8194710)
 was built on the [Hill of Phrygian
 Ate](https://manto.unh.edu/viewer.p/60/2616/object/6580-9615945).
 All of these entities are treated as main entities in MANTO because the
@@ -263,7 +263,7 @@ Nemea and Isthmia) as well as some local festivals (e.g. the panathenaic
 games at Athens). The ties for collecting data about regular events are
 a little different from those used when there is a mythic event that can
 be created as an entity in MANTO. See
-[2.8.11](#competitions).
+2.8.11(#competitions).
 
 # 4.8 Personifications
 
@@ -289,7 +289,7 @@ the agent entity. Where the natural feature acts like a natural feature
 entity.
 
 There are instructions for creating personifications as entities in
-Nodegoat at [2.4.1.4](#personifications).
+Nodegoat at 2.4.1.4(#personifications).
 
 ## 
 
@@ -311,7 +311,7 @@ We can also use ties like 'is child of' to recreate family trees. These
 can also reveal the aspects of the chronology of the mythic period.
 
 We do have a small number of mythic events as entities. (See
-[2.3](#entities-the-basics).) These mark moments in time
+2.3(#entities-the-basics).) These mark moments in time
 in that they capture where a group of people came together at a
 particular place. For example, any agent who participates in the
 [Funeral Games of
@@ -322,7 +322,7 @@ establishing broad, relative chronologies within MANTO's mythical
 networks.
 
 We also create historical events to use only in timemarks. (See
-[2.7.5](#timemarks).) When we capture information about
+2.7.5(#timemarks).) When we capture information about
 (e.g.) the movement of relics in the historical world we want to be able
 to say when such events happened, and so we mark time in these instances
 using an historical event entity.
@@ -350,7 +350,7 @@ Take care, however, that you do not use a Pleiades URN that will fetch
 locational data if we have described a place as fictional or unlocatable
 in MANTO.
 
-See [4.17](#ingesting-locations-from-pleiades) for
+See 4.17(#ingesting-locations-from-pleiades) for
 instructions on ingesting locational data from Pleiades.
 
 # 4.11: Uploading data using a spreadsheet
@@ -359,7 +359,7 @@ Any data can be uploaded by spreadsheet into Nodegoat. This can be
 useful for editing lists of entities etc. Where we find it a real
 timesaver is in the creation of passages before we start entering the
 data of a new text. The full guide from Nodegoat is here:
-[https://nodegoat.net/guides/csvfile](https://nodegoat.net/guides/csvfile)
+https://nodegoat.net/guides/csvfile(https://nodegoat.net/guides/csvfile)
 but it's useful to have a description of the process specifically geared
 towards creating passages:
 
@@ -401,7 +401,7 @@ towards creating passages:
 
 Most places in the *spatium mythicum* have quite secure relationships
 with places in the *spatium historicum*. For example, the
-'[Athens](https://manto.unh.edu/viewer.p/60/2616/object/6580-8188815)'
+'Athens(https://manto.unh.edu/viewer.p/60/2616/object/6580-8188815)'
 of myth can clearly be assumed to be located on the site of the
 historical city.
 
@@ -412,21 +412,21 @@ carefully.
 'Messy' relationships between places tend to be of two kinds. The first
 kind is where an (e.g.) epic poet describes a certain place, and there
 is later dispute over where that place was. A good example of this is
-[Oichalia](https://manto.unh.edu/viewer.p/60/2616/object/6580-8254017).
+Oichalia(https://manto.unh.edu/viewer.p/60/2616/object/6580-8254017).
 There is an archaic epic that tells of its sacking by Heracles in which
 it is treated as a specific place (probably on Euboia), but by the
 Hellenistic period several different cities claimed to have once been
 Oichalia. The second kind is where a place is obviously fictional in
 poetry but in later traditions it is located somewhere in the historical
 Mediterranean. So, for example, Circe's island of
-[Aiaia](https://manto.unh.edu/viewer.p/60/2616/object/6580-9051582)
+Aiaia(https://manto.unh.edu/viewer.p/60/2616/object/6580-9051582)
 is clearly a fantasy location in the *Odyssey*, but like many of the
 places Odysseus visits it was later said to be in southern Italy.
 
 When collecting data for MANTO, we treat both kinds of places in the
 same way. We create entities for the unlocatable places (e.g.
 'Oichalia', 'Aiaia') and put the word 'unlocatable' in
-**[Information.]{.smallcaps}** We also create entities for each location
+**Information.** We also create entities for each location
 in the *spatium historicum* that claimed to be this place and use the
 interaction 'is identified (as)' to connect them. E.g.:
 
@@ -497,33 +497,33 @@ fit the context. Ideally you should also use the commentary field to
 alert the user (e.g. 'In this passage, Pausanias gives a rationalized
 account of Theseus and Peirithous' journey to the Underworld'). If the
 source expresses explicit skepticism of the mythic data, tag the tie
-with **[Doubt of disbelief expressed.]{.smallcaps}**
+with **Doubt of disbelief expressed.**
 
 If the characters in the rationalized version do things that do not
 happen in the traditional versions, and so the data looks very different
 from the data that we used to capture the traditional version, then you
-need to create new agents. Use **[Rationalized form of]{.smallcaps}** to
+need to create new agents. Use **Rationalized form of** to
 capture the connection between the rationalized and traditional figures.
-(See [2.4.1.2](#rationalized-form-entities) for creating
+(See 2.4.1.2(#rationalized-form-entities) for creating
 rationalized entities).
 
 So, in this example of Plutarch's rationalization of Theseus and
 Peirithous' trip to the underworld, we use the existing entities to
 capture data about
-[Theseus](https://manto.unh.edu/viewer.p/60/2616/object/6580-8188822),
-[Peirithous](https://manto.unh.edu/viewer.p/60/2616/object/6580-8189133),
+Theseus(https://manto.unh.edu/viewer.p/60/2616/object/6580-8188822),
+Peirithous(https://manto.unh.edu/viewer.p/60/2616/object/6580-8189133),
 and
-[Cerberos](https://manto.unh.edu/viewer.p/60/2616/object/6580-8187977),
+Cerberos(https://manto.unh.edu/viewer.p/60/2616/object/6580-8187977),
 since they do what they normally do in the myth (except that the action
 takes place in Epeiros, not the Underworld). However, we do need new
 entities to capture
-[Aidoneus](https://manto.unh.edu/viewer.p/60/2616/object/6580-10150526),
+Aidoneus(https://manto.unh.edu/viewer.p/60/2616/object/6580-10150526),
 king of Epeiros as the rationalized form of Hades, and to capture the
 fact that Persephone's traditional role is now divided between two
 separate figures,
-'[Phersephone](https://manto.unh.edu/viewer.p/60/2616/object/6580-10150526)',
+'Phersephone(https://manto.unh.edu/viewer.p/60/2616/object/6580-10150526)',
 and
-'[Kore](https://manto.unh.edu/viewer.p/60/2616/scenario/1/geo/)'.
+'Kore(https://manto.unh.edu/viewer.p/60/2616/scenario/1/geo/)'.
 
 > Plutarch, *Theseus* 31.4:
 > "*Then Theseus, to return the service of Peirithous, journeyed with
@@ -559,24 +559,24 @@ rest.
 
 When creating places, landmarks, constellations, mythical events and
 historical artifacts, you can nest one entity inside another using
-**[In.]{.smallcaps}** When creating collectives and historical events,
-you can nest one entity inside another using **[Part of.]{.smallcaps}**
-(See [2.4.4-8](#creating-places-and-landmarks) and
-[2.7.5.1](#creating-historical-events) for details.) By
+**In.** When creating collectives and historical events,
+you can nest one entity inside another using **Part of.**
+(See 2.4.4-8(#creating-places-and-landmarks) and
+2.7.5.1(#creating-historical-events) for details.) By
 using these attributes we are expressing how entities relate to each
 other in terms of their locations, or the fact that they are subsets of
 larger groupings or periods of time.
 
 This allows us to work with quite complex arrangements of entities. So,
 at
-[Troy](https://manto.unh.edu/viewer.p/60/2616/object/6580-8194710)
+Troy(https://manto.unh.edu/viewer.p/60/2616/object/6580-8194710)
 for example, we have not merely the city 'Troy' but also smaller areas
 in and around the city and various landmarks (see fig. 4.14.1) and these
 all need to be nested inside one another. You can read more about this
 conception of Troy in this [blog
 post](https://www.manto-myth.org/blog/a-narrative-gazetteer-of-troy).
 
-![](media/image5.png){width="6.267716535433071in"
+!(media/image5.png){width="6.267716535433071in"
 height="3.5277777777777777in"}
 
 ##### Figure 4.14.1: Nesting of locations at Troy (graphic: G. Goodwin)
@@ -590,7 +590,7 @@ the tombs that are only collected against the 'inner' layers of the nest
 are also listed. In the example of Troy, the [Scaian
 Gates](https://manto.unh.edu/viewer.p/60/2616/object/6580-8240597)
 is one of the landmarks that
-[Troy](https://manto.unh.edu/viewer.p/60/2616/object/6580-8194710)
+Troy(https://manto.unh.edu/viewer.p/60/2616/object/6580-8194710)
 'encompases'.
 
 **Figure 4.14.2: Nesting of locations at Athens (graphic: G. Hawes)**
@@ -602,16 +602,16 @@ times. When we collect the tie '[THE OLIVE TREE OF ATHENA is a relic at
 THE SANCTUARY OF
 PANDROSOS'](https://manto.unh.edu/viewer.p/60/2800/object/6582-9619265),
 reversals will populate the filecards for the
-[tree](https://manto.unh.edu/viewer.p/60/2616/object/6580-9619257)
+tree(https://manto.unh.edu/viewer.p/60/2616/object/6580-9619257)
 ('survives as a relic at: Sanctuary of Pandrosos') and the
-[Sanctuary](https://manto.unh.edu/viewer.p/60/2616/object/6580-9619261)
+Sanctuary(https://manto.unh.edu/viewer.p/60/2616/object/6580-9619261)
 ('relics preserved on site: Olive Tree'). And reversals will also send
 this data to the outer layers of the nest as well, so that the
 information 'relics preserved on site: Olive Tree' will also appear on
 the filecards for the
-[Acropolis](https://manto.unh.edu/viewer.p/60/2616/object/6580-8188821)
+Acropolis(https://manto.unh.edu/viewer.p/60/2616/object/6580-8188821)
 and for
-[Athens](https://manto.unh.edu/viewer.p/60/2616/object/6580-8188815)
+Athens(https://manto.unh.edu/viewer.p/60/2616/object/6580-8188815)
 itself.
 
 The reversals that are affected by nesting are: "Place of conception
@@ -641,7 +641,7 @@ recent locational data from Pleiades.
 
 # 4.18 When to tag implicit data
 
-The tag **[Data implicit]{.smallcaps}** means the information in the tie
+The tag **Data implicit** means the information in the tie
 is deduced from the information in the passage, and very likely to be
 correct, but it is not explicitly stated in the source material.
 
@@ -655,11 +655,11 @@ Examples include:
 > this statement is the role of Niobe, who is always Argos' mother and
 > Phoroneus' daughter)]{.mark}*
 >
-> ***[ARGOS is child of NIOBE]{.mark}***
+> ***ARGOS is child of NIOBE{.mark}***
 >
 > ***Data implicit: yes***
 >
-> ***[NIOBE is child of PHORONEUS]{.mark}***
+> ***NIOBE is child of PHORONEUS{.mark}***
 >
 > ***Data implicit: yes***
 
@@ -677,7 +677,7 @@ Examples include:
 >
 > ***Data implicit: yes***
 >
-> ***\[BLANK\] expels PELEUS, TELAMON from AIGINA***
+> ***\BLANK\ expels PELEUS, TELAMON from AIGINA***
 >
 > ***Data implicit: yes***
 
@@ -702,21 +702,21 @@ Examples include:
 > *[Pausanias 2.21.3: "\...Tyrsenus was the son of Heracles and the
 > Lydian woman..."]{.mark}*
 >
-> [***TYRSENOS is child of HERACLES and OMPHALE***]{.mark}
+> ***TYRSENOS is child of HERACLES and OMPHALE***{.mark}
 >
-> ***[Data implicit: yes]{.mark}***
+> ***Data implicit: yes{.mark}***
 
 As always, if you think that a user might be confused about how you
 created a tie from that passage, explain yourself in
-**[Commentary]{.smallcaps}** or **[Note.]{.smallcaps}** [E.g., in the
+**Commentary]** or **[Note.** [E.g., in the
 final example above, "Omphale is unnamed in the text but is identifiable
 by Pausanias\' reference to \'the Lydian woman\'".]{.mark}
 
 # 4.19 Entity attributes for research projects
 
 You will notice that several checkboxes appear after
-**[Modified?]{.smallcaps}**. These include: **[Ruined city in Pausanias,
+**Modified?**. These include: **[Ruined city in Pausanias,
 Functional city in Pausanias, Matriliny - former king, Matriliny - new
-king, Matriliny - woman, Generation.]{.smallcaps}** These are being used
+king, Matriliny - woman, Generation.]** These are being used
 for specific research projects. Their use is not covered in this manual
 and you should not touch them.
