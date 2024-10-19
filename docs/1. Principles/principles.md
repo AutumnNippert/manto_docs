@@ -73,23 +73,22 @@ categories:
 
 * 👤 AGENTS: Living entities, including gods, heroes, monsters, and animals.
 
-* 👥 COLLECTIVES: Groups of agents with recognizable collective identities, e.g. the Argonauts](https://manto.unh.edu/viewer.p/60/2616/object/6580-8187813),the Daughters of Proitos](https://manto.unh.edu/viewer.p/60/2616/object/6580-10158859), [the Centaurs(https://manto.unh.edu/viewer.p/60/2616/object/6580-8187970), [the Cattle of Helios.(https://manto.unh.edu/viewer.p/60/2616/object/6580-8190292)
+* 👥 COLLECTIVES: Groups of agents with recognizable collective identities, e.g. [the Argonauts](https://manto.unh.edu/viewer.p/60/2616/object/6580-8187813),[the Daughters of Proitos](https://manto.unh.edu/viewer.p/60/2616/object/6580-10158859), [the Centaurs](https://manto.unh.edu/viewer.p/60/2616/object/6580-8187970), [the Cattle of Helios](https://manto.unh.edu/viewer.p/60/2616/object/6580-8190292)
 
-* 🏺 OBJECTS: Moveable, object-like entities without agency and with specific identities, e.g. the Scepter of Agamemnon](https://manto.unh.edu/viewer.p/60/2616/object/6580-8190286), [the Shoulder of Pelops(https://manto.unh.edu/viewer.p/60/2616/object/6580-10055354)
+* 🏺 OBJECTS: Moveable, object-like entities without agency and with specific identities, e.g. [the Scepter of Agamemnon](https://manto.unh.edu/viewer.p/60/2616/object/6580-8190286), [the Shoulder of Pelops](https://manto.unh.edu/viewer.p/60/2616/object/6580-10055354)
 
 * 🏛️ LANDMARKS: Immovable buildings or smaller natural features, e.g.
- the Tomb of Helen](https://manto.unh.edu/viewer.p/60/2616/object/6580-10149928), [the Olive Tree on the Acropolis(https://manto.unh.edu/viewer.p/60/2616/object/6580-9619257)
+ [the Tomb of Helen](https://manto.unh.edu/viewer.p/60/2616/object/6580-10149928), [the Olive Tree on the Acropolis](https://manto.unh.edu/viewer.p/60/2616/object/6580-9619257)
 
-* 🌍 PLACES: Significant geographical locations in the mythic storyworld, e.g. Athens](https://manto.unh.edu/viewer.p/60/2616/object/6580-8188815), the Underworld(https://manto.unh.edu/viewer.p/60/2616/object/580-8188448), [Mount Olympos(https://manto.unh.edu/viewer.p/60/2616/object/6580-8253991)
+* 🌍 PLACES: Significant geographical locations in the mythic storyworld, e.g. [Athens](https://manto.unh.edu/viewer.p/60/2616/object/6580-8188815), [the Underworld](https://manto.unh.edu/viewer.p/60/2616/object/580-8188448), [Mount Olympos](https://manto.unh.edu/viewer.p/60/2616/object/6580-8253991)
 
 * ⭐ CONSTELLATIONS: stars, groups of stars, and planets in the night sky,
-e.g. [the
-Pleiades](https://manto.unh.edu/viewer.p/60/2616/object/6580-9882842)
+e.g. [the Pleiades](https://manto.unh.edu/viewer.p/60/2616/object/ 6580-9882842)
 
-* ⏳ MYTHICAL EVENTS: Significant events which bring together gods and goddesses, heroes and heroines e.g. the Flood of Deucalion](https://manto.unh.edu/viewer.p/60/2616/object/6580-9055626), [the Funeral Games of Achilles(https://manto.unh.edu/viewer.p/60/2616/object/6580-9744216)
+* ⏳ MYTHICAL EVENTS: Significant events which bring together gods and goddesses, heroes and heroines e.g. the Flood of [Deucalion](https://manto.unh.edu/viewer.p/60/2616/object/6580-9055626), [the Funeral Games of Achilles](https://manto.unh.edu/viewer.p/60/2616/object/6580-9744216)
 
 For more detail about these types of entities, see
-2.3.1(#entity-types).
+[2.3.1 entity-types](#231-entity-types).
 
 ## 1.3 Entities in the *spatium historicum*
 
@@ -145,7 +144,7 @@ historicum*. These are:
 * 📅 HISTORICAL EVENTS that are required as timemarks.
 
 For more detail about these types of entities, see
-2.3.1(2_practices.md/#231-entity-types).
+[2.3.1](2_practices.md/#231-entity-types).
 
 ## 1.4 Ties
 
@@ -160,7 +159,7 @@ situations. The \'nouns\' in these sentences come from our dataset of
 entities; they are often written in CAPS in this manual for clarity. The
 predicates come from our list of interactions. Prepositional phrases,
 genitive absolutes, and purpose clauses are also allowed. (These are all
-listed in 2.7.2-4(2_practices.md/#272-prepositional-phrases).) Figure 1.4.1
+listed in [2.7.2-4](2_practices.md/#272-prepositional-phrases).) Figure 1.4.1
 shows some examples of actual ties in our dataset from Apollodoros'
 *Library*:
 
@@ -176,13 +175,13 @@ deal of autonomy in data collection.
 Always keep in mind how these ties will later be used. Firstly, MANTO
 works as an index of myth by connecting every entity back to a piece of
 ancient evidence. So, a user who searches for
-Apia(https://manto.unh.edu/viewer.p/60/2616/object/6580-8194366)
+[Apia](https://manto.unh.edu/viewer.p/60/2616/object/6580-8194366)
 would discover passage
-2.1.1(https://manto.unh.edu/viewer.p/60/2800/object/6581-8316517)
+[2.1.1](https://manto.unh.edu/viewer.p/60/2800/object/6581-8316517)
 in Apollodoros' *Library*; a user who searches for
-Deianeira(https://manto.unh.edu/viewer.p/60/2616/object/6580-8188140)
+[Deianeira](https://manto.unh.edu/viewer.p/60/2616/object/6580-8188140)
 would discover Apollod. *Lib.*
-2.7.7(https://manto.unh.edu/viewer.p/60/2800/object/6581-8316560).
+[2.7.7](https://manto.unh.edu/viewer.p/60/2800/object/6581-8316560).
 
 Secondly, these ties show the networks of the mythic storyworld. When
 entities appear together in a tie, we assume that there is some kind of
@@ -204,16 +203,16 @@ Because our ties are quite specific, and our entities have certain
 attributes (like gender) assigned to them, from each piece of data we
 collect we can often deduce further information. So, from the third
 example in fig.
-1.4.1(#figure-1.4.1-examples-of-ties-in-manto.-entities-are-in-caps-graphic-g.-goodwin)
-'THERIMACHOS and CREONTIADES and DEICOON and IOLAOS is child of HERACLES and MEGARA(https://manto.unh.edu/viewer.p/60/2800/object/6582-9602152)
+[1.4.1](#figure-1.4.1-examples-of-ties-in-manto.-entities-are-in-caps-graphic-g.-goodwin)
+[THERIMACHOS and CREONTIADES and DEICOON and IOLAOS is child of HERACLES and MEGARA](https://manto.unh.edu/viewer.p/60/2800/object/6582-9602152)
 we can create certain further statements, for instance:
 
 > HERACLES is father of THERIMACHOS and
-> CREONTIADES] and [DEICOON and
+> CREONTIADES and DEICOON and
 > IOLAOS
 >
-> MEGARA] is mother of [THERIMACHOS and
-> CREONTIADES] and [DEICOON and
+> MEGARA is mother of THERIMACHOS and
+> CREONTIADES and DEICOON and
 > IOLAOS
 >
 > THERIMACHOS is son of HERACLES and MEGARA
@@ -222,19 +221,19 @@ we can create certain further statements, for instance:
 >
 > HERACLES has children with MEGARA
 >
-> THERIMACHOS] and [CREONTIADES and
-> DEICOON] and [IOLAOS belong to the same
+> THERIMACHOS and CREONTIADES and
+> DEICOON and IOLAOS belong to the same
 > generation
 >
 > HERACLES and MEGARA belong to a generation earlier than
-> THERIMACHOS] and [CREONTIADES and
-> DEICOON] and [IOLAOS
+> THERIMACHOS and CREONTIADES and
+> DEICOON and IOLAOS
 
 Finally, it is important to understand what MANTO is not
 able to do. MANTO is like the supercharged index to a book: it helps the
 user navigate mythic sources, but is not intended to replace them. For
 example, MANTO does not capture *how* an author chooses to tell a myth.
-In the final example of fig.1.4.1(#figure-1.4.1-examples-of-ties-in-manto.-entities-are-in-caps-graphic-g.-goodwin),
+In the final example of [fig.1.4.1](#figure-1.4.1-examples-of-ties-in-manto. entities-are-in-caps-graphic-g.-goodwin),
 for example, it's not clear that Deianeira kills her husband Heracles
 without meaning to -- the tie 'kills' is used to capture all killings,
 but does not distinguish acts of cold-blooded murder from instances of
@@ -259,8 +258,7 @@ the same time. For example, when we add this tie to our dataset \--
 
 **Apollodoros, *Library* 3.6.6-3.6.8:**
 
-**[ZEUS kills CAPANEUS at THE WALLS OF THEBES using THE THUNDERBOLT OF
-ZEUS](https://manto.unh.edu/viewer.p/60/2800/object/6582-9613756)**
+**[ZEUS kills CAPANEUS at THE WALLS OF THEBES using THE THUNDERBOLT OF ZEUS](https://manto.unh.edu/viewer.p/60/2800/object/6582-9613756)**
 
 MANTO will automatically send information to these filecards \--
 
@@ -334,7 +332,7 @@ because we capture when a monster is described as a multi-species
 hybrid, or a place is said to be an entrance to the underworld, we can
 create lists of those particular phenomena too. These and other
 phenomena will be directly accessible in MANTO's public interface soon.
-(You will see in 2.8.1-21(2_practices.md/#281-qualities) how we plan to
+(You will see in [2.8.1-21](2_practices.md/#281-qualities) how we plan to
 create them from specific ties.)
 
 But the uses of MANTO's data go beyond just the things we set out to
@@ -363,21 +361,21 @@ To identify places and fetch locational data, we use the
 Pleiades(https://pleiades.stoa.org/) Gazetteer.
 
 Where possible, we add
-Wikidata(https://www.wikidata.org/wiki/Wikidata:Main_Page)
+[Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page)
 links to our entities, and link to
-Wikipedia(https://www.wikipedia.org/) to give further
+[Wikipedia](https://www.wikipedia.org/) to give further
 information about the ancient sources we use. MANTO's principal
 importance as an LOD resource is in its provision of an authoritative
 list of mythic 'people' and objects with stable Unique Resource
 Identifiers (URIs). These are the 'object IDs' that appear at the end of
 each URL in the public interface. E.g., for
-Theseus(https://manto.unh.edu/viewer.p/60/2616/object/6580-8188822):
+[Theseus](https://manto.unh.edu/viewer.p/60/2616/object/6580-8188822):
 8188822.
 
-MANTO's canonical URLs have the form (e.g. for Theseus)
-https://resource.manto.unh.edu/8188822(https://resource.manto.unh.edu/8188822).
+MANTO's canonical URLs have the form (e.g. for Theseus) [https://resource.manto.unh.edu/8188822](https://resource.manto.unh.edu/8188822)
+
 The API can be queried at
-https://api.manto.unh.edu/(https://api.manto.unh.edu/).
+[https://api.manto.unh.edu/(https://api.manto.unh.edu/](https://api.manto.unh.edu/(https://api.manto.unh.edu/)).
 
 MANTO is recognised as an authoritative source in Wikidata (Q107400883).
 MANTO URIs can be added to Wikidata using the property 'MANTO ID'
