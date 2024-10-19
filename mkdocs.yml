@@ -31,9 +31,11 @@ theme:
     - navigation.expand
     - navigation.instant
     - navigation.path
-    - navigation.indexes 
+    - navigation.indexes
+
     - toc.follow
 
+    - search.suggest
     - search.highlight
     
 extra_css:
