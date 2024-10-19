@@ -1,6 +1,6 @@
 # Issues
 
-4.1: Epithets
+## 4.1: Epithets
 
 Because MANTO is primarily concerned with mythic narratives rather than
 cult practices or religious ideas, we do not distinguish between the
@@ -46,7 +46,7 @@ think a user might be confused when they click through to the text, add
 a note in **Commentary** explaining your decision (e.g.
 ''Argeiphontes' is used in line 110 to mean Hermes').
 
-# 4.2: Repeating ties
+## 4.2: Repeating ties
 
 You will not be able to capture absolutely every possible relationship
 in every line of text---believe us, we've tried!
@@ -65,7 +65,7 @@ useful example of it. Any time it reappears after that, you can ignore
 it. (There is nothing necessarily wrong with capturing the same tie more
 than once in a text, it is simply creating extra work!)
 
-# 4.3: Prophecies at Delphi
+## 4.3: Prophecies at Delphi
 
 To capture oracles given at Delphi (usually by the Pythia) whose
 ultimate source is Apollo, use '[the Oracle of
@@ -79,7 +79,7 @@ Pythia(https://manto.unh.edu/viewer.p/60/2616/object/6580-8189965)
 as an entity when she is an active agent in a mythical event (e.g.
 breaking up the fight between Apollo and Heracles over the tripod).
 
-# 4.4 Syncretism of gods and goddesses
+## 4.4 Syncretism of gods and goddesses
 
 'Syncretism' means that people identified one deity as equivalent to, or
 perhaps embodying some aspect of, another deity. These ideas are a
@@ -101,15 +101,15 @@ Where a Greek agent is said to be the same as a non-Greek one, use
 > *Apollodoros 2.1.3:"having found Epaphus \[Io\ came to Egypt and was
 > married to Telegonus, who then reigned over the Egyptians. And she set
 > up an image of Demeter, whom the Egyptians called Isis, and Io
-> likewise they called by the name of Isis.]{.mark}*
+> likewise they called by the name of Isis.]*
 >
-> ***ISIS is identified as DEMETER{.mark}***
+> ***ISIS is identified as DEMETER***
 >
-> ***local source: EGYPT{.mark}***
+> ***local source: EGYPT***
 >
-> ***ISIS is identified as IO{.mark}***
+> ***ISIS is identified as IO***
 >
-> ***local source: EGYPT{.mark}***
+> ***local source: EGYPT***
 
 Where a text is clearly conflating two Greek deities, capture using 'is
 associated with' or 'is mentioned' as appropriate. E.g.:
@@ -122,7 +122,7 @@ associated with' or 'is mentioned' as appropriate. E.g.:
 >
 > ***HECATE is associated with ARTEMIS***
 
-# 4.5: Seemingly 'mythical' entities in the historical period
+## 4.5: Seemingly 'mythical' entities in the historical period
 
 Our definition of 'mythical' is strictly chronological, i.e. existing in
 the period which ends 5 generations after the return of the Heracleidai
@@ -141,7 +141,7 @@ Mars and features in stories that look very similar to the mythic ones
 we collect. Because he is 13 generations after Aeneas, he is not
 'eligible' to be counted as an agent in MANTO.
 
-# 4.6 Alternative names
+## 4.6 Alternative names
 
 The basic principle of MANTO is that each entity in our dataset should
 correspond to one particular entity in the ancient world. All entities
@@ -227,14 +227,14 @@ uses of names. E.g.:
 > Theban land was an Egyptian, and not a Phoenician, have their opinion
 > contradicted by the name of this Athena, because she is called by the
 > Phoenician name of Onga, and not by the Egyptian name of
-> Sais."]{.mark}*
+> Sais."]*
 >
 > ***[ONGA (ALT. ATHENA) is alternative name for ATHENA; local tradition
-> at: PHOINICIA, THEBES]{.mark}***
+> at: PHOINICIA, THEBES]***
 
 [(Note that in the past we collected more data about alternative names
 than we do now, so you may notice that some of the older data doesn't
-conform with these instructions.)]{.mark}
+conform with these instructions.)]
 
 'Alternative name entities' should not be created where an entity
 undergoes a profound transformation. In these instances they become a
@@ -253,7 +253,7 @@ Ate](https://manto.unh.edu/viewer.p/60/2616/object/6580-9615945).
 All of these entities are treated as main entities in MANTO because the
 transformation is not merely a change of name.
 
-# 4.7 Panhellenic games
+## 4.7 Panhellenic games
 
 We capture one-off events like funeral games as mythic events, but not
 games that were celebrated regularly. In these instances, we simply
@@ -265,7 +265,7 @@ a little different from those used when there is a mythic event that can
 be created as an entity in MANTO. See
 2.8.11(#competitions).
 
-# 4.8 Personifications
+## 4.8 Personifications
 
 Personifications are agents or collectives that either represent an
 abstract concept like 'love' or 'death', or divine incarnations of a
@@ -291,9 +291,9 @@ entity.
 There are instructions for creating personifications as entities in
 Nodegoat at 2.4.1.4(#personifications).
 
-## 
+### 
 
-# 4.9 Modeling time in MANTO
+## 4.9 Modeling time in MANTO
 
 MANTO does not directly collect information about when events happened
 in the *spatium mythicum.* Our data structure focuses on creating ties,
@@ -327,7 +327,7 @@ We also create historical events to use only in timemarks. (See
 to say when such events happened, and so we mark time in these instances
 using an historical event entity.
 
-# 4.10: Choosing a Pleiades Number
+## 4.10: Choosing a Pleiades Number
 
 Pleiades URNs allow us to fetch the locational data (longitude and
 latitude) that displays in our maps, and also to link our project to
@@ -353,7 +353,7 @@ in MANTO.
 See 4.17(#ingesting-locations-from-pleiades) for
 instructions on ingesting locational data from Pleiades.
 
-# 4.11: Uploading data using a spreadsheet
+## 4.11: Uploading data using a spreadsheet
 
 Any data can be uploaded by spreadsheet into Nodegoat. This can be
 useful for editing lists of entities etc. Where we find it a real
@@ -397,7 +397,7 @@ towards creating passages:
 > that will be created. Ensure these look correct, then run the template
 > to create all of the passages.
 
-# 4.12: Identification of mythical places with historical locations 
+## 4.12: Identification of mythical places with historical locations 
 
 Most places in the *spatium mythicum* have quite secure relationships
 with places in the *spatium historicum*. For example, the
@@ -434,7 +434,7 @@ interaction 'is identified (as)' to connect them. E.g.:
 > not inhabited, was formerly a city and was called Oechalia. The
 > account given by the Euboeans agrees with the statements of Creophylus
 > in his Heraeleia ; and Hecataeus of Miletus stated that Oechalia is in
-> Scius, a part of the]{.mark} territory of Eretria. Nevertheless, I
+> Scius, a part of the] territory of Eretria. Nevertheless, I
 > think that the whole version of the Messenians is more probable than
 > these, particularly on account of the bones of Eurytus, which my story
 > will deal with later."*
@@ -456,7 +456,7 @@ interaction 'is identified (as)' to connect them. E.g.:
 > ***OICHALIA (UNLOCATABLE) is identified as OICHALIA (EUBOIA)***
 >
 > ***Textual source: [Creophylos, Capture of Oichalia fr. 2; Hecataios
-> fr. 28 ]{.mark}***
+> fr. 28 ]***
 >
 > ***Local tradition at: EUBOIA***
 >
@@ -483,7 +483,7 @@ narrative data against the mythic location or one of the historical
 claimants. Where data is relevant to both, you should capture it against
 both.
 
-# 4.13 Rationalized variants
+## 4.13 Rationalized variants
 
 Rationalizations are versions of the traditional stories which are
 manipulated to seem less fantastic in some way. You can read more about
@@ -550,7 +550,7 @@ and
 >
 > ***(not all ties included here)***
 
-# 4.14 Nesting entities 
+## 4.14 Nesting entities 
 
 By 'nesting' entities we make our data tidier and more systematic. It
 also makes data collection quick because we only need to capture the
@@ -579,7 +579,7 @@ post](https://www.manto-myth.org/blog/a-narrative-gazetteer-of-troy).
 !(media/image5.png){width="6.267716535433071in"
 height="3.5277777777777777in"}
 
-##### Figure 4.14.1: Nesting of locations at Troy (graphic: G. Goodwin)
+###### Figure 4.14.1: Nesting of locations at Troy (graphic: G. Goodwin)
 
 The advantage of doing this is that we can capture data in very granular
 ways, using the most precise location that we can find. Meanwhile,
@@ -618,7 +618,7 @@ The reversals that are affected by nesting are: "Place of conception
 of", "Place of birth of", "Place of death of", "Place of burial of",
 "Has depictions of", "Relics on site", and "Related Entities".
 
-# 4.16 Dead bodies 
+## 4.16 Dead bodies 
 
 We create entities that represent the dead bodies of agents as seldom as
 possible. When we use interactions like 'buries' or 'recovers the body
@@ -632,14 +632,14 @@ situations where the body of a hero is described as a relic or moved in
 the historical period. In these situations, the body should be an
 Object, and usually have the name 'the Bones of ...'.
 
-# 4.17 Ingesting locations from Pleiades
+## 4.17 Ingesting locations from Pleiades
 
 To run the Pleiades ingestion: From the Nodegoat Data environment select
 Processes \> Ingestion \> Pleiades Location Data Run \> Run Ingestion.
 This process trashes all locational data in MANTO and fetches the most
 recent locational data from Pleiades.
 
-# 4.18 When to tag implicit data
+## 4.18 When to tag implicit data
 
 The tag **Data implicit** means the information in the tie
 is deduced from the information in the passage, and very likely to be
@@ -650,16 +650,16 @@ Examples include:
 (1) When a hero's grandfather is named, which allows you to deduce his
     parentage. E.g.:
 
-> *[Pausanias 2.16.1: "Argus, the grandson of Phoroneus, succeeding to
+> *Pausanias 2.16.1: "Argus, the grandson of Phoroneus, succeeding to
 > the throne after Phoroneus, gave his name to the land." (Implicit in
 > this statement is the role of Niobe, who is always Argos' mother and
-> Phoroneus' daughter)]{.mark}*
+> Phoroneus' daughter)*
 >
-> ***ARGOS is child of NIOBE{.mark}***
+> ***ARGOS is child of NIOBE***
 >
 > ***Data implicit: yes***
 >
-> ***NIOBE is child of PHORONEUS{.mark}***
+> ***NIOBE is child of PHORONEUS***
 >
 > ***Data implicit: yes***
 
@@ -677,7 +677,7 @@ Examples include:
 >
 > ***Data implicit: yes***
 >
-> ***\BLANK\ expels PELEUS, TELAMON from AIGINA***
+> ***[BLANK] expels PELEUS, TELAMON from AIGINA***
 >
 > ***Data implicit: yes***
 
@@ -685,8 +685,8 @@ Examples include:
     exact nature of the connection is not spelled out in the passage.
     E.g.:
 
-> *[Pausanias 4.2.3: "The Thessalians say that Eurytium, which to-day is
-> not inhabited, was formerly a city and was called Oechalia."]{.mark}
+> *Pausanias 4.2.3: "The Thessalians say that Eurytium, which to-day is
+> not inhabited, was formerly a city and was called Oechalia."
 > (Implicit in this statement is the Thessalians' logic: the mythical
 > city of Oichalia was ruled by Eurytos, so they are implicitly claiming
 > that their city of Eurytion was renamed for him.)*
@@ -699,24 +699,24 @@ Examples include:
     only by a description, meaning that some readers might be uncertain
     about who is meant. E.g.:
 
-> *[Pausanias 2.21.3: "\...Tyrsenus was the son of Heracles and the
-> Lydian woman..."]{.mark}*
+> *Pausanias 2.21.3: "\...Tyrsenus was the son of Heracles and the
+> Lydian woman..."*
 >
-> ***TYRSENOS is child of HERACLES and OMPHALE***{.mark}
+> ***TYRSENOS is child of HERACLES and OMPHALE***
 >
-> ***Data implicit: yes{.mark}***
+> ***Data implicit: yes***
 
 As always, if you think that a user might be confused about how you
 created a tie from that passage, explain yourself in
-**Commentary]** or **[Note.** [E.g., in the
+**Commentary** or **Note.** E.g., in the
 final example above, "Omphale is unnamed in the text but is identifiable
-by Pausanias\' reference to \'the Lydian woman\'".]{.mark}
+by Pausanias' reference to 'the Lydian woman'".
 
-# 4.19 Entity attributes for research projects
+## 4.19 Entity attributes for research projects
 
 You will notice that several checkboxes appear after
-**Modified?**. These include: **[Ruined city in Pausanias,
+**Modified?**. These include: **Ruined city in Pausanias,
 Functional city in Pausanias, Matriliny - former king, Matriliny - new
-king, Matriliny - woman, Generation.]** These are being used
+king, Matriliny - woman, Generation.** These are being used
 for specific research projects. Their use is not covered in this manual
 and you should not touch them.
